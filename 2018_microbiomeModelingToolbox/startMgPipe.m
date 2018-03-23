@@ -14,11 +14,11 @@ modPath='YOUR_PATH_TO_AGORA\';
 resPath='YOUR PATH TO RESULT FOLDER\' ;
 % path to where the COBRA Toolbox is located
 global CBTDIR
-toolboxPath=strcat(CBTDIR,'/');
+toolboxPath=CBTDIR;
 % path to and name of the file with dietary information.
-dietFilePath=strcat(toolboxPath,'papers\2017_AGORA\resourceForMicrobiomeModelingToolbox/AverageEuropeanDiet');
+dietFilePath=[CBTDIR filesep 'papers' filesep '2017_AGORA' filesep 'resourceForMicrobiomeModelingToolbox' filesep 'AverageEuropeanDiet'];
 % path to and name of the file with abundance information.
-abunFilePath=strcat(toolboxPath,'papers\2018_microbiomeModelingToolbox/examples/normCoverage.csv');
+abunFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'examples' filesep 'normCoverage.csv'];
 % name of objective function of organisms 
 objre={'EX_biomass(e)'};
 %the output is vectorized picture, change to '-dpng' for .png
