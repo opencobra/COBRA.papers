@@ -5,20 +5,21 @@
 
 % Federico Baldini, 2017-2018
 
-
+initCobraToolbox()
 %REQUIRED INPUT VARIABLES
 
 % path to microbe models
 modPath='YOUR_PATH_TO_AGORA\';
-% path to where the Microbiome Modeling Toolbox is located
-toolboxPath='YOUR_PATH_TO_Microbiome_Modeling_Toolbox\'
 % path where to save results
 resPath='YOUR PATH TO RESULT FOLDER\' ;
+% path to where the COBRA Toolbox is located
+global CBTDIR
+toolboxPath=strcat(CBTDIR,'/');
 % path to and name of the file with dietary information.
-dietFilePath=strcat(toolboxPath,'DietImplementation/AverageEuropeanDiet');
+dietFilePath=strcat(toolboxPath,'papers\2017_AGORA\resourceForMicrobiomeModelingToolbox/AverageEuropeanDiet');
 % path to and name of the file with abundance information.
-abunFilePath=strcat(toolboxPath,'Resources/normCoverage.csv');
-% name of objective function of organisms
+abunFilePath=strcat(toolboxPath,'papers\2018_microbiomeModelingToolbox/examples/normCoverage.csv');
+% name of objective function of organisms 
 objre={'EX_biomass(e)'};
 %the output is vectorized picture, change to '-dpng' for .png
 figForm = '-depsc'

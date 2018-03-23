@@ -85,7 +85,7 @@ end
 % folder. 
 
 if modbuild == 1
-   setup=fastSetupCreator(models, strains, {})
+   setup=fastSetupCreator(models, strains, {},objre)
    setup.name='Global reconstruction with lumen / fecal compartments no host';
    setup.recon=0;
    save(strcat(resPath,'Setup_allbacs.mat'), 'setup')
