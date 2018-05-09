@@ -11,14 +11,16 @@ initCobraToolbox()
 % path to microbe models
 modPath='YOUR_PATH_TO_AGORA\';
 % path where to save results
-resPath='YOUR PATH TO RESULT FOLDER\' ;
+resPath='YOUR PATH TO RESULT FOLDER\';
 % path to where the COBRA Toolbox is located
 global CBTDIR
 toolboxPath=CBTDIR;
 % path to and name of the file with dietary information.
-dietFilePath=[CBTDIR filesep 'papers' filesep '2017_AGORA' filesep 'resourceForMicrobiomeModelingToolbox' filesep 'AverageEuropeanDiet'];
+dietFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'resources' filesep 'AverageEuropeanDiet'];
 % path to and name of the file with abundance information.
 abunFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'examples' filesep 'normCoverage.csv'];
+% path to csv file for stratification criteria (if empty or not existent no criteria is used)
+indInfoFilePath='none'
 % name of objective function of organisms 
 objre={'EX_biomass(e)'};
 %the output is vectorized picture, change to '-dpng' for .png
@@ -26,23 +28,21 @@ figForm = '-depsc'
 % number of cores dedicated for parallelization 
 numWorkers = 3;
 % autofix for names mismatch
-autoFix = 1 
-% if outputs in open formats should be produced for each section (1=T)
-compMod = 0; 
-% if documentations on patient health status is provided (0 not 1 yes)
-patStat = 0; 
+autoFix = true;
+% if outputs in open formats should be produced for each section 
+compMod = false; 
 % to enable also rich diet simulations 
-rDiet = 0; 
+rDiet =false;
 % if if to use an external solver and save models with diet
-extSolve = 0; 
+extSolve = false;
 % the type of FVA function to use to solve
-fvaType = 1; 
+fvaType=true;
 % To tourn off the autorun to be able to manually execute each part of the pipeline.
-autorun=1; 
+autorun=false;
 %END OF REQUIRED INPUT VARIABLES
 
 %%
 %PIPELINE LAUNCHER 
-[init,modPath,toolboxPath,resPath,dietFilePath,abunFilePath,objre,figForm,numWorkers,autoFix,compMod,patStat,rDiet,extSolve,fvaType,autorun]= initMgPipe(modPath, toolboxPath, resPath, dietFilePath, abunFilePath, objre, figForm, numWorkers, autoFix, compMod, patStat, rDiet,extSolve,fvaType,autorun);
+[init,modPath,toolboxPath,resPath,dietFilePath,abunFilePath,indInfoFilePath,objre,figForm,numWorkers,autoFix,compMod,rDiet,extSolve,fvaType,autorun]= initMgPipe(modPath, toolboxPath, resPath, dietFilePath, abunFilePath,indInfoFilePath, objre, figForm, numWorkers, autoFix, compMod, rDiet,extSolve,fvaType,autorun);
 
 

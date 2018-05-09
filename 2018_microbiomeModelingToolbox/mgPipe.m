@@ -41,7 +41,7 @@ models=loadUncModels(modPath,strains,objre);
 writetable(cell2table(reacAbun),strcat(resPath,'reactions.csv'));
 
 % Plotting genetic information
-[PCoA]=plotMappingInfo(resPath,patOrg,reacPat,reacTab,reacNumber,patStat,figForm); 
+[PCoA]=plotMappingInfo(resPath,patOrg,reacPat,reacTab,reacNumber,indInfoFilePath,figForm); 
 
 if compMod==1
    mkdir(strcat(resPath,'compfile'))
@@ -117,5 +117,4 @@ end
 % profiles (using the different NMPCs as features) between individuals are also 
 % evaluated with classical multidimensional scaling. 
 
-[Fsp,Y]= mgSimResCollect(resPath,ID,rDiet,0,patNumb,patStat,fvaCt,figForm);
-
+[Fsp,Y]= mgSimResCollect(resPath,ID,rDiet,0,patNumb,indInfoFilePath,fvaCt,figForm);
