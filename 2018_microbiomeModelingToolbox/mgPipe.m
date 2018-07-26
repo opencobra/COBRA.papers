@@ -117,4 +117,4 @@ end
 % profiles (using the different NMPCs as features) between individuals are also 
 % evaluated with classical multidimensional scaling. 
 
-[Fsp,Y]= mgSimResCollect(resPath,ID,rDiet,0,patNumb,indInfoFilePath,fvaCt,figForm);
+[Fsp,Y]= mgSimResCollect(resPath,ID,sampName,rDiet,0,patNumb,indInfoFilePath,fvaCt,figForm);
