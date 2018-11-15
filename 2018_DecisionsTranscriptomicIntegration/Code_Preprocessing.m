@@ -1,3 +1,12 @@
+%This code is related to the following publication
+%"Assessing key decisions for transcriptomic data integration in
+%biochemical networks"
+%Authors : Anne Richelle, Chintan Joshi and Nathan E Lewis
+%doi: https://doi.org/10.1101/301945 
+%Please cite it if you use it for your research
+%If you have any question, do not hesitate to contact me:
+%arichelleres@gmail.com 
+
 %%____________________________________________________________________________________________________________%%
 %------------ANALYSIS OF TRANSCRIPTOMICS DATA AND RECON2.2 MODEL CONTENT---
 %%____________________________________________________________________________________________________________%%
@@ -130,7 +139,7 @@ expression.Rxns_case2_GM1_global50=[];
 expression.geneUsed_case2_GM1_global50={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp50(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule1(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
     expression.Rxns_case2_GM1_global50=[expression.Rxns_case2_GM1_global50 expressionRxns];
     expression.geneUsed_case2_GM1_global50{i}= gene_used;
 end
@@ -141,7 +150,7 @@ expression.Rxns_case2_GM2_global50=[];
 expression.geneUsed_case2_GM2_global50={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp50(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule2(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
     expression.Rxns_case2_GM2_global50=[expression.Rxns_case2_GM2_global50 expressionRxns];
     expression.geneUsed_case2_GM2_global50{i}= gene_used;
 end
@@ -155,7 +164,7 @@ expression.Rxns_case2_GM1_global75=[];
 expression.geneUsed_case2_GM1_global75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule1(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
     expression.Rxns_case2_GM1_global75=[expression.Rxns_case2_GM1_global75 expressionRxns];
     expression.geneUsed_case2_GM1_global75{i}= gene_used;
 end
@@ -166,7 +175,7 @@ expression.Rxns_case2_GM2_global75=[];
 expression.geneUsed_case2_GM2_global75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule2(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
     expression.Rxns_case2_GM2_global75=[expression.Rxns_case2_GM2_global75 expressionRxns];
     expression.geneUsed_case2_GM2_global75{i}= gene_used;
 end
@@ -183,7 +192,7 @@ expression.Rxns_case2_GM1_local25=[];
 expression.geneUsed_case2_GM1_local25={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T1_25(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule1(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
     expression.Rxns_case2_GM1_local25=[expression.Rxns_case2_GM1_local25 expressionRxns];
     expression.geneUsed_case2_GM1_local25{i}= gene_used;
 end
@@ -194,7 +203,7 @@ expression.Rxns_case2_GM2_local25=[];
 expression.geneUsed_case2_GM2_local25={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T1_25(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule2(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
     expression.Rxns_case2_GM2_local25=[expression.Rxns_case2_GM2_local25 expressionRxns];
     expression.geneUsed_case2_GM2_local25{i}= gene_used;
 end
@@ -210,7 +219,7 @@ expression.Rxns_case2_GM1_local25_75=[];
 expression.geneUsed_case2_GM1_local25_75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule1(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
     expression.Rxns_case2_GM1_local25_75=[expression.Rxns_case2_GM1_local25_75 expressionRxns];
     expression.geneUsed_case2_GM1_local25_75{i}= gene_used;
 end
@@ -221,7 +230,7 @@ expression.Rxns_case2_GM2_local25_75=[];
 expression.geneUsed_case2_GM2_local25_75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule2(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
     expression.Rxns_case2_GM2_local25_75=[expression.Rxns_case2_GM2_local25_75 expressionRxns];
     expression.geneUsed_case2_GM2_local25_75{i}= gene_used;
 end
@@ -237,7 +246,7 @@ expression.Rxns_case2_GM1_local25_90=[];
 expression.geneUsed_case2_GM1_local25_90={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_90(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule1(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
     expression.Rxns_case2_GM1_local25_90=[expression.Rxns_case2_GM1_local25_90 expressionRxns];
     expression.geneUsed_case2_GM1_local25_90{i}= gene_used;
 end
@@ -248,7 +257,7 @@ expression.Rxns_case2_GM2_local25_90=[];
 expression.geneUsed_case2_GM2_local25_90={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_90(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule2(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
     expression.Rxns_case2_GM2_local25_90=[expression.Rxns_case2_GM2_local25_90 expressionRxns];
     expression.geneUsed_case2_GM2_local25_90{i}= gene_used;
 end
@@ -263,7 +272,7 @@ expression.Rxns_case1_GM1=[];
 expression.geneUsed_case1_GM1={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreGlobal(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule1(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
     expression.Rxns_case1_GM1=[expression.Rxns_case1_GM1 expressionRxns];
     expression.geneUsed_case1_GM1{i}= gene_used;
 end
@@ -274,7 +283,8 @@ for k=1:length(expressionData.Tissue)
     geneUsed_case1_GM1=expression.geneUsed_case1_GM1{k};
     for i=1:7785
         if ~isempty(geneUsed_case1_GM1{i})
-            ID_case1_GM1=find(expressionData.gene==geneUsed_case1_GM1{i});
+            gene=geneUsed_case1_GM1{i};
+            ID_case1_GM1=find(expressionData.gene==str2num(gene{1}));
             expressionValue=expressionData.valuebyTissue(ID_case1_GM1,:);
 %---------------------------------------------C2.1.1 - Local T1:25th------------------------------------%
             expression.ths_case1_GM1_local25(i,k)=max(mean(expressionValue),expression.ths_25);
@@ -304,7 +314,7 @@ expression.Rxns_case1_GM2=[];
 expression.geneUsed_case1_GM2={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreGlobal(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions_rule2(model,expressionData); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
     expression.Rxns_case1_GM2= [expression.Rxns_case1_GM2 expressionRxns];
     expression.geneUsed_case1_GM2= gene_used;
 end
@@ -319,7 +329,7 @@ for i=1:7785
         local25_75=[];
         local25_90=[];
         for j=1:length(geneUsed_case1_GM2{i})
-            ID=find(expressionData.gene==gene(j));
+            ID=find(expressionData.gene==str2num(gene{j}));
             expressionValue=expressionData.valuebyTissue(ID,:);
 %---------------------------------------------C2.2.1 - Local T1:25th------------------------------------%
             local25(j)=max(mean(expressionValue),expression.ths_25);
