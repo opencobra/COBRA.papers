@@ -2,17 +2,22 @@
 %"Assessing key decisions for transcriptomic data integration in
 %biochemical networks"
 %Authors : Anne Richelle, Chintan Joshi and Nathan E Lewis
-%doi: https://doi.org/10.1101/301945 
+%doi: https://doi.org/10.1101/301945
 %Please cite it if you use it for your research
 %If you have any question, do not hesitate to contact me:
-%arichelleres@gmail.com 
+%arichelleres@gmail.com
 
 %%____________________________________________________________________________________________________________%%
 %------------ANALYSIS OF TRANSCRIPTOMICS DATA AND RECON2.2 MODEL CONTENT---
 %%____________________________________________________________________________________________________________%%
+
+% download the model Recon 2.2 from https://www.ebi.ac.uk/biomodels/MODEL1603150001
+system('curl -O https://www.ebi.ac.uk/biomodels/model/download/MODEL1603150001.2\?filename\=MODEL1603150001_url.xml')
+system('mv MODEL1603150001.2\?filename\=MODEL1603150001_url.xml Recon2.2.xml')
+
 %% Identify the metabolic genes of HPA present in recon2.2 model
 metabolicGene=[];
-load('ModelRecon22')
+readCbModel('Recon2.2.xml')
 for i=1:length(model.genes)
     metabolicGene(i)=str2num(model.genes{i});
 end
@@ -90,17 +95,17 @@ expression.ths_75=10^l75;
 expression.ths_50=10^l50;
 expression.ths_25=10^l25;
 expression.ths_10=10^l10;
-    
+
 %_______LOCAL_____%
 %------ Local T1 - 25th------%
 expression.ths_local_T1_25=[];
-for i=1:length(expressionData.gene) 
+for i=1:length(expressionData.gene)
     	expressionValue=expressionData.valuebyTissue(i,:);
       	expression.ths_local_T1_25(i,:)=max(mean(expressionValue),expression.ths_25);
 end
 %------ Local T2 - 25th & 75th------%
 expression.ths_local_T2_25_75=[];
-for i=1:length(expressionData.gene) 
+for i=1:length(expressionData.gene)
     	expressionValue=expressionData.valuebyTissue(i,:);
         if  mean(expressionValue)>= expression.ths_75
             expression.ths_local_T2_25_75(i)=expression.ths_75;
@@ -110,7 +115,7 @@ for i=1:length(expressionData.gene)
 end
 %------ Local T2 - 25th & 90th------%
 expression.ths_local_T2_25_90=[];
-for i=1:length(expressionData.gene) 
+for i=1:length(expressionData.gene)
     	expressionValue=expressionData.valuebyTissue(i,:);
         if  mean(expressionValue)>= expression.ths_90
             expression.ths_local_T2_25_90(i)=expression.ths_90;
@@ -127,7 +132,7 @@ expression.Tissue=expressionData.Tissue;
 %_____________________________________________C1. CASE1___________________________________________________%
 %_________________________________________________________________________________________________________%
 % Perform first the thresholding on all the metabolic gene and after the
-% gene mapping 
+% gene mapping
 %_____________________________________________C1.1 - GLOBAL________________________________________________%
 %------------------------------------------C1.1.1 -  T1:50th-----------------------------------------------%
 %--------------------------------------------C1.1.1.1 - GM1------------------------------------------------%
@@ -139,7 +144,7 @@ expression.Rxns_case2_GM1_global50=[];
 expression.geneUsed_case2_GM1_global50={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp50(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false');
     expression.Rxns_case2_GM1_global50=[expression.Rxns_case2_GM1_global50 expressionRxns];
     expression.geneUsed_case2_GM1_global50{i}= gene_used;
 end
@@ -150,7 +155,7 @@ expression.Rxns_case2_GM2_global50=[];
 expression.geneUsed_case2_GM2_global50={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp50(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true');
     expression.Rxns_case2_GM2_global50=[expression.Rxns_case2_GM2_global50 expressionRxns];
     expression.geneUsed_case2_GM2_global50{i}= gene_used;
 end
@@ -164,7 +169,7 @@ expression.Rxns_case2_GM1_global75=[];
 expression.geneUsed_case2_GM1_global75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false');
     expression.Rxns_case2_GM1_global75=[expression.Rxns_case2_GM1_global75 expressionRxns];
     expression.geneUsed_case2_GM1_global75{i}= gene_used;
 end
@@ -175,7 +180,7 @@ expression.Rxns_case2_GM2_global75=[];
 expression.geneUsed_case2_GM2_global75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=scoreUp75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true');
     expression.Rxns_case2_GM2_global75=[expression.Rxns_case2_GM2_global75 expressionRxns];
     expression.geneUsed_case2_GM2_global75{i}= gene_used;
 end
@@ -192,7 +197,7 @@ expression.Rxns_case2_GM1_local25=[];
 expression.geneUsed_case2_GM1_local25={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T1_25(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false');
     expression.Rxns_case2_GM1_local25=[expression.Rxns_case2_GM1_local25 expressionRxns];
     expression.geneUsed_case2_GM1_local25{i}= gene_used;
 end
@@ -203,7 +208,7 @@ expression.Rxns_case2_GM2_local25=[];
 expression.geneUsed_case2_GM2_local25={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T1_25(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true');
     expression.Rxns_case2_GM2_local25=[expression.Rxns_case2_GM2_local25 expressionRxns];
     expression.geneUsed_case2_GM2_local25{i}= gene_used;
 end
@@ -219,7 +224,7 @@ expression.Rxns_case2_GM1_local25_75=[];
 expression.geneUsed_case2_GM1_local25_75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false');
     expression.Rxns_case2_GM1_local25_75=[expression.Rxns_case2_GM1_local25_75 expressionRxns];
     expression.geneUsed_case2_GM1_local25_75{i}= gene_used;
 end
@@ -230,7 +235,7 @@ expression.Rxns_case2_GM2_local25_75=[];
 expression.geneUsed_case2_GM2_local25_75={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_75(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true');
     expression.Rxns_case2_GM2_local25_75=[expression.Rxns_case2_GM2_local25_75 expressionRxns];
     expression.geneUsed_case2_GM2_local25_75{i}= gene_used;
 end
@@ -246,7 +251,7 @@ expression.Rxns_case2_GM1_local25_90=[];
 expression.geneUsed_case2_GM1_local25_90={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_90(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false');
     expression.Rxns_case2_GM1_local25_90=[expression.Rxns_case2_GM1_local25_90 expressionRxns];
     expression.geneUsed_case2_GM1_local25_90{i}= gene_used;
 end
@@ -257,7 +262,7 @@ expression.Rxns_case2_GM2_local25_90=[];
 expression.geneUsed_case2_GM2_local25_90={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreLocal_T2_25_90(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true');
     expression.Rxns_case2_GM2_local25_90=[expression.Rxns_case2_GM2_local25_90 expressionRxns];
     expression.geneUsed_case2_GM2_local25_90{i}= gene_used;
 end
@@ -272,7 +277,7 @@ expression.Rxns_case1_GM1=[];
 expression.geneUsed_case1_GM1={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreGlobal(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'false');
     expression.Rxns_case1_GM1=[expression.Rxns_case1_GM1 expressionRxns];
     expression.geneUsed_case1_GM1{i}= gene_used;
 end
@@ -314,7 +319,7 @@ expression.Rxns_case1_GM2=[];
 expression.geneUsed_case1_GM2={};
 for i=1:length(expressionData.Tissue)
     expressionData.value=expression.scoreGlobal(:,i);
-    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true'); 
+    [expressionRxns, parsedGPR, gene_used] = mapExpressionToReactions(model,expressionData,'true');
     expression.Rxns_case1_GM2= [expression.Rxns_case1_GM2 expressionRxns];
     expression.geneUsed_case1_GM2= gene_used;
 end
@@ -447,7 +452,7 @@ ax.XTickLabel={'Case 1 GM1 Global T1 50th' ...
 'Case 2 GM1 Local T2 25th & 90th' ...
 'Case 1 GM2 Local T2 25th & 90th' ...
 'Case 2 GM2 Local T2 25th & 90th'};
-ax.XTickLabelRotation=45; 
+ax.XTickLabelRotation=45;
 ylabel('Percentage of reactions considered as active','FontSize',14)
 
 %% What is the similarity between reactions considered as active depending on preprocessing combinations
@@ -514,7 +519,7 @@ approaches=({'Case 1 GM1 Global T1 50th' ...
 'Case 1 GM1 Local T2 25th & 90th' ...
 'Case 2 GM1 Local T2 25th & 90th' ...
 'Case 1 GM2 Local T2 25th & 90th' ...
-'Case 2 GM2 Local T2 25th & 90th'});   
+'Case 2 GM2 Local T2 25th & 90th'});
 
 for k=1:20
     if k==1
@@ -558,7 +563,7 @@ for k=1:20
   	elseif k==20
         essGene=ActiveRxns_case2_GM2_local25_90;
     end
-    
+
     Jacc_index=zeros(length(essGene),length(essGene));
     for i=1:length(essGene)
         Gene1= (essGene{i});
@@ -576,7 +581,7 @@ for k=1:20
         end
     end
     figure(3);
-        colormap hot      
+        colormap hot
         subplot(5,4,k);imagesc(Jacc_index)
         title(approaches{k})
         cb = colorbar;
@@ -635,12 +640,12 @@ up_percent=up./1663*100;
 figure(4);boxplot(up_percent)
 ax=gca;ax.XTick=1:7;
 ax.XTickLabel=({'Global T1 25th','Global T1 50th','Global T1 75th','Global T1 90th','Local T1 25th','Local T2 25th & 75th','Local T2 25th & 90th'});
-ax.XTickLabelRotation=(45); 
+ax.XTickLabelRotation=(45);
 ylabel('Percentage of genes considered as active','FontSize',14)
 
 %% What is the similarity between genes considered as active depending on preprocessing combinations
 approaches=({'Global T1 25th','Global T1 50th','Global T1 75th','Global T1 90th','Local T1 25th','Local T2 25th & 75th','Local T2 25th & 90th'});
-        
+
 for k=1:7
     if k==1
         essGene=expression.ActiveGene_global_T1_25;
@@ -674,7 +679,7 @@ for k=1:7
         end
     end
     figure(5);
-        colormap hot      
+        colormap hot
         subplot(4,2,k);imagesc(Jacc_index)
         title(approaches{k})
         cb = colorbar;
