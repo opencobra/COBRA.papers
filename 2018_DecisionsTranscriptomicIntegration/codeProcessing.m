@@ -17,13 +17,22 @@ system('mv MODEL1603150001.2\?filename\=MODEL1603150001_url.xml Recon2.2.xml')
 
 %% Identify the metabolic genes of HPA present in recon2.2 model
 metabolicGene=[];
-readCbModel('Recon2.2.xml')
-for i=1:length(model.genes)
-    metabolicGene(i)=str2num(model.genes{i});
-end
-metabolicGene=unique(metabolicGene);
+model=readCbModel('Recon2.2.xml');
+model.genes{793}='HGNC:2898';
+model.genes{794}='HGNC:987';
+[HGNC,gID]=textread('HGNC_2_geneID.txt','%s%s');
 
-load('dataHPA')
+mGene=[];
+length(model.genes)
+for i=1:length(model.genes)
+    ID=find(strcmp(model.genes{i},HGNC));
+    mGene(i)=str2num(gID{ID});
+end
+model.genes=mGene';
+
+metabolicGene=unique(model.genes);
+
+load('dataHPA.mat')
 data_extraction=[];
 missing=[];
 for i=1:length(metabolicGene)
@@ -44,13 +53,10 @@ expressionData.min=min(expressionData.valuebyTissue,[],2);
 expressionData.Tissue={'adipose tissue','adrenal gland','appendix','bone marrow','brain','colon','duodenum','endometrium','esophagus','fallopian tube','gallbladder','heart muscle','kidney','liver','lung','lymph node','ovary','pancreas','placenta','prostate','rectum','salivary gland','skeletal muscle','skin','small intestine','smooth muscle','spleen','stomach','testis','thyroid gland','tonsil','urinary bladder'};
 
 
-% Removal of the missing genes from the model
-ID_geneMissing=[];
-for i=1:length(missing)
-    ID_geneMissing(i)=findGeneIDs(model,num2str(missing(i)));
-end
-model= removeFieldEntriesForType(model,ID_geneMissing,'genes', 1675);
-model = creategrRulesField(model);
+% % Removal of the missing genes from the model
+ID_geneMissing=findGeneIDs(model,missing);
+ model= removeFieldEntriesForType(model,ID_geneMissing,'genes', 1675);
+% model = creategrRulesField(model);
 
 %% - Distribution of gene expression value for HPA dataset mapped to recon2.2
 % compute the distribution of gene expression observed in global data (only metabolic gene) to
@@ -289,7 +295,7 @@ for k=1:length(expressionData.Tissue)
     for i=1:7785
         if ~isempty(geneUsed_case1_GM1{i})
             gene=geneUsed_case1_GM1{i};
-            ID_case1_GM1=find(expressionData.gene==str2num(gene{1}));
+            ID_case1_GM1=find(expressionData.gene==gene);
             expressionValue=expressionData.valuebyTissue(ID_case1_GM1,:);
 %---------------------------------------------C2.1.1 - Local T1:25th------------------------------------%
             expression.ths_case1_GM1_local25(i,k)=max(mean(expressionValue),expression.ths_25);
