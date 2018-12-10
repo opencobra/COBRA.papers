@@ -179,7 +179,7 @@ function classification_model(model, data, predictors; testSize=0.33, randomStat
          println("Test verification score: $(round(testScore*100, 2))%") 
      end
     
-     return model, accuracy, meanCS, testScore, y_pred, y
+     return model, accuracy, meanCS, testScore, y_pred, y, predictions, y_train
 end
 ```
 
@@ -220,6 +220,8 @@ function chooseBestClassifier(categories, data)
     maxTestSize = 0.15
     maxY = 0
     maxYpred = 0
+    maxPred = 0
+    maxYtrain = 0
     # set the maximum testSize
     maxK = 2
     maxcvKi = 5
@@ -227,12 +229,14 @@ function chooseBestClassifier(categories, data)
         for testSizej = maxTestSize:0.05:0.9
             for k = maxK:15
                 model = KNeighborsClassifier(k)
-                (model, accuracy, cross_score, test_score, y_pred, y) = classification_model(model, data, namesVect[categories], 
+                (model, accuracy, cross_score, test_score, y_pred, y, predictions, y_train) = classification_model(model, data, namesVect[categories], 
                                                                                 testSize=testSizej, randomState=200, 
                                                                                 cvK=cvKi, 
                                                                                 printLevel=0)
                 if test_score > maxTS
                     maxModel = model
+                    maxPred = predictions
+                    maxYtrain = y_train
                     maxY = y
                     maxYpred = y_pred
                     maxCS = cross_score
@@ -253,7 +257,7 @@ function chooseBestClassifier(categories, data)
     println("  > Test size P = $maxTestSize")
     println("  > Cross-validation k: $maxcvKi-fold")
 
-    cnf_matrix = confusion_matrix(maxY, maxYpred)
+    cnf_matrix = confusion_matrix(maxYtrain, maxPred)
     return cnf_matrix    
 end
 ```
@@ -274,16 +278,22 @@ function safeProp(num, den)
     return prop
 end
     
-function plot_confusion_matrix(cm, classes;title_top="Confusion matrix")
+function plot_confusion_matrix(cm, classes)
     m, n = size(cm)
     extended_cm = zeros(m+1, n+1)
     extended_cm[1:m, 1:n] = cm
-    imshow(extended_cm, interpolation="nearest", cmap=ColorMap("Blues"))
-    title(title_top)
-    colorbar()
+    imshow(cm, interpolation="nearest", cmap=ColorMap("Blues"))
+    tick_params(axis="x", pad=30)
+    colorbar(pad=0.15)
     tick_marks = 0:size(classes,1)-1
-    xticks(tick_marks, classes, rotation=45)
+    xticks(tick_marks, classes, rotation=65)
     yticks(tick_marks, classes)
+    text(size(cm, 2), size(cm, 1)+0.4 , "Accuracy",
+                     horizontalalignment="center",
+                     color="black", rotation=65)
+        text(-1.1, size(cm, 1) , "Reliability",
+                     horizontalalignment="center",
+                     color="black")
 
     thresh = maximum(cm) / 2.
     for i in 1:size(cm, 1)
@@ -307,30 +317,18 @@ function plot_confusion_matrix(cm, classes;title_top="Confusion matrix")
         prop = safeProp(cm[i,i], sum(cm[i, :]))    
         text(size(cm, 2), i-1 , @sprintf("%.1f",prop*100)*"%",
                      horizontalalignment="center",
-                     color="green")
-        prop = safeProp((sum(cm[i, :])-cm[i,i]), sum(cm[i, :]))
-        text(size(cm, 2), i-0.75, @sprintf("%.1f", prop*100)*"%",
-                     horizontalalignment="center",
-                     color="red")     
+                     color="black")   
     end
     for j in 1:size(cm, 2)
             prop = safeProp(cm[j,j], sum(cm[:, j]))
         text(j-1, size(cm, 1) , @sprintf("%.1f",prop*100)*"%",
                      horizontalalignment="center",
-                     color="green")
-            prop = safeProp((sum(cm[:, j])-cm[j,j]), sum(cm[:, j]))
-        text(j-1, size(cm, 1)+0.25, @sprintf("%.1f", prop*100)*"%",
-                     horizontalalignment="center",
-                     color="red")
+                     color="black")
     end
         prop = safeProp(sum(diag(cm)), sum(cm))
     text(size(cm, 2), size(cm, 1) , @sprintf("%.1f",prop*100)*"%",
                      horizontalalignment="center",
-                     color="green")
-        prop = safeProp((sum(cm)-sum(diag(cm))), sum(cm))
-    text(size(cm, 2), size(cm, 1)+0.25, @sprintf("%.1f", prop*100)*"%",
-                     horizontalalignment="center",
-                     color="red")
+                     color="black")
     tight_layout()
     ylabel("True label")
     xlabel("Predicted label")
