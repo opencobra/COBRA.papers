@@ -16,14 +16,22 @@ system('curl -O https://www.ebi.ac.uk/biomodels/model/download/MODEL1603150001.2
 system('mv MODEL1603150001.2\?filename\=MODEL1603150001_url.xml Recon2.2.xml')
 
 %% Identify the metabolic genes of HPA present in recon2.2 model
+model=readCbModel('Recon2.2.xml');
+model.genes{793}='HGNC:2898';
+model.genes{794}='HGNC:987';
+[HGNC,gID]=textread('HGNC_2_geneID.txt','%s%s');
+
+mGene={};
 metabolicGene=[];
-readCbModel('Recon2.2.xml')
 for i=1:length(model.genes)
-    metabolicGene(i)=str2num(model.genes{i});
+    ID=find(strcmp(model.genes{i},HGNC));
+    mGene{i}=(gID{ID});
+    metabolicGene(i)=str2num(gID{ID});
 end
+model.genes=mGene';
 metabolicGene=unique(metabolicGene);
 
-load('dataHPA')
+load('dataHPA.mat')
 data_extraction=[];
 missing=[];
 for i=1:length(metabolicGene)
@@ -43,14 +51,12 @@ expressionData.valuebyTissue=data(:,3:end);
 expressionData.min=min(expressionData.valuebyTissue,[],2);
 expressionData.Tissue={'adipose tissue','adrenal gland','appendix','bone marrow','brain','colon','duodenum','endometrium','esophagus','fallopian tube','gallbladder','heart muscle','kidney','liver','lung','lymph node','ovary','pancreas','placenta','prostate','rectum','salivary gland','skeletal muscle','skin','small intestine','smooth muscle','spleen','stomach','testis','thyroid gland','tonsil','urinary bladder'};
 
-
-% Removal of the missing genes from the model
+% % Removal of the missing genes from the model
 ID_geneMissing=[];
 for i=1:length(missing)
     ID_geneMissing(i)=findGeneIDs(model,num2str(missing(i)));
 end
-model= removeFieldEntriesForType(model,ID_geneMissing,'genes', 1675);
-model = creategrRulesField(model);
+ model= removeFieldEntriesForType(model,ID_geneMissing,'genes', 1675);
 
 %% - Distribution of gene expression value for HPA dataset mapped to recon2.2
 % compute the distribution of gene expression observed in global data (only metabolic gene) to
