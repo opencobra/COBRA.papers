@@ -1,0 +1,139 @@
+---
+title: "Visualize Elementary Flux Modes from Human model "
+author: "Chaitra Sarathy"
+date: "July 11, 2019"
+output: html_document
+---
+This code is part of the study:
+"An integrative workflow to visualize Elementary Flux Modes in genome-scale metabolic models", Sarathy et al. (2019) (in preparation)
+
+It performs step D of the workflow described in "tutorial_efmviz_recon.mlx", i.e., visualizes the EFMs that were selected after running the tutorial. In order to visualize an EFM and map fluxes on reactions, follow the steps below.
+
+First, the the SBML file(s) created in the mlx script are loaded into Cytoscape. 
+After which a set of functions from RCy3 are called to perform network layout operations and mapping gene expression on the visualized network. 
+This automation allows users to visualize multiple EFMs in shorter time. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+DEPENDENCIES
+- R libraries: RCy3
+- Cytpscape (v 3.5 and above)
+- Cytpscape apps: cy3sbml, yFiles Layout
+
+INPUTS
+- an EFM/submodel saved as an SBML file (as generated in the tutorial)
+- file containing gene level statistics (.txt): Tab separated file containing an expression level (log2 fold change) and p-value for every gene. Columns: <GeneID><GeneName><log2FC><PValue>. Make sure to have the gene IDs in the same format as in the model.
+- Network style file provided under core/inputs/efmviz_style.xml
+
+EXPECTED OUTCOME
+EFM from recon that was selected from the tutorial is visualized as a network of genes, reactions and metabolites with gene expression mapped on the gene nodes in the network.
+
+NOTE: Due to current unavailability of API for cy3sbml, unfortunately, the file import must be done manually through the GUI. Also, due to licensing issues, yFiles layout cannot be applied through the script and must be done in the GUI. We have tried our best to automate the network operations wherever possible. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+STEPS (* indicates manual operation in Cytoscape GUI)
+A. File import *
+B. Set input file names
+C. Install and load necessary R packages and connect to Cytoscape
+D. Perform network operations and data mapping
+  i. Import and apply the provided style file 
+  ii. Color reaction nodes as green
+  iii. Get node table of the network to modify node display labels 
+  iv. Map gene expression data
+E. Apply layout*
+
+------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+A. File import*
+
+i. Open Cytoscape (v 3.5 and above) and make sure cy3sbml app has been installed. If installing for the first time, a Cytoscape restart maybe necessary
+ii. Click on the cy3sbl app-specific icon and select the EFM (SBML submodel file which was generated from MATLAB) to open
+Three networks are generated for every file imported and they are respectively identified using the prefixes: All, Base and Kinetic. 
+iii. Click on the Base network and run the script below. (Other two networks, All and Kinetic may be deleted from GUI)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+B. Before running this script, declare file locations and file names. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: CHANGE THE NAMES OF ONLY THESE VARIABLES
+```{r}
+dirname(rstudioapi::getActiveDocumentContext()$path)
+usecase2_fileName = "data_useCase_2.txt"
+styleName = "efmviz_style"
+```
+C. Install and load necessary R packages
+```{r}
+if("RCy3" %in% rownames(installed.packages()) == FALSE) {install.packages("RCy3")}
+if("RColorBrewer" %in% rownames(installed.packages()) == FALSE) {install.packages("RColorBrewer")}
+if("rstudioapi" %in% rownames(installed.packages()) == FALSE) {install.packages("rstudioapi")}
+
+library(RCy3)
+library(RColorBrewer)
+library(rstudioapi)
+```
+
+Make sure the connection between R and Cytoscape works
+```{r}
+cytoscapePing() #must return "You are connected to Cytoscape!"
+```
+cytoscapePing() must return "You are connected to Cytoscape!". If not, Cytoscape needs a restart.
+
+MAKE SURE THE BASE NETWORK IS SELECTED IN CYTOSCAPE
+
+D. Perform network operations and data mapping
+
+i. Import and apply the provided style file 
+```{r}
+setVisualStyle(style.name = styleName)
+```
+
+ii. Color reaction nodes as green
+```{r}
+clearSelection()
+setNodeColorBypass(node.names = getSelectedNodes(selectNodes(nodes = "reaction", by.col = "sbml type")), new.colors = "#00FF00" )
+``` 
+
+iii. Get node table of the network to modify node display labels 
+```{r}
+# Get three columns label (default value of label), name (node identifier) and sbml type (for filtering nodes later)
+
+nodeTab = getTableColumns(table = "node", columns = c("label", "sbml type", "name"))
+nodeTab = data.frame(nodeTab, stringsAsFactors = F)
+
+# Import gene expression data
+cancerGEx = read.delim(usecase2_fileName, header=T, stringsAsFactors = F)
+
+# Add gene symbols
+nodeTab[,"nodeLabels"] = character()
+nodeTab$nodeLabels = nodeTab$label
+nodeTab$nodeLabels[which(nodeTab$label %in% cancerGEx$GeneID)] = cancerGEx$GeneName[which(cancerGEx$GeneID %in% nodeTab$label)]
+
+# Remove reaction label
+nodeTab$nodeLabels[which(nodeTab$`sbml type` == "reaction")] = ""
+
+# Load the updated node table into Cytoscape 
+loadTableData(data = nodeTab, data.key.column = "label", table = "node", table.key.column = "label")
+
+# Remap node labels to new label
+updateStyleMapping(style.name = styleName, mapVisualProperty('node label', 'nodeLabels','p'))
+```
+
+iv. Map gene expression data
+```{r}
+# merge both tables
+nodeTab_withData = merge(x=nodeTab, y=cancerGEx, by.x = "label", by.y="GeneID", all.x=T)
+nodeTab_withData = nodeTab_withData[!is.na(nodeTab_withData$log2FC),]
+
+# Export table to cytoscape
+loadTableData(data = nodeTab_withData, data.key.column = "label", table = "node", table.key.column = "label")
+
+# Map gene expression to the gene nodes
+setNodeColorMapping('log2FC', c(-2,0,2), c("#3182bd","#f5f5f5","#de2d26"), style.name=styleName)
+
+# show gene pvalue on edge weight
+# createColumnFilter(filter.name = "geneEx_sigPVal", column = "P.Value", criterion = 0.05, predicate = "LESS_THAN", caseSensitive = FALSE)
+# setNodeBorderWidthBypass(node.names = getSelectedNodes(), new.widths = 8)
+```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+E. Apply layout*
+To apply layout, click Layout --> yFiles Orthogonal Layout
