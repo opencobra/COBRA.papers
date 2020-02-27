@@ -43,6 +43,6 @@ autorun=false;
 
 %%
 %PIPELINE LAUNCHER 
-[init,modPath,toolboxPath,resPath,dietFilePath,abunFilePath,indInfoFilePath,objre,figForm,numWorkers,autoFix,compMod,rDiet,extSolve,fvaType,autorun]= initMgPipe(modPath, toolboxPath, resPath, dietFilePath, abunFilePath,indInfoFilePath, objre, figForm, numWorkers, autoFix, compMod, rDiet,extSolve,fvaType,autorun);
+[init]= initMgPipe(modPath, toolboxPath, resPath, dietFilePath, abunFilePath,indInfoFilePath, objre, figForm, numWorkers, autoFix, compMod, rDiet,extSolve,fvaType,autorun);
 
 
