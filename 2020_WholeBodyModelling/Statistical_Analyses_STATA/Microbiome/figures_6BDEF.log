@@ -1,0 +1,576 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures_6DEF.log
+  log type:  text
+ opened on:   4 Dec 2018, 15:06:09
+
+. 
+. import delimited A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\bacteroidia_clostridia_ratio.csv
+(2 vars, 149 obs)
+
+. save bacteroidia_clostridia_ratio.dta, replace
+file bacteroidia_clostridia_ratio.dta saved
+
+. clear
+
+. import delimited A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\fold_changes_modeling.csv
+(14 vars, 147 obs)
+
+. rename v1 sample
+
+. save fold_changes_modeling.dta, replace
+file fold_changes_modeling.dta saved
+
+. merge 1:1 sample using bacteroidia_clostridia_ratio.dta
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             2
+        from master                         0  (_merge==1)
+        from using                          2  (_merge==2)
+
+    matched                               147  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. *Liver Sulphotransferase
+. mfp reg liver_pcsf bacteroidia_clostridia_ratio
+
+Deviance for model with all terms untransformed =   406.444, 147 observations
+
+Variable     Model (vs.)   Deviance  Dev diff.   P      Powers   (vs.)
+----------------------------------------------------------------------
+bacteroid... lin.   FP2     406.444    18.189  0.000+   1         1 2
+             FP1            397.893     9.638  0.009+   .5        
+             Final          388.255                     1 2
+
+
+Transformations of covariates:
+
+-> gen double Ibact__1 = X-1.230871605 if e(sample) 
+-> gen double Ibact__2 = X^2-1.515044907 if e(sample) 
+   (where: X = bacteroidia_clostridia_ratio/10)
+
+Final multivariable fractional polynomial model for liver_pcsf
+--------------------------------------------------------------------
+    Variable |    -----Initial-----          -----Final-----
+             |   df     Select   Alpha    Status    df    Powers
+-------------+------------------------------------------------------
+bacteroid... |    4     1.0000   0.0500     in      4     1 2
+--------------------------------------------------------------------
+
+      Source |       SS           df       MS      Number of obs   =       147
+-------------+----------------------------------   F(2, 144)       =     85.37
+       Model |  143.173733         2  71.5868663   Prob > F        =    0.0000
+    Residual |  120.752904       144  .838561836   R-squared       =    0.5425
+-------------+----------------------------------   Adj R-squared   =    0.5361
+       Total |  263.926637       146  1.80771669   Root MSE        =    .91573
+
+------------------------------------------------------------------------------
+  liver_pcsf |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+    Ibact__1 |  -1.022637   .1177368    -8.69   0.000    -1.255352   -.7899211
+    Ibact__2 |   .0648234   .0148843     4.36   0.000     .0354034    .0942433
+       _cons |   3.154874   .0868778    36.31   0.000     2.983153    3.326594
+------------------------------------------------------------------------------
+Deviance:  388.255.
+
+. *p-value:
+. display Ftail(e(df_m), e(df_r),e(F))
+3.547e-25
+
+. predict sulpho_score
+(option xb assumed; fitted values)
+(2 missing values generated)
+
+. *graph
+. cd A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+
+. scatter liver_pcsf bacteroidia_clostridia_ratio || fpfit sulpho_score bacteroidia_clostridia_ratio, saving(figure_6D, replace)
+(file figure_6D.gph saved)
+
+. 
+. *Liver alcohol dehydrogenase
+. mfp reg liver_alcd2if bacteroidia_clostridia_ratio
+
+Deviance for model with all terms untransformed =   986.826, 147 observations
+
+Variable     Model (vs.)   Deviance  Dev diff.   P      Powers   (vs.)
+----------------------------------------------------------------------
+bacteroid... lin.   FP2     986.826   318.082  0.000+   1         -1 -.5
+             FP1            751.486    82.743  0.000+   0         
+             Final          668.743                     -1 -.5
+
+
+Transformations of covariates:
+
+-> gen double Ibact__1 = X^-1-.8124324228 if e(sample) 
+-> gen double Ibact__2 = X^-.5-.901350333 if e(sample) 
+   (where: X = bacteroidia_clostridia_ratio/10)
+
+Final multivariable fractional polynomial model for liver_alcd2if
+--------------------------------------------------------------------
+    Variable |    -----Initial-----          -----Final-----
+             |   df     Select   Alpha    Status    df    Powers
+-------------+------------------------------------------------------
+bacteroid... |    4     1.0000   0.0500     in      4     -1 -.5
+--------------------------------------------------------------------
+
+      Source |       SS           df       MS      Number of obs   =       147
+-------------+----------------------------------   F(2, 144)       =    852.21
+       Model |  9633.48337         2  4816.74168   Prob > F        =    0.0000
+    Residual |  813.893703       144   5.6520396   R-squared       =    0.9221
+-------------+----------------------------------   Adj R-squared   =    0.9210
+       Total |  10447.3771       146  71.5573772   Root MSE        =    2.3774
+
+------------------------------------------------------------------------------
+liver_alcd~f |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+    Ibact__1 |  -.8642825   .0797892   -10.83   0.000    -1.021992   -.7065732
+    Ibact__2 |   11.38102   .4915121    23.16   0.000     10.40951    12.35253
+       _cons |   5.986608   .2384693    25.10   0.000     5.515255     6.45796
+------------------------------------------------------------------------------
+Deviance:  668.743.
+
+. *p-value:
+. display Ftail(e(df_m), e(df_r),e(F))
+1.557e-80
+
+. predict alco_score
+(option xb assumed; fitted values)
+(2 missing values generated)
+
+. *graph
+. cd A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+
+. scatter liver_alcd2if bacteroidia_clostridia_ratio || fpfit alco_score bacteroidia_clostridia_ratio, saving(figure_6E, replace)
+(file figure_6E.gph saved)
+
+. 
+. *Colon carboxylic acid:CoA ligase
+. mfp reg colon_hmr_0156 bacteroidia_clostridia_ratio
+
+Deviance for model with all terms untransformed =  1580.704, 147 observations
+
+Variable     Model (vs.)   Deviance  Dev diff.   P      Powers   (vs.)
+----------------------------------------------------------------------
+bacteroid... lin.   FP2    1580.704   329.036  0.000+   1         -1 -.5
+             FP1           1333.429    81.761  0.000+   0         
+             Final         1251.668                     -1 -.5
+
+
+Transformations of covariates:
+
+-> gen double Ibact__1 = X^-1-.8124324228 if e(sample) 
+-> gen double Ibact__2 = X^-.5-.901350333 if e(sample) 
+   (where: X = bacteroidia_clostridia_ratio/10)
+
+Final multivariable fractional polynomial model for colon_hmr_0156
+--------------------------------------------------------------------
+    Variable |    -----Initial-----          -----Final-----
+             |   df     Select   Alpha    Status    df    Powers
+-------------+------------------------------------------------------
+bacteroid... |    4     1.0000   0.0500     in      4     -1 -.5
+--------------------------------------------------------------------
+
+      Source |       SS           df       MS      Number of obs   =       147
+-------------+----------------------------------   F(2, 144)       =    953.32
+       Model |   568405.19         2  284202.595   Prob > F        =    0.0000
+    Residual |  42929.0928       144    298.1187   R-squared       =    0.9298
+-------------+----------------------------------   Adj R-squared   =    0.9288
+       Total |  611334.283       146  4187.22111   Root MSE        =    17.266
+
+------------------------------------------------------------------------------
+colon_h~0156 |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+    Ibact__1 |  -8.282412   .5794768   -14.29   0.000    -9.427791   -7.137032
+    Ibact__2 |   95.98717   3.569655    26.89   0.000     88.93148    103.0429
+       _cons |   36.59729   1.731907    21.13   0.000     33.17404    40.02053
+------------------------------------------------------------------------------
+Deviance: 1251.668.
+
+. *p-value:
+. display Ftail(e(df_m), e(df_r),e(F))
+8.832e-84
+
+. predict carbo_CoA_ligase
+(option xb assumed; fitted values)
+(2 missing values generated)
+
+. *graph
+. cd A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+
+. scatter colon_hmr_0156 bacteroidia_clostridia_ratio || fpfit carbo_CoA_ligase bacteroidia_clostridia_ratio, saving(figure_6F, replace)
+(file figure_6F.gph saved)
+
+. 
+. clear
+
+. import excel "A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\AbsoluteFluxes_Microbiota_Germfree.xlsx", sheet("Sheet2") cellrange(A2:W149) firstrow
+
+. rename A sample
+
+. gen d_Braindopamineproduction=-(BraindopamineproductionG-Braindopamineproduction)
+
+. gen d_Brainserotoninproduction=-BrainserotoninproductionG+Brainserotoninproduction
+
+. gen d_Brainadrenalineproduction=-BrainadrenalineproductionG+Brainadrenalineproduction
+
+. gen d_BrainGABAproduction=-BrainGABAproductionG+BrainGABAproduction
+
+. gen d_Brainhistamineproduction=-BrainhistamineproductionG+Brainhistamineproduction
+
+. gen d_Brainkynurenicacid=-BrainkynurenicacidG+Brainkynurenicacidproduction
+
+. gen d_Brainnorepinephrine=-BrainnorepinephrineG+Brainnorepinephrineproduction
+
+. gen d_BrainLkynurenine=-BrainnorepinephrineG+BrainLkynurenineproduction
+
+. 
+. ttest BraindopamineproductionG=Braindopamineproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Braind~G |     147    43.26966    .0055142    .0668558    43.25876    43.28055
+Braind~n |     147    291.0799    2.758222    33.44167    285.6287    296.5311
+---------+--------------------------------------------------------------------
+    diff |     147   -247.8102    2.760902    33.47416   -253.2667   -242.3537
+------------------------------------------------------------------------------
+     mean(diff) = mean(Braindopaminep~G - Braindopaminep~n)       t = -89.7570
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainserotoninproductionG=Brainserotoninproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Brains~G |     147    5.453467    .0001756    .0021295     5.45312    5.453814
+Brains~n |     147    186.2172    1.726464    20.93226    182.8051    189.6292
+---------+--------------------------------------------------------------------
+    diff |     147   -180.7637    1.726556    20.93338    -184.176   -177.3514
+------------------------------------------------------------------------------
+     mean(diff) = mean(Brainserotonin~G - Brainserotonin~n)       t = -1.0e+02
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainadrenalineproductionG=Brainadrenalineproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Braina~G |     147    43.26966    .0055142    .0668558    43.25876    43.28055
+Braina~n |     147    228.0329     1.87709     22.7585    224.3232    231.7427
+---------+--------------------------------------------------------------------
+    diff |     147   -184.7633    1.880195    22.79615   -188.4792   -181.0474
+------------------------------------------------------------------------------
+     mean(diff) = mean(Brainadrenalin~G - Brainadrenalin~n)       t = -98.2681
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainkynurenicacidG=Brainkynurenicacidproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Braink~G |     147    5.453809    .0001775    .0021522    5.453458    5.454159
+Braink~n |     147    1166.538    8.868488    107.5247    1149.011    1184.065
+---------+--------------------------------------------------------------------
+    diff |     147   -1161.084     8.86846    107.5244   -1178.611   -1143.557
+------------------------------------------------------------------------------
+     mean(diff) = mean(Brainkynurenic~G - Brainkynurenic~n)       t = -1.3e+02
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainGABAproductionG=BrainGABAproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+BrainG~G |     147    1442.245    20.06573     243.284    1402.588    1481.901
+BrainG~n |     147    1648.156    16.84271     204.207    1614.869    1681.443
+---------+--------------------------------------------------------------------
+    diff |     147   -205.9111    10.83348    131.3489   -227.3218   -184.5004
+------------------------------------------------------------------------------
+     mean(diff) = mean(BrainGABAprodu~G - BrainGABAprodu~n)       t = -19.0069
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainhistamineproductionG=Brainhistamineproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Brainh~G |     147    66.72019    .0016636    .0201697     66.7169    66.72348
+Brainh~n |     147    118.9932    1.524699      18.486    115.9799    122.0065
+---------+--------------------------------------------------------------------
+    diff |     147   -52.27299    1.524679    18.48575   -55.28629    -49.2597
+------------------------------------------------------------------------------
+     mean(diff) = mean(Brainhistamine~G - Brainhistamine~n)       t = -34.2846
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainnorepinephrineG=Brainnorepinephrineproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Brainn~G |     147    43.26966    .0055142    .0668558    43.25876    43.28055
+Brainn~n |     147    233.3151    1.826737      22.148    229.7048    236.9253
+---------+--------------------------------------------------------------------
+    diff |     147   -190.0454    1.829762    22.18468   -193.6617   -186.4292
+------------------------------------------------------------------------------
+     mean(diff) = mean(Brainnorepinep~G - Brainnorepinep~n)       t = -1.0e+02
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. ttest BrainnorepinephrineG=BrainLkynurenineproduction
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+Brainn~G |     147    43.26966    .0055142    .0668558    43.25876    43.28055
+BrainL~n |     147    480.4795    3.416852    41.42713    473.7267    487.2324
+---------+--------------------------------------------------------------------
+    diff |     147   -437.2099    3.419975    41.46499   -443.9689   -430.4508
+------------------------------------------------------------------------------
+     mean(diff) = mean(Brainnorepinep~G - BrainLkynureni~n)       t = -1.3e+02
+ Ho: mean(diff) = 0                              degrees of freedom =      146
+
+ Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = 0.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 1.0000
+
+. 
+. local i=1
+
+. label define met 1 "Dopamine" 2 "Serotonin" 3 "Adrenaline" 4 "GABA" 5 "Histamine" 6 "Kynurenic acid" 7 "Norepinephrine" 8 "L-Kynurenine"
+
+. gen var_name=.
+(147 missing values generated)
+
+. label values var_name met
+
+. 
+. gen mean_=.
+(147 missing values generated)
+
+. gen CI_l=.
+(147 missing values generated)
+
+. gen CI_u=.
+(147 missing values generated)
+
+. gen p_val=.
+(147 missing values generated)
+
+. foreach j of varlist d_*{
+  2.         mean `j'
+  3.         matrix V=e(V)
+  4.         matrix B=e(b)
+  5.         replace mean=B[1,1] in `i'
+  6.         replace CI_l=B[1,1]+invttail(e(df_r),0.975)*sqrt(V[1,1]) in `i'
+  7.         replace CI_u=B[1,1]-invttail(e(df_r),0.975)*sqrt(V[1,1]) in `i'
+  8.         replace var_name=`i' in `i'
+  9.         local i=`i'+1
+ 10.         }
+
+Mean estimation                   Number of obs   =        147
+
+---------------------------------------------------------------------------
+                          |       Mean   Std. Err.     [95% Conf. Interval]
+--------------------------+------------------------------------------------
+d_Braindopamineproduction |   247.8102   2.760902      242.3537    253.2667
+---------------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+----------------------------------------------------------------------------
+                           |       Mean   Std. Err.     [95% Conf. Interval]
+---------------------------+------------------------------------------------
+d_Brainserotoninproduction |   180.7637   1.726556      177.3514     184.176
+----------------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+-----------------------------------------------------------------------------
+                            |       Mean   Std. Err.     [95% Conf. Interval]
+----------------------------+------------------------------------------------
+d_Brainadrenalineproduction |   184.7633   1.880195      181.0474    188.4792
+-----------------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+-----------------------------------------------------------------------
+                      |       Mean   Std. Err.     [95% Conf. Interval]
+----------------------+------------------------------------------------
+d_BrainGABAproduction |   205.9111   10.83348      184.5004    227.3218
+-----------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+----------------------------------------------------------------------------
+                           |       Mean   Std. Err.     [95% Conf. Interval]
+---------------------------+------------------------------------------------
+d_Brainhistamineproduction |   52.27299   1.524679       49.2597    55.28628
+----------------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+----------------------------------------------------------------------
+                     |       Mean   Std. Err.     [95% Conf. Interval]
+---------------------+------------------------------------------------
+d_Brainkynurenicacid |   1161.084    8.86846      1143.557    1178.611
+----------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+-----------------------------------------------------------------------
+                      |       Mean   Std. Err.     [95% Conf. Interval]
+----------------------+------------------------------------------------
+d_Brainnorepinephrine |   190.0454   1.829762      186.4292    193.6617
+-----------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+Mean estimation                   Number of obs   =        147
+
+--------------------------------------------------------------------
+                   |       Mean   Std. Err.     [95% Conf. Interval]
+-------------------+------------------------------------------------
+d_BrainLkynurenine |   437.2099   3.419975      430.4508    443.9689
+--------------------------------------------------------------------
+(1 real change made)
+(1 real change made)
+(1 real change made)
+(1 real change made)
+
+. cd A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw   
+A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+
+. graph twoway bar mean_ var_name, horizontal || rcap CI_u CI_l var_name, horizontal saving(figure4B_raw, replace)
+(file figure4B_raw.gph saved)
+
+. 
+. clear
+
+. 
+. import excel "A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\Flux_Sulfotransferase_vs_Clostridioides.xlsx", sheet("Sheet1") firstrow
+
+. rename A sample
+
+. mfp reg LiverSulfotransferase Clostridioides
+
+Deviance for model with all terms untransformed =   472.141, 147 observations
+
+Variable     Model (vs.)   Deviance  Dev diff.   P      Powers   (vs.)
+----------------------------------------------------------------------
+Clostridi... lin.   FP2     472.141   166.327  0.000+   1         -1 -.5
+             FP1            365.013    59.199  0.000+   0         
+             Final          305.814                     -1 -.5
+
+
+Transformations of covariates:
+
+-> gen double IClos__1 = X^-1-12.49682479 if e(sample) 
+-> gen double IClos__2 = X^-.5-3.535084834 if e(sample) 
+   (where: X = (Clostridioides+2.00000002337e-07)*100)
+
+Final multivariable fractional polynomial model for LiverSulfotransferase
+--------------------------------------------------------------------
+    Variable |    -----Initial-----          -----Final-----
+             |   df     Select   Alpha    Status    df    Powers
+-------------+------------------------------------------------------
+Clostridi... |    4     1.0000   0.0500     in      4     -1 -.5
+--------------------------------------------------------------------
+
+      Source |       SS           df       MS      Number of obs   =       147
+-------------+----------------------------------   F(2, 144)       =    203.73
+       Model |  195.008134         2  97.5040669   Prob > F        =    0.0000
+    Residual |  68.9181835       144  .478598497   R-squared       =    0.7389
+-------------+----------------------------------   Adj R-squared   =    0.7352
+       Total |  263.926317       146   1.8077145   Root MSE        =    .69181
+
+------------------------------------------------------------------------------
+LiverSulfo~e |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+    IClos__1 |   .0009936   .0000635    15.64   0.000      .000868    .0011192
+    IClos__2 |  -.2439572   .0145003   -16.82   0.000    -.2726182   -.2152963
+       _cons |   4.024158     .06696    60.10   0.000     3.891806    4.156509
+------------------------------------------------------------------------------
+Deviance:  305.814.
+
+. display Ftail(e(df_m), e(df_r),e(F))
+1.031e-42
+
+. 
+. *Graph S3
+. cd A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures\raw
+
+. scatter LiverSulfotransferase Clostridioides || function y=.0009936*(((x+2.00000002337e-07)*100)^(-1)-12.49682479)-.2439572*(((x+2.00000002337e-07)*100)^(-.5)-3.535084834)+4.
+> 024158, range(0 0.006) saving(figure_S3, replace)
+(file figure_S3.gph saved)
+
+. 
+. clear
+
+. log close
+      name:  <unnamed>
+       log:  A:\Hertel\Finalized\Thiele_2018_HH\Microbiome_modeling\figures_6DEF.log
+  log type:  text
+ closed on:   4 Dec 2018, 15:06:22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

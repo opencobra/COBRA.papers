@@ -1,0 +1,418 @@
+----------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  A:\Hertel\Finalized\Thiele_2018_HH\BMR\BMR_prediction_analyses.log
+  log type:  text
+ opened on:  27 Nov 2018, 12:11:54
+
+. 
+. import excel "A:\Hertel\Finalized\Thiele_2018_HH\BMR\Kopie von BMR_predictions_Oct_2018_1.xlsx", sheet("BMR calculation - parameter id
+> e") firstrow cellrange(A3:P16) 
+
+. 
+. *calculate model-fit and p-values on the training data set n=13
+. foreach j of varlist Muscleatphydrolysisadjustment-P{
+  2.         reg MeasuredBMRkcal `j'
+  3.         test `j'
+  4.         display r(p)
+  5.         ci2 MeasuredBMRkcal `j', corr
+  6.         }
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      6.68
+       Model |  56004.1872         1  56004.1872   Prob > F        =    0.0254
+    Residual |  92230.4927        11  8384.59024   R-squared       =    0.3778
+-------------+----------------------------------   Adj R-squared   =    0.3212
+       Total |   148234.68        12    12352.89   Root MSE        =    91.567
+
+-----------------------------------------------------------------------------------------------
+              MeasuredBMRkcal |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+------------------------------+----------------------------------------------------------------
+Muscleatphydrolysisadjustment |   4.489629   1.737165     2.58   0.025     .6661541    8.313104
+                        _cons |   -3638.09   1930.492    -1.88   0.086    -7887.074    610.8939
+-----------------------------------------------------------------------------------------------
+
+ ( 1)  Muscleatphydrolysisadjustment = 0
+
+       F(  1,    11) =    6.68
+            Prob > F =    0.0254
+.02538783
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and Muscleatphydrolysisadjustment, based on Fisher's transformation.
+Correlation = 0.615 on 13 observations (95% CI: 0.096 to 0.871)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      0.58
+       Model |  7408.10091         1  7408.10091   Prob > F        =    0.4628
+    Residual |  140826.579        11  12802.4163   R-squared       =    0.0500
+-------------+----------------------------------   Adj R-squared   =   -0.0364
+       Total |   148234.68        12    12352.89   Root MSE        =    113.15
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           I |    2.31394   3.041898     0.76   0.463    -4.381232    9.009113
+       _cons |  -1567.376   3836.289    -0.41   0.691    -10010.99     6876.24
+------------------------------------------------------------------------------
+
+ ( 1)  I = 0
+
+       F(  1,    11) =    0.58
+            Prob > F =    0.4628
+.46283707
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and I, based on Fisher's transformation.
+Correlation = 0.224 on 13 observations (95% CI: -0.373 to 0.690)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      2.57
+       Model |  28089.1427         1  28089.1427   Prob > F        =    0.1371
+    Residual |  120145.537        11  10922.3216   R-squared       =    0.1895
+-------------+----------------------------------   Adj R-squared   =    0.1158
+       Total |   148234.68        12    12352.89   Root MSE        =    104.51
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           J |   1.690422   1.054104     1.60   0.137    -.6296448    4.010489
+       _cons |  -1138.718    1552.64    -0.73   0.479    -4556.055    2278.619
+------------------------------------------------------------------------------
+
+ ( 1)  J = 0
+
+       F(  1,    11) =    2.57
+            Prob > F =    0.1371
+.13709263
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and J, based on Fisher's transformation.
+Correlation = 0.435 on 13 observations (95% CI: -0.152 to 0.795)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      3.20
+       Model |    33436.13         1    33436.13   Prob > F        =    0.1010
+    Residual |   114798.55        11  10436.2318   R-squared       =    0.2256
+-------------+----------------------------------   Adj R-squared   =    0.1552
+       Total |   148234.68        12    12352.89   Root MSE        =    102.16
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           K |   1.236795   .6909735     1.79   0.101     -.284028    2.757617
+       _cons |  -33.16693   773.6879    -0.04   0.967    -1736.042    1669.709
+------------------------------------------------------------------------------
+
+ ( 1)  K = 0
+
+       F(  1,    11) =    3.20
+            Prob > F =    0.1010
+.10099744
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and K, based on Fisher's transformation.
+Correlation = 0.475 on 13 observations (95% CI: -0.103 to 0.813)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =     28.02
+       Model |  106450.974         1  106450.974   Prob > F        =    0.0003
+    Residual |  41783.7062        11  3798.51875   R-squared       =    0.7181
+-------------+----------------------------------   Adj R-squared   =    0.6925
+       Total |   148234.68        12    12352.89   Root MSE        =    61.632
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           L |   2.221546   .4196505     5.29   0.000     1.297902    3.145191
+       _cons |  -1458.922    531.023    -2.75   0.019    -2627.696   -290.1485
+------------------------------------------------------------------------------
+
+ ( 1)  L = 0
+
+       F(  1,    11) =   28.02
+            Prob > F =    0.0003
+.00025482
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and L, based on Fisher's transformation.
+Correlation = 0.847 on 13 observations (95% CI: 0.556 to 0.953)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =     43.14
+       Model |   118114.63         1   118114.63   Prob > F        =    0.0000
+    Residual |  30120.0495        11  2738.18632   R-squared       =    0.7968
+-------------+----------------------------------   Adj R-squared   =    0.7783
+       Total |   148234.68        12    12352.89   Root MSE        =    52.328
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           M |   1.244716   .1895177     6.57   0.000     .8275901    1.661841
+       _cons |  -487.7913   280.3085    -1.74   0.110    -1104.746    129.1636
+------------------------------------------------------------------------------
+
+ ( 1)  M = 0
+
+       F(  1,    11) =   43.14
+            Prob > F =    0.0000
+.00004036
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and M, based on Fisher's transformation.
+Correlation = 0.893 on 13 observations (95% CI: 0.672 to 0.968)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      3.20
+       Model |    33372.75         1    33372.75   Prob > F        =    0.1014
+    Residual |   114861.93        11  10441.9936   R-squared       =    0.2251
+-------------+----------------------------------   Adj R-squared   =    0.1547
+       Total |   148234.68        12    12352.89   Root MSE        =    102.19
+
+--------------------------------------------------------------------------------------------
+           MeasuredBMRkcal |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------------------+----------------------------------------------------------------
+BasedonoriginalHarrisBened |    .666226   .3726639     1.79   0.101    -.1540017    1.486454
+                     _cons |   439.7333   510.3798     0.86   0.407    -683.6051    1563.072
+--------------------------------------------------------------------------------------------
+
+ ( 1)  BasedonoriginalHarrisBened = 0
+
+       F(  1,    11) =    3.20
+            Prob > F =    0.1014
+.10136668
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and BasedonoriginalHarrisBened, based on Fisher's transformation.
+Correlation = 0.474 on 13 observations (95% CI: -0.104 to 0.813)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      3.76
+       Model |  37774.4918         1  37774.4918   Prob > F        =    0.0785
+    Residual |  110460.188        11  10041.8353   R-squared       =    0.2548
+-------------+----------------------------------   Adj R-squared   =    0.1871
+       Total |   148234.68        12    12352.89   Root MSE        =    100.21
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           O |   .6783172   .3497358     1.94   0.079    -.0914461    1.448081
+       _cons |    432.824   474.0926     0.91   0.381    -610.6468    1476.295
+------------------------------------------------------------------------------
+
+ ( 1)  O = 0
+
+       F(  1,    11) =    3.76
+            Prob > F =    0.0785
+.07850648
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and O, based on Fisher's transformation.
+Correlation = 0.505 on 13 observations (95% CI: -0.064 to 0.826)
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(1, 11)        =      4.39
+       Model |  42258.9084         1  42258.9084   Prob > F        =    0.0602
+    Residual |  105975.772        11  9634.16105   R-squared       =    0.2851
+-------------+----------------------------------   Adj R-squared   =    0.2201
+       Total |   148234.68        12    12352.89   Root MSE        =    98.154
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           P |   .5539017   .2644725     2.09   0.060    -.0281983    1.136002
+       _cons |   643.3552   338.8572     1.90   0.084    -102.4645    1389.175
+------------------------------------------------------------------------------
+
+ ( 1)  P = 0
+
+       F(  1,    11) =    4.39
+            Prob > F =    0.0602
+.06018456
+
+Confidence interval for Pearson's product-moment correlation 
+of MeasuredBMRkcal and P, based on Fisher's transformation.
+Correlation = 0.534 on 13 observations (95% CI: -0.024 to 0.838)
+
+. 
+. reg MeasuredBMRkcal P M
+
+      Source |       SS           df       MS      Number of obs   =        13
+-------------+----------------------------------   F(2, 10)        =     21.34
+       Model |  120098.762         2   60049.381   Prob > F        =    0.0002
+    Residual |   28135.918        10   2813.5918   R-squared       =    0.8102
+-------------+----------------------------------   Adj R-squared   =    0.7722
+       Total |   148234.68        12    12352.89   Root MSE        =    53.043
+
+------------------------------------------------------------------------------
+MeasuredBM~l |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+           P |    .137225   .1634099     0.84   0.421    -.2268751     .501325
+           M |   1.155297    .219646     5.26   0.000     .6658954    1.644699
+       _cons |   -530.965   288.7557    -1.84   0.096    -1174.353    112.4228
+------------------------------------------------------------------------------
+
+. test P
+
+ ( 1)  P = 0
+
+       F(  1,    10) =    0.71
+            Prob > F =    0.4207
+
+. display r(p)
+.42066657
+
+. test M
+
+ ( 1)  M = 0
+
+       F(  1,    10) =   27.67
+            Prob > F =    0.0004
+
+. display r(p)
+.00036816
+
+. *Graphs:
+. cd A:\Hertel\Finalized\Thiele_2018_HH\BMR\figures\raw
+A:\Hertel\Finalized\Thiele_2018_HH\BMR\figures\raw
+
+. *Training data set:
+. scatter MeasuredBMRkcal Muscleatphydrolysisadjustment || lfit MeasuredBMRkcal Muscleatphydrolysisadjustment, saving(fig_5A1.gph, repla
+> ce)
+(file fig_5A1.gph saved)
+
+. scatter MeasuredBMRkcal M || lfit MeasuredBMRkcal M, saving(fig_5A2.gph, replace)
+(file fig_5A2.gph saved)
+
+. scatter MeasuredBMRkcal P || lfit MeasuredBMRkcal P, saving(fig_5A3.gph, replace)       
+(file fig_5A3.gph saved)
+
+.         
+. *calculate model-fit and p-values on the test data set n=       
+. clear
+
+. 
+. import excel "A:\Hertel\Finalized\Thiele_2018_HH\BMR\Kopie von BMR_predictions_Oct_2018_1.xlsx", sheet("BMR calculation - parameter va
+> l") firstrow cellrange(A5:K33)
+
+. destring(WBMbasedpredictionofBMR BasedonoriginalHarrisBened), replace force 
+WBMbasedpredictionofBMR contains nonnumeric characters; WBMbasedpredictionofBMR replaced as double
+(6 missing values generated)
+BasedonoriginalHarrisBened already numeric; no replace
+
+. egen sex=group(Gender)
+
+. 
+. reg  BMRkcal  WBMbasedpredictionofBMR sex       
+
+      Source |       SS           df       MS      Number of obs   =        22
+-------------+----------------------------------   F(2, 19)        =     15.06
+       Model |  526818.717         2  263409.358   Prob > F        =    0.0001
+    Residual |  332395.206        19  17494.4846   R-squared       =    0.6131
+-------------+----------------------------------   Adj R-squared   =    0.5724
+       Total |  859213.923        21  40914.9487   Root MSE        =    132.27
+
+-----------------------------------------------------------------------------------------
+                BMRkcal |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+------------------------+----------------------------------------------------------------
+WBMbasedpredictionofBMR |   2.141917   .4491611     4.77   0.000     1.201812    3.082022
+                    sex |  -484.9348   151.6002    -3.20   0.005    -802.2377   -167.6318
+                  _cons |  -865.3911   451.7343    -1.92   0.071    -1810.882     80.0997
+-----------------------------------------------------------------------------------------
+
+. predict WBM_score
+(option xb assumed; fitted values)
+(6 missing values generated)
+
+. ci2 WBM_score BMRkcal, corr
+
+Confidence interval for Pearson's product-moment correlation 
+of WBM_score and BMRkcal, based on Fisher's transformation.
+Correlation = 0.783 on 22 observations (95% CI: 0.540 to 0.906)
+
+. reg  BMRkcal  BasedonoriginalHarrisBened sex
+
+      Source |       SS           df       MS      Number of obs   =        22
+-------------+----------------------------------   F(2, 19)        =      8.95
+       Model |  416682.481         2  208341.241   Prob > F        =    0.0018
+    Residual |  442531.442        19  23291.1285   R-squared       =    0.4850
+-------------+----------------------------------   Adj R-squared   =    0.4307
+       Total |  859213.923        21  40914.9487   Root MSE        =    152.61
+
+--------------------------------------------------------------------------------------------
+                   BMRkcal |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------------------+----------------------------------------------------------------
+BasedonoriginalHarrisBened |   .9956522   .2832921     3.51   0.002     .4027151    1.588589
+                       sex |   -44.7595   95.59667    -0.47   0.645    -244.8456    155.3266
+                     _cons |   98.66074   344.7424     0.29   0.778    -622.8934    820.2149
+--------------------------------------------------------------------------------------------
+
+. predict Base_score
+(option xb assumed; fitted values)
+(6 missing values generated)
+
+. ci2 Base_score BMRkcal, corr
+
+Confidence interval for Pearson's product-moment correlation 
+of Base_score and BMRkcal, based on Fisher's transformation.
+Correlation = 0.696 on 22 observations (95% CI: 0.389 to 0.864)
+
+. 
+. reg  BMRkcal BasedonoriginalHarrisBened sex WBMbasedpredictionofBMR
+
+      Source |       SS           df       MS      Number of obs   =        22
+-------------+----------------------------------   F(3, 18)        =      9.52
+       Model |  527100.307         3  175700.102   Prob > F        =    0.0005
+    Residual |  332113.616        18  18450.7565   R-squared       =    0.6135
+-------------+----------------------------------   Adj R-squared   =    0.5490
+       Total |  859213.923        21  40914.9487   Root MSE        =    135.83
+
+--------------------------------------------------------------------------------------------
+                   BMRkcal |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------------------+----------------------------------------------------------------
+BasedonoriginalHarrisBened |  -.0618229   .5004352    -0.12   0.903    -1.113198    .9895525
+                       sex |  -501.4402   205.1568    -2.44   0.025    -932.4586   -70.42176
+   WBMbasedpredictionofBMR |   2.239612   .9155041     2.45   0.025     .3162093    4.163015
+                     _cons |  -890.8743   507.7093    -1.75   0.096    -1957.532    175.7834
+--------------------------------------------------------------------------------------------
+
+. test WBMbasedpredictionofBMR
+
+ ( 1)  WBMbasedpredictionofBMR = 0
+
+       F(  1,    18) =    5.98
+            Prob > F =    0.0249
+
+. display r(p)
+.02493247
+
+. test BasedonoriginalHarrisBened 
+
+ ( 1)  BasedonoriginalHarrisBened = 0
+
+       F(  1,    18) =    0.02
+            Prob > F =    0.9030
+
+. display r(p)
+.90304985
+
+. 
+. *Graphs:
+. cd A:\Hertel\Finalized\Thiele_2018_HH\BMR\figures\raw
+A:\Hertel\Finalized\Thiele_2018_HH\BMR\figures\raw
+
+. *Test data set
+. scatter BMRkcal WBM_score || lfit BMRkcal WBM_score, saving(fig_5B1.gph, replace)
+(file fig_5B1.gph saved)
+
+. scatter BMRkcal Base_score || lfit BMRkcal Base_score, saving(fig_5B2.gph, replace)
+(file fig_5B2.gph saved)
+
+.  
+. 
+. 
+. log close
+      name:  <unnamed>
+       log:  A:\Hertel\Finalized\Thiele_2018_HH\BMR\BMR_prediction_analyses.log
+  log type:  text
+ closed on:  27 Nov 2018, 12:11:59
+----------------------------------------------------------------------------------------------------------------------------------------
