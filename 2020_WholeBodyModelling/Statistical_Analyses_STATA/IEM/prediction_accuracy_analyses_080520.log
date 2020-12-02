@@ -1,0 +1,565 @@
+------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  A:\Hertel\Finalized\Thiele_2018_HH\Statistical_Analyses_STATA\IEM\prediction_accuracy_analyses_080520.log
+  log type:  text
+ opened on:   8 May 2020, 21:51:31
+
+. 
+. *******************************************
+. *Data preparation: Import from Excel-files*
+. *******************************************
+. 
+. foreach j in REC HTA HV{
+  2.         import excel "A:\Hertel\Finalized\Thiele_2018_HH\Statistical_Analyses_STATA\IEM\IEM_predictions_Overview_rc_08_05_20.xlsx", firstro
+> w //adapt directory as suitable
+  3.         egen id=seq(), by(G)
+  4.         drop G N
+  5.         keep id *`j'
+  6.         gen iem_bio=IEM+Biomarker
+  7.         egen test=seq(), by(iem_bio)
+  8.         drop if test>1
+  9.         drop test
+ 10.         save `j'_pred.dta, replace
+ 11.         gen agree_`j'=insilico_`j'-invivo_`j'
+ 12.         replace agree_`j'=1 if agree_`j'==-1 | agree_`j'==-2 | agree_`j'==2
+ 13.         recode agree_`j' (0=1) (1=0)
+ 14.         tab agree_`j'
+ 15.         egen mean_agree_`j'=mean(agree_`j'), by(IEM_`j')
+ 16.         save `j'_pred.dta, replace
+ 17.         collapse agree_`j',by(IEM_`j')
+ 18.         rename IEM_`j' IEM
+ 19.         save `j'_IEM.dta, replace
+ 20.         clear
+ 21.         }
+(47 missing values generated)
+(46 observations deleted)
+file REC_pred.dta saved
+(1 missing value generated)
+(93 real changes made)
+(agree_REC: 205 changes made)
+
+  agree_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |        102       49.76       49.76
+          1 |        103       50.24      100.00
+------------+-----------------------------------
+      Total |        205      100.00
+(1 missing value generated)
+file REC_pred.dta saved
+file REC_IEM.dta saved
+(0 observations deleted)
+file HTA_pred.dta saved
+(34 real changes made)
+(agree_HTA: 252 changes made)
+
+  agree_HTA |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         37       14.68       14.68
+          1 |        215       85.32      100.00
+------------+-----------------------------------
+      Total |        252      100.00
+file HTA_pred.dta saved
+file HTA_IEM.dta saved
+(0 observations deleted)
+file HV_pred.dta saved
+(33 real changes made)
+(agree_HV: 252 changes made)
+
+   agree_HV |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         38       15.08       15.08
+          1 |        214       84.92      100.00
+------------+-----------------------------------
+      Total |        252      100.00
+file HV_pred.dta saved
+file HV_IEM.dta saved
+
+.         
+. **************************************************************
+. *Analyses of agreements on the level of reactions/metabolites*
+. **************************************************************  
+. 
+. use REC_pred.dta
+
+. merge 1:1 iem_bio using HV_pred.dta
+(note: variable iem_bio was str21, now str22 to accommodate using data's values)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                           216
+        from master                        85  (_merge==1)
+        from using                        131  (_merge==2)
+
+    matched                               121  (_merge==3)
+    -----------------------------------------
+
+. rename _merge merge1
+
+. merge 1:1 iem_bio using HTA_pred.dta
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            85
+        from master                        85  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                               252  (_merge==3)
+    -----------------------------------------
+
+. rename _merge merge2
+
+. 
+. *Cohen's Kappa: Metric of agreement between in-vivo measurements and prediction from modelling
+. 
+. foreach j in REC HTA HV{
+  2.         tab invivo_`j' insilico_`j'
+  3.         kap  invivo_`j' insilico_`j'
+  4.         local CI_l=r(kappa)-invnormal(0.975)*r(se)
+  5.         local CI_u=r(kappa)+invnormal(0.975)*r(se)
+  6.         display "95%-CI lower bound:"
+  7.         display `CI_l'
+  8.         display "95%-CI upper bound:"
+  9.         display `CI_u'
+ 10.         }
+
+           |           insilico_REC
+invivo_REC |        -1          0          1 |     Total
+-----------+---------------------------------+----------
+        -1 |        18          9          2 |        29 
+         1 |         7         84         85 |       176 
+-----------+---------------------------------+----------
+     Total |        25         93         87 |       205 
+
+
+             Expected
+Agreement   Agreement     Kappa   Std. Err.         Z      Prob>Z
+-----------------------------------------------------------------
+  50.24%      38.16%     0.1954     0.0265       7.36      0.0000
+95%-CI lower bound:
+.14336808
+95%-CI upper bound:
+.24742767
+
+           |           insilico_HTA
+invivo_HTA |        -1          0          1 |     Total
+-----------+---------------------------------+----------
+        -1 |        20          3         14 |        37 
+         1 |         5         15        195 |       215 
+-----------+---------------------------------+----------
+     Total |        25         18        209 |       252 
+
+
+             Expected
+Agreement   Agreement     Kappa   Std. Err.         Z      Prob>Z
+-----------------------------------------------------------------
+  85.32%      72.22%     0.4715     0.0505       9.34      0.0000
+95%-CI lower bound:
+.37264493
+95%-CI upper bound:
+.57045187
+
+           |           insilico_HV
+ invivo_HV |        -1          0          1 |     Total
+-----------+---------------------------------+----------
+        -1 |        21          5         11 |        37 
+         1 |         5         17        193 |       215 
+-----------+---------------------------------+----------
+     Total |        26         22        204 |       252 
+
+
+             Expected
+Agreement   Agreement     Kappa   Std. Err.         Z      Prob>Z
+-----------------------------------------------------------------
+  84.92%      70.58%     0.4874     0.0488      10.00      0.0000
+95%-CI lower bound:
+.39187248
+95%-CI upper bound:
+.58296961
+
+. 
+. *Model-fit and p-values from multinomial logistic regressions
+. 
+. foreach j in REC HTA HV{
+  2.         replace insilico_`j'=insilico_`j'+1
+  3.         mlogit invivo_`j' i.insilico_`j',
+  4.         display "p-value:"
+  5.         display chi2tail(2,e(chi2))
+  6.         }
+(205 real changes made)
+
+Iteration 0:   log likelihood = -83.560284  
+Iteration 1:   log likelihood = -62.369789  
+Iteration 2:   log likelihood = -54.964938  
+Iteration 3:   log likelihood = -53.925807  
+Iteration 4:   log likelihood =  -53.91433  
+Iteration 5:   log likelihood = -53.914309  
+Iteration 6:   log likelihood = -53.914309  
+
+Multinomial logistic regression                 Number of obs     =        205
+                                                LR chi2(2)        =      59.29
+                                                Prob > chi2       =     0.0000
+Log likelihood = -53.914309                     Pseudo R2         =     0.3548
+
+------------------------------------------------------------------------------
+  invivo_REC |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+-1           |
+insilico_REC |
+          1  |  -3.178054   .5669467    -5.61   0.000    -4.289249   -2.066859
+          2  |  -4.693966   .8427202    -5.57   0.000    -6.345667   -3.042264
+             |
+       _cons |   .9444616   .4454354     2.12   0.034     .0714243    1.817499
+-------------+----------------------------------------------------------------
+1            |  (base outcome)
+------------------------------------------------------------------------------
+p-value:
+1.333e-13
+(252 real changes made)
+
+Iteration 0:   log likelihood = -105.12499  
+Iteration 1:   log likelihood = -77.919302  
+Iteration 2:   log likelihood =  -73.51617  
+Iteration 3:   log likelihood = -71.988239  
+Iteration 4:   log likelihood = -71.986305  
+Iteration 5:   log likelihood = -71.986304  
+
+Multinomial logistic regression                 Number of obs     =        252
+                                                LR chi2(2)        =      66.28
+                                                Prob > chi2       =     0.0000
+Log likelihood = -71.986304                     Pseudo R2         =     0.3152
+
+------------------------------------------------------------------------------
+  invivo_HTA |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+-1           |
+insilico_HTA |
+          1  |  -2.995732   .8062258    -3.72   0.000    -4.575906   -1.415559
+          2  |  -4.020237   .5714515    -7.04   0.000    -5.140261   -2.900212
+             |
+       _cons |   1.386294         .5     2.77   0.006     .4063124    2.366276
+-------------+----------------------------------------------------------------
+1            |  (base outcome)
+------------------------------------------------------------------------------
+p-value:
+4.056e-15
+(252 real changes made)
+
+Iteration 0:   log likelihood = -105.12499  
+Iteration 1:   log likelihood =  -73.74183  
+Iteration 2:   log likelihood = -69.228956  
+Iteration 3:   log likelihood = -67.343122  
+Iteration 4:   log likelihood = -67.339891  
+Iteration 5:   log likelihood = -67.339891  
+
+Multinomial logistic regression                 Number of obs     =        252
+                                                LR chi2(2)        =      75.57
+                                                Prob > chi2       =     0.0000
+Log likelihood = -67.339891                     Pseudo R2         =     0.3594
+
+------------------------------------------------------------------------------
+   invivo_HV |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+-1           |
+ insilico_HV |
+          1  |   -2.65886   .7116478    -3.74   0.000    -4.053664   -1.264056
+          2  |  -4.299879   .5862674    -7.33   0.000    -5.448942   -3.150816
+             |
+       _cons |   1.435084   .4976133     2.88   0.004     .4597802    2.410389
+-------------+----------------------------------------------------------------
+1            |  (base outcome)
+------------------------------------------------------------------------------
+p-value:
+3.892e-17
+
+. clear
+
+.         
+. *********************************************
+. *Analyses of agreements on the level of IEMs*
+. *********************************************   
+. 
+. use REC_IEM.dta
+
+. merge 1:1 IEM using HV_IEM.dta
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             2
+        from master                         1  (_merge==1)
+        from using                          1  (_merge==2)
+
+    matched                                56  (_merge==3)
+    -----------------------------------------
+
+. rename _merge merge1
+
+. merge 1:1 IEM using HTA_IEM.dta
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             1
+        from master                         1  (_merge==1)
+        from using                          0  (_merge==2)
+
+    matched                                57  (_merge==3)
+    -----------------------------------------
+
+. rename _merge merge2
+
+. 
+. *Non-parametric sign test comparing agreement percentages in IEMs for every pair of model
+. signtest agree_REC=agree_HV
+
+Sign test
+
+        sign |    observed    expected
+-------------+------------------------
+    positive |           4        14.5
+    negative |          25        14.5
+        zero |          27          27
+-------------+------------------------
+         all |          56          56
+
+One-sided tests:
+  Ho: median of agree_REC - agree_HV = 0 vs.
+  Ha: median of agree_REC - agree_HV > 0
+      Pr(#positive >= 4) =
+         Binomial(n = 29, x >= 4, p = 0.5) =  1.0000
+
+  Ho: median of agree_REC - agree_HV = 0 vs.
+  Ha: median of agree_REC - agree_HV < 0
+      Pr(#negative >= 25) =
+         Binomial(n = 29, x >= 25, p = 0.5) =  0.0001
+
+Two-sided test:
+  Ho: median of agree_REC - agree_HV = 0 vs.
+  Ha: median of agree_REC - agree_HV != 0
+      Pr(#positive >= 25 or #negative >= 25) =
+         min(1, 2*Binomial(n = 29, x >= 25, p = 0.5)) =  0.0001
+
+. signtest agree_REC=agree_HTA
+
+Sign test
+
+        sign |    observed    expected
+-------------+------------------------
+    positive |           5          15
+    negative |          25          15
+        zero |          26          26
+-------------+------------------------
+         all |          56          56
+
+One-sided tests:
+  Ho: median of agree_REC - agree_HTA = 0 vs.
+  Ha: median of agree_REC - agree_HTA > 0
+      Pr(#positive >= 5) =
+         Binomial(n = 30, x >= 5, p = 0.5) =  1.0000
+
+  Ho: median of agree_REC - agree_HTA = 0 vs.
+  Ha: median of agree_REC - agree_HTA < 0
+      Pr(#negative >= 25) =
+         Binomial(n = 30, x >= 25, p = 0.5) =  0.0002
+
+Two-sided test:
+  Ho: median of agree_REC - agree_HTA = 0 vs.
+  Ha: median of agree_REC - agree_HTA != 0
+      Pr(#positive >= 25 or #negative >= 25) =
+         min(1, 2*Binomial(n = 30, x >= 25, p = 0.5)) =  0.0003
+
+. signtest agree_HV=agree_HTA
+
+Sign test
+
+        sign |    observed    expected
+-------------+------------------------
+    positive |           7           5
+    negative |           3           5
+        zero |          47          47
+-------------+------------------------
+         all |          57          57
+
+One-sided tests:
+  Ho: median of agree_HV - agree_HTA = 0 vs.
+  Ha: median of agree_HV - agree_HTA > 0
+      Pr(#positive >= 7) =
+         Binomial(n = 10, x >= 7, p = 0.5) =  0.1719
+
+  Ho: median of agree_HV - agree_HTA = 0 vs.
+  Ha: median of agree_HV - agree_HTA < 0
+      Pr(#negative >= 3) =
+         Binomial(n = 10, x >= 3, p = 0.5) =  0.9453
+
+Two-sided test:
+  Ho: median of agree_HV - agree_HTA = 0 vs.
+  Ha: median of agree_HV - agree_HTA != 0
+      Pr(#positive >= 7 or #negative >= 7) =
+         min(1, 2*Binomial(n = 10, x >= 7, p = 0.5)) =  0.3438
+
+. 
+. *IEMs with REC better HV
+. tab IEM if agree_REC>agree_HV & agree_REC!=.
+
+    IEM_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       DPYR |          1       25.00       25.00
+       HCYS |          1       25.00       50.00
+       MSUD |          1       25.00       75.00
+       XAN1 |          1       25.00      100.00
+------------+-----------------------------------
+      Total |          4      100.00
+
+. *IEMs with REC better HTA
+. tab IEM if agree_REC>agree_HTA & agree_REC!=.
+
+    IEM_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      ASNSD |          1       20.00       20.00
+        HCP |          1       20.00       40.00
+       HCYS |          1       20.00       60.00
+       MSUD |          1       20.00       80.00
+       XAN1 |          1       20.00      100.00
+------------+-----------------------------------
+      Total |          5      100.00
+
+. *IEMs with REC worse HV
+. tab IEM if agree_REC<agree_HV & agree_REC!=.
+
+    IEM_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       AADC |          1        4.00        4.00
+       AKGD |          1        4.00        8.00
+       AMA1 |          1        4.00       12.00
+        ASA |          1        4.00       16.00
+        BTD |          1        4.00       20.00
+       CIT1 |          1        4.00       24.00
+       CPS1 |          1        4.00       28.00
+        DGK |          1        4.00       32.00
+        GA2 |          1        4.00       36.00
+       GACR |          1        4.00       40.00
+        GMT |          1        4.00       44.00
+       HMET |          1        4.00       48.00
+        HMG |          1        4.00       52.00
+       HPII |          1        4.00       56.00
+     HYPRO1 |          1        4.00       60.00
+        IVA |          1        4.00       64.00
+        LNS |          1        4.00       68.00
+       NAGS |          1        4.00       72.00
+        OTC |          1        4.00       76.00
+       OXOP |          1        4.00       80.00
+         PC |          1        4.00       84.00
+      PHOX1 |          1        4.00       88.00
+     SSADHD |          1        4.00       92.00
+      SUCLA |          1        4.00       96.00
+       TYR1 |          1        4.00      100.00
+------------+-----------------------------------
+      Total |         25      100.00
+
+. *IEMs with REC worse HTA
+. tab IEM if agree_REC<agree_HTA & agree_REC!=.
+
+    IEM_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       AADC |          1        4.00        4.00
+       AKGD |          1        4.00        8.00
+       AMA1 |          1        4.00       12.00
+        ASA |          1        4.00       16.00
+        BTD |          1        4.00       20.00
+       CIT1 |          1        4.00       24.00
+       CPS1 |          1        4.00       28.00
+        DGK |          1        4.00       32.00
+        GA2 |          1        4.00       36.00
+       GACR |          1        4.00       40.00
+        GMT |          1        4.00       44.00
+       HMET |          1        4.00       48.00
+        HMG |          1        4.00       52.00
+       HPII |          1        4.00       56.00
+     HYPRO1 |          1        4.00       60.00
+        IVA |          1        4.00       64.00
+        LNS |          1        4.00       68.00
+        MMA |          1        4.00       72.00
+       NAGS |          1        4.00       76.00
+        OTC |          1        4.00       80.00
+       OXOP |          1        4.00       84.00
+         PC |          1        4.00       88.00
+      PHOX1 |          1        4.00       92.00
+     SSADHD |          1        4.00       96.00
+      SUCLA |          1        4.00      100.00
+------------+-----------------------------------
+      Total |         25      100.00
+
+. *IEMs with REC equal HV
+. tab IEM if agree_REC==agree_HV & agree_REC!=.
+
+    IEM_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       2OAA |          1        3.70        3.70
+       3MCC |          1        3.70        7.41
+       3MGA |          1        3.70       11.11
+       AGAT |          1        3.70       14.81
+        ARG |          1        3.70       18.52
+      ASNSD |          1        3.70       22.22
+         CD |          1        3.70       25.93
+       CMO1 |          1        3.70       29.63
+     CYP21D |          1        3.70       33.33
+      DESMO |          1        3.70       37.04
+         EF |          1        3.70       40.74
+         EP |          1        3.70       44.44
+        FED |          1        3.70       48.15
+      FIGLU |          1        3.70       51.85
+        GA1 |          1        3.70       55.56
+        HCP |          1        3.70       59.26
+        HIS |          1        3.70       62.96
+      HLYS1 |          1        3.70       66.67
+      HLYS2 |          1        3.70       70.37
+     HYCARO |          1        3.70       74.07
+     HYPVLI |          1        3.70       77.78
+      LTC4S |          1        3.70       81.48
+        MMA |          1        3.70       85.19
+        PKU |          1        3.70       88.89
+       STAR |          1        3.70       92.59
+       TETB |          1        3.70       96.30
+       TYR3 |          1        3.70      100.00
+------------+-----------------------------------
+      Total |         27      100.00
+
+. *IEMs with REC equal HTA
+. tab IEM if agree_REC==agree_HTA & agree_REC!=.
+
+    IEM_REC |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       2OAA |          1        3.85        3.85
+       3MCC |          1        3.85        7.69
+       3MGA |          1        3.85       11.54
+       AGAT |          1        3.85       15.38
+        ARG |          1        3.85       19.23
+         CD |          1        3.85       23.08
+       CMO1 |          1        3.85       26.92
+     CYP21D |          1        3.85       30.77
+      DESMO |          1        3.85       34.62
+       DPYR |          1        3.85       38.46
+         EF |          1        3.85       42.31
+         EP |          1        3.85       46.15
+        FED |          1        3.85       50.00
+      FIGLU |          1        3.85       53.85
+        GA1 |          1        3.85       57.69
+        HIS |          1        3.85       61.54
+      HLYS1 |          1        3.85       65.38
+      HLYS2 |          1        3.85       69.23
+     HYCARO |          1        3.85       73.08
+     HYPVLI |          1        3.85       76.92
+      LTC4S |          1        3.85       80.77
+        PKU |          1        3.85       84.62
+       STAR |          1        3.85       88.46
+       TETB |          1        3.85       92.31
+       TYR1 |          1        3.85       96.15
+       TYR3 |          1        3.85      100.00
+------------+-----------------------------------
+      Total |         26      100.00
+
+. 
+. log close
+      name:  <unnamed>
+       log:  A:\Hertel\Finalized\Thiele_2018_HH\Statistical_Analyses_STATA\IEM\prediction_accuracy_analyses_080520.log
+  log type:  text
+ closed on:   8 May 2020, 21:51:33
+------------------------------------------------------------------------------------------------------------------------------------------------
