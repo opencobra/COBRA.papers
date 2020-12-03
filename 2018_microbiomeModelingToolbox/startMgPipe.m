@@ -76,9 +76,13 @@ lowerBMBound = 0.4;
 % to set whether existing simulation results are rewritten (default=false)
 repeatSim = false;
 
+% to set if the input medium should be adapted through the adaptVMHDietToAGORA
+% function or used as is (default=true)                  
+adaptMedium = true; 
+
 %% Pipeline start if setting any optional inputs
 % Only inputs that you want to change from the default need to be declared.
 
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, 'resPath', resPath, 'dietFilePath', dietFilePath, 'indInfoFilePath', indInfoFilePath, 'objre', objre, 'figForm', figForm, 'numWorkers', numWorkers, 'autoFix', autoFix, 'compMod', compMod, 'rDiet', rDiet, 'pDiet', pDiet, 'extSolve', extSolve, 'fvaType', fvaType, 'autorun', autorun, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim);
+[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, 'resPath', resPath, 'dietFilePath', dietFilePath, 'indInfoFilePath', indInfoFilePath, 'objre', objre, 'figForm', figForm, 'numWorkers', numWorkers, 'autoFix', autoFix, 'compMod', compMod, 'rDiet', rDiet, 'pDiet', pDiet, 'extSolve', extSolve, 'fvaType', fvaType, 'autorun', autorun, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
 
 
