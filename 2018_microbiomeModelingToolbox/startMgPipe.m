@@ -12,9 +12,9 @@ global CBTDIR
 %% REQUIRED INPUT VARIABLES
 
 % path to microbe models
-system('curl -O https://www.vmh.life/files/reconstructions/AGORA/1.02/Agora-1.02.zip')
-unzip('Agora-1.02.zip','AGORA')
-modPath = [pwd filesep 'AGORA' filesep 'mat'];
+system('curl -LJO https://github.com/VirtualMetabolicHuman/AGORA/archive/master.zip')
+unzip('AGORA-master')
+modPath = [pwd filesep 'AGORA-master' filesep 'CurrentVersion' filesep 'AGORA_1_03' filesep' 'AGORA_1_03_mat'];
 
 % path to and name of the file with abundance information.
 abunFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'examples' filesep 'normCoverage.csv'];
@@ -26,7 +26,8 @@ abunFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' f
 % If you want to change any of the optional inputs, please find a
 % description of them below.
 
-%% OPTIONAL INPUTS
+%% Pipeline start if setting any optional inputs
+
 % path where to save results (default=cobratoolbox/tmp)
 mkdir('MicrobiomeModels')
 resPath = [pwd filesep 'MicrobiomeModels'];
@@ -35,8 +36,9 @@ resPath = [pwd filesep 'MicrobiomeModels'];
 % (default='AverageEuropeanDiet')
 dietFilePath = [CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'resources' filesep 'AverageEuropeanDiet'];
 
-% path to csv file for stratification criteria (if empty or not existent no criteria is used)
-indInfoFilePath = '';
+% stratification of samples (note that group classification in the example 
+% input file is not biologically meaningful)
+infoFilePath='sampInfo.csv';
 
 % name of objective function of organisms, default='EX_biomass(e)'
 objre = 'EX_biomass(e)';
@@ -63,7 +65,7 @@ pDiet = false;
 extSolve = false;
 
 % the type of FVA function to use to solve (true=fastFVA,
-% flase=fluxVariability)
+% false=fluxVariability)
 fvaType = true;
 
 % To turn off the autorun to be able to manually execute each part of the pipeline (default=true).
@@ -80,9 +82,48 @@ repeatSim = false;
 % function or used as is (default=true)                  
 adaptMedium = true; 
 
-%% Pipeline start if setting any optional inputs
 % Only inputs that you want to change from the default need to be declared.
 
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, 'resPath', resPath, 'dietFilePath', dietFilePath, 'indInfoFilePath', indInfoFilePath, 'objre', objre, 'figForm', figForm, 'numWorkers', numWorkers, 'autoFix', autoFix, 'compMod', compMod, 'rDiet', rDiet, 'pDiet', pDiet, 'extSolve', extSolve, 'fvaType', fvaType, 'autorun', autorun, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
+[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'objre', objre, 'figForm', figForm, 'numWorkers', numWorkers, 'autoFix', autoFix, 'compMod', compMod, 'rDiet', rDiet, 'pDiet', pDiet, 'extSolve', extSolve, 'fvaType', fvaType, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
 
+%% Pipeline start if including Recon3D as the host
+
+system('curl -LJO https://www.vmh.life/files/reconstructions/Recon/3D.01/Recon3D_301.zip')
+unzip('Recon3D_301')
+hostPath = [pwd filesep 'Recon3D_301' filesep 'Recon3DModel_301.mat'];
+%
+% Since host metabolites can now enter from the host model itself, the 
+% adaptMedium input can be set to false.                 
+adaptMedium = false; 
+%
+% overwrite the previous simulation for the purpose of the tutorial
+repeatSim = true;
+%
+% If a host model is entered, it is also highly recommended to enter the
+% host biomass reaction to generate coupling constraints for the host.
+hostBiomassRxn = 'biomass_reaction';
+
+[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'hostPath', hostPath, 'hostBiomassRxn', hostBiomassRxn, 'objre', objre, 'figForm', figForm, 'numWorkers', numWorkers, 'autoFix', autoFix, 'compMod', compMod, 'rDiet', rDiet, 'pDiet', pDiet, 'extSolve', extSolve, 'fvaType', fvaType, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
+
+%% Statistical analysis and violin plots of the results
+% Requires providing the path to a file with sample stratification
+% information as the variable infoFilePath.
+infoFilePath='sampInfo.csv';
+
+% Header in the file with sample information with the stratification to 
+% analyze (if not provided, the second column will be chosen by default)
+
+sampleGroupHeaders={'Group'};
+% sampleGroupHeaders can contain more than one entry if multiple columns 
+% with sample information (e.g., disease state, age group) should be analyzed.
+
+% path with results of mgPipe that will be analyzed
+resPath = [tutorialPath filesep 'Results'];
+
+% define where results will be saved (optional, default folders will be
+% generated otherwise)
+statPath = [tutorialPath filesep 'Statistics'];
+violinPath = [tutorialPath filesep 'ViolinPlots'];
+
+analyzeMgPipeResults(infoFilePath,resPath,'statPath', statPath, 'violinPath', violinPath, 'sampleGroupHeaders', sampleGroupHeaders);
 
