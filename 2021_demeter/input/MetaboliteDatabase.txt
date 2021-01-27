@@ -2985,7 +2985,7 @@ cystrna	L-Cysteinyl-tRNA(Cys)		C3H6NOSR	1							02/07/2014
 cystyrasn	Cystyl-Tyrosyl-Asparagine		C16H22N4O6S	0				IWVNIQXKTIQXCT-TUAOUCFPSA-N			03/01/2017
 cytaaox	cytochrome-aa-ox		CuR	2							12/11/2020
 cytaar	cytochrome-aa-red		CuR	2							12/11/2020
-cytbdox	cytochrome-bd-ox		FeR	2							12/11/2020
+cytbdox	cytochrome-bd-ox		FeR	4							12/11/2020
 cytbdr	cytochrome-bd-red		FeR	2							12/11/2020
 cytbox	cytochrome-bo-ox		CuR	2							12/11/2020
 cytbr	cytochrome-bo-red		CuR	2							12/11/2020
