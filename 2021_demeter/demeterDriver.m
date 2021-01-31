@@ -29,7 +29,7 @@ numWorkers = 4;
 reconVersion = 'TutorialExample';
 
 % Run the pipeline
-[reconVersion,refinedFolder,translatedDraftsFolder,summaryFolder,sbmlFolder] = runPipeline(draftFolder, 'infoFilePath', infoFilePath, 'inputDataFolder', inputDataFolder,'numWorkers', numWorkers, 'reconVersion', reconVersion);
+[reconVersion,refinedFolder,translatedDraftsFolder,summaryFolder] = runPipeline(draftFolder, 'infoFilePath', infoFilePath, 'inputDataFolder', inputDataFolder,'numWorkers', numWorkers, 'reconVersion', reconVersion);
 
 %% Testing reconstructions
 
