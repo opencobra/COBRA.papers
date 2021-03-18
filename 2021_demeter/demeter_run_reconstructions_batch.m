@@ -1,5 +1,10 @@
-% This file contains the minimal inputs needed to run the DEMETER pipeline.
-% Adapt to your own organisms as necessary.
+% This file contains the minimal inputs needed to run the DEMETER pipeline 
+% on a batch of draft reconstructions. Adapt to your own organisms as 
+% necessary. It is recommended to use this workflow if you want to refine 
+% multiple draft reconstructions. If you want to refine a single 
+% reconstruction, use the script "demeter_run_single_reconstruction".
+%
+% Almut Heinken, 03/21
 
 initCobraToolbox
 solverOK=changeCobraSolver('ibm_cplex','LP');
