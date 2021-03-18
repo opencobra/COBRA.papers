@@ -66,6 +66,12 @@ biomassReaction = model.rxns{find(strncmp(model.rxns,'bio',3)),1};
 %% Testing of model predictions against experimental and comparativs data
 % run the test suite on the model
 testResultsRefined = runTestsOnModel(model, microbeID, inputDataFolder);
+% remove all fields with no cases
+fields = fieldnames(testResultsRefined);
+lengths = structfun(@(x) size(x,2), testResultsRefined);
+testResultsRefined = rmfield(testResultsRefined,fields(lengths<2));
+% You will see that there are no false negative predictions in the test
+% example after refinement.
 
 % print a report on the test results as a PDF file. 
 ncbiCol=find(strcmp(infoFile(1,:),'NCBI Taxonomy ID'));
@@ -76,14 +82,19 @@ else
 end
 outputFile = reportPDF(model, microbeID, biomassReaction, inputDataFolder, pwd, ncbiID);
 
-% test the draft model for comparison
-testResultsDraft = runTestsOnModel(model, microbeID, inputDataFolder);
+% test the draft model for comparison. You will see that for the test
+% example, there are multiple cases of false negative predictions.
+testResultsDraft = runTestsOnModel(draftModel, microbeID, inputDataFolder);
+% remove all fields with no cases
+fields = fieldnames(testResultsDraft);
+lengths = structfun(@(x) size(x,2), testResultsDraft);
+testResultsDraft = rmfield(testResultsDraft,fields(lengths<2));
 
 %% Step 4: debugging
 % run additional gapfilling and elimination of futile cycles if neccessary
 fields=fieldnames(testResultsRefined);
 
-if atpFluxAerobic > 150 || atpFluxAnaerobic > 100 || AnaerobicGrowth(1,2) < 0.000001 || any(contains(fields,'falseNegatives'))
+if atpFluxAerobic > 150 || atpFluxAnaerobic > 100 || AnaerobicGrowth(1,2) < 0.000001 || any(contains(fields,'FalseNegatives'))
     [revisedModel,gapfilledReactions,replacedReactions]=debugModel(model,testResultsRefined,inputDataFolder,microbeID,biomassReaction);
     
     % repeat tests on the revised model
