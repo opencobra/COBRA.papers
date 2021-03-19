@@ -23,7 +23,7 @@ refinedModelIDs = printRefinedModelIDs(draftFolder);
 infoFilePath = [CBTDIR filesep 'papers' filesep '2021_demeter' filesep 'example_infoFile.xlsx'];
 
 % propagate experimental data
-[infoFilePath,inputDataFolder] = prepareInputData(infoFilePath,'inputDataFolder', inputDataFolder);
+[infoFilePath,inputDataFolder] = prepareInputData(infoFilePath);
 
 %% Refining reconstructions
 
