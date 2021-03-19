@@ -38,7 +38,7 @@ draftModel = readCbModel([draftFolder filesep modelName]);
 save([microbeID '_refined'],'model');
 
 % export the model as SBML file
-writeCbModel(model, 'format', 'sbml', 'fileName', [microbeID '_revised']);
+writeCbModel(model, 'format', 'sbml', 'fileName', [microbeID '_refined']);
 
 % save the summary of performed refinement
 save([microbeID '_summary'],'summary');
