@@ -124,7 +124,6 @@ end
 UptakeSecretion(:,1) = exRxns;
 UptakeSecretion(:,2) = cellstr(num2str(minFlux));
 UptakeSecretion(:,3) = cellstr(num2str(maxFlux));
-
 % The variable "UptakeSecretion" contains the computed fluxes in 
 % mmol/g dry weight/hr through exchange reactions in the model.
 
@@ -134,22 +133,23 @@ Metabolites=strrep(model.mets,'[c]','');
 Metabolites=strrep(Metabolites,'[e]','');
 Metabolites=unique(Metabolites);
 
+modelTest=model;
 % add sink reactions for each metabolite and optimize it
 for k=1:length(Metabolites)
-    if ~isempty(find(strcmp(model.mets,[Metabolites{k} '[c]'])))
-        if ~contains(model.rxns,['DM_' Metabolites{k} '[c]'])
-            model=addDemandReaction(model,[Metabolites{k} '[c]']);
+    if ~isempty(find(strcmp(modelTest.mets,[Metabolites{k} '[c]'])))
+        if ~contains(modelTest.rxns,['DM_' Metabolites{k} '[c]'])
+            modelTest=addDemandReaction(modelTest,[Metabolites{k} '[c]']);
         end
-        model=changeObjective(model,['DM_' Metabolites{k} '[c]']);
+        modelTest=changeObjective(modelTest,['DM_' Metabolites{k} '[c]']);
         % do not count uptake of the metabolite
-        model=changeRxnBounds(model,['EX_' Metabolites{k} '(e)'],0,'l');
+        modelTest=changeRxnBounds(modelTest,['EX_' Metabolites{k} '(e)'],0,'l');
         
-        FBA=optimizeCbModel(model,'max');
+        FBA=optimizeCbModel(modelTest,'max');
         Metabolites{k,2}=FBA.f;
     else
         Metabolites{k,2}=0;
     end
 end
-
 % The variable "Metabolites" contains the internal production potential in
 % mmol/g dry weight/hr for each cytosolic metabolite present in the model.
+
