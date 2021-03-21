@@ -14,6 +14,7 @@ EX_oxa(e)	-1
 EX_lcts(e)	-1
 EX_malt(e)	-1
 EX_sucr(e)	-1
+EX_strch1(e)	-0.1
 EX_melib(e)	-1
 EX_cellb(e)	-1
 EX_tre(e)	-1
