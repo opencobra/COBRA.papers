@@ -148,6 +148,7 @@ EX_nmn(e)	-1
 EX_no2(e)	-1
 EX_no3(e)	-1
 EX_orn(e)	-1
+EX_orot(e)	-1
 EX_pheme(e)	-1
 EX_pi(e)	-1
 EX_pime(e)	-1
