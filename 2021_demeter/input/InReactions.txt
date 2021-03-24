@@ -1891,7 +1891,7 @@ FldN	TYRt4	L-Tyrosine Transport in via Sodium Symport	na1[e] + tyr_L[e] -> na1[c
 FldO	IOR2	Indolepyruvate ferredoxin oxidoreductase (phenylpyvurate)	coa[c] + fdxox[c] + h[c] + phpyr[c] <=> co2[c] + fdxrd[c] + phaccoa[c]
 FldO	IOR3	Indolepyruvate ferredoxin oxidoreductase (hydroxyphenylpyvurate)	34hpp[c] + coa[c] + fdxox[c] + h[c] <=> co2[c] + fdxrd[c] + hphaccoa[c]
 FldP	4HPLt2r	4-Hydroxyphenylpropanoate transport via proton symport, reversible	r34hpp[c] +h[c] <=> r34hpp[e] + h[e]
-FldP	IND3PPAt2r	Indolepropionate transport via proton symport, reversible	indprp[c] + h[c] <=> indprp[e] + h[e]
+FldP	IND3PPAt2r	Indolepropionate transport via proton symport, reversible	ind3ppa[c] + h[c] <=> ind3ppa[e] + h[e]
 FldP	PPPNt2r	3-phenylpropionate transport via proton symport, reversible	h[e] + pppn[e] <=> h[c] + pppn[c]
 FldT	PHPHAC	Phopphate hydroxyphehylacetyl transferase	hphaccoa[c] + pi[c] <=> coa[c] + 4hphacp[c]
 FldT	PPHAC	Phopphate phehylacetyl transferase	phaccoa[c] + pi[c] <=> coa[c] + phacp[c]
