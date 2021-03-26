@@ -35,7 +35,7 @@ draftModel = readCbModel([draftFolder filesep modelName]);
 [model,summary]=refinementPipeline(draftModel,microbeID, infoFilePath, inputDataFolder);
 
 % save the model
-save([microbeID '_refined'],'model');
+writeCbModel(model, 'format', 'mat', 'fileName', [microbeID '_refined']);
 
 % export the model as SBML file
 writeCbModel(model, 'format', 'sbml', 'fileName', [microbeID '_refined']);
@@ -84,7 +84,8 @@ outputFile = reportPDF(model, microbeID, biomassReaction, inputDataFolder, pwd, 
 
 % test the draft model for comparison. You will see that for the test
 % example, there are multiple cases of false negative predictions.
-testResultsDraft = runTestsOnModel(draftModel, microbeID, inputDataFolder);
+translatedDraftModel=translateDraftReconstruction(draftModel);
+testResultsDraft = runTestsOnModel(translatedDraftModel, microbeID, inputDataFolder);
 % remove all fields with no cases
 fields = fieldnames(testResultsDraft);
 lengths = structfun(@(x) size(x,2), testResultsDraft);
