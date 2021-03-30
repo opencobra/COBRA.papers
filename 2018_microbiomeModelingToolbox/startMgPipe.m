@@ -83,26 +83,6 @@ adaptMedium = true;
 
 [init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'objre', objre, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers, 'rDiet', rDiet, 'pDiet', pDiet, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
 
-%% Pipeline start if including Recon3D as the host
-
-system('curl -LJO https://www.vmh.life/files/reconstructions/Recon/3D.01/Recon3D_301.zip')
-unzip('Recon3D_301')
-hostPath = [pwd filesep 'Recon3D_301' filesep 'Recon3DModel_301.mat'];
-
-% Since host metabolites can now enter from the host model itself, the 
-% adaptMedium input can be set to false.                 
-adaptMedium = false; 
-
-% If a host model is entered, it is also highly recommended to enter the host 
-% biomass reaction to generate coupling constraints for the host.
-hostBiomassRxn = 'biomass_reaction';
-
-% The upper bound on the flux through the host biomass reaction can also be 
-% constrained by entering the input variable hostBiomassRxnFlux (default: 1).
-hostBiomassRxnFlux = 1;
-
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'hostPath', hostPath, 'hostBiomassRxn', hostBiomassRxn, 'hostBiomassRxnFlux', hostBiomassRxnFlux, 'objre', objre, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers, 'rDiet', rDiet, 'pDiet', pDiet, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
-
 %% Statistical analysis and violin plots of the results
 % Requires providing the path to a file with sample stratification
 % information as the variable infoFilePath.
