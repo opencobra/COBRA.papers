@@ -6,7 +6,7 @@
 % Federico Baldini, 2017-2018
 % Almut Heinken, 08/2020: adapted to simplified inputs.
 
-initCobraToolbox()
+initCobraToolbox
 global CBTDIR
 
 %% REQUIRED INPUT VARIABLES
@@ -17,11 +17,11 @@ unzip('AGORA-master')
 modPath = [pwd filesep 'AGORA-master' filesep 'CurrentVersion' filesep 'AGORA_1_03' filesep' 'AGORA_1_03_mat'];
 
 % path to and name of the file with abundance information.
-abunFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'examples' filesep 'normCoverage.csv'];
+abunFilePath=[CBTDIR filesep 'tutorials' filesep 'analysis' filesep 'microbiomeModelingToolbox' filesep 'normCoverageReduced.csv'];
 
 % To define whether flux variability analysis to compute the metabolic profiles 
 % should be performed
-computeProfiles = true;
+computeProfiles = false;
 
 %% If you only want to set the required input variables, please run the
 % pipeline as follows:
@@ -32,17 +32,26 @@ computeProfiles = true;
 
 %% Pipeline start if setting any optional inputs
 
+% To define whether flux variability analysis to compute the metabolic profiles 
+% should be performed
+computeProfiles = true;
+
 % path where to save results (default=cobratoolbox/tmp)
 mkdir('MicrobiomeModels')
 resPath = [pwd filesep 'MicrobiomeModels'];
 
 % path to and name of the file with dietary information
 % (default='AverageEuropeanDiet')
-dietFilePath = [CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'resources' filesep 'AverageEuropeanDiet'];
+dietFilePath = [CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'input' filesep 'AverageEuropeanDiet'];
 
 % stratification of samples (note that group classification in the example 
 % input file is not biologically meaningful)
 infoFilePath='sampInfo.csv';
+
+% to define whether the personalized mdoels should be pruned from a globals
+% etup model (default), or created separately (recommended for large
+% numbers of organisms)
+buildSetupAll=true;
 
 % name of objective function of organisms, default='EX_biomass(e)'
 objre = 'EX_biomass(e)';
@@ -72,27 +81,7 @@ adaptMedium = true;
 
 % Only inputs that you want to change from the default need to be declared.
 
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'hostPath', hostPath, 'objre', objre, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers, 'rDiet', rDiet, 'pDiet', pDiet, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
-
-%% Pipeline start if including Recon3D as the host
-
-system('curl -LJO https://www.vmh.life/files/reconstructions/Recon/3D.01/Recon3D_301.zip')
-unzip('Recon3D_301')
-hostPath = [pwd filesep 'Recon3D_301' filesep 'Recon3DModel_301.mat'];
-
-% Since host metabolites can now enter from the host model itself, the 
-% adaptMedium input can be set to false.                 
-adaptMedium = false; 
-
-% If a host model is entered, it is also highly recommended to enter the host 
-% biomass reaction to generate coupling constraints for the host.
-hostBiomassRxn = 'biomass_reaction';
-
-% The upper bound on the flux through the host biomass reaction can also be 
-% constrained by entering the input variable hostBiomassRxnFlux (default: 1).
-hostBiomassRxnFlux = 1;
-
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'hostPath', hostPath, 'hostBiomassRxn', hostBiomassRxn, 'hostBiomassRxnFlux', hostBiomassRxnFlux, 'objre', objre, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers, 'rDiet', rDiet, 'pDiet', pDiet, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
+[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'objre', objre, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers, 'rDiet', rDiet, 'pDiet', pDiet, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
 
 %% Statistical analysis and violin plots of the results
 % Requires providing the path to a file with sample stratification
@@ -107,12 +96,12 @@ sampleGroupHeaders={'Group'};
 % with sample information (e.g., disease state, age group) should be analyzed.
 
 % path with results of mgPipe that will be analyzed
-resPath = [tutorialPath filesep 'Results'];
+resPath = [pwd filesep 'Results'];
 
 % define where results will be saved (optional, default folders will be
 % generated otherwise)
-statPath = [tutorialPath filesep 'Statistics'];
-violinPath = [tutorialPath filesep 'ViolinPlots'];
+statPath = [pwd filesep 'Statistics'];
+violinPath = [pwd filesep 'ViolinPlots'];
 
 analyzeMgPipeResults(infoFilePath,resPath,'statPath', statPath, 'violinPath', violinPath, 'sampleGroupHeaders', sampleGroupHeaders);
 
