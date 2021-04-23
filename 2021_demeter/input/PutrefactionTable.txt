@@ -207,8 +207,6 @@ Blattabacterium_Mastotermes_subs_darwiniensis_MADAR	0	0	0	0	1	0	0	0	0	0	0	0	0	0	
 Blattabacterium_Nauphoeta_subs_cinerea	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
 Blattabacterium_Panesthia_subs_angustipennis_spadica_BPAA	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
 Blattabacterium_Periplaneta_subs_americana_BPLAN	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
-Blautia_obeum_A2_162	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
-Blautia_torques_L2_14	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
 Brachybacterium_faecium_DSM_4810	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Brachyspira_murdochii_DSM_12563	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0
 Brachyspira_pilosicoli_WesB	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
@@ -309,11 +307,11 @@ Clavibacter_michiganensis_subs_nebraskensis_NCPPB_2581	0	0	0	0	0	0	0	0	0	0	0	0	0
 Clostridiales_genomosp_BVAB3_UPII9_5	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
 Clostridioides_difficile_630	0	0	0	1	0	0	1	0	1	0	0	0	1	0	0	0
 Clostridioides_difficile_BI1	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0
-Clostridioides_difficile_CD196	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0
-Clostridioides_difficile_R20291	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0
 Clostridium_botulinum_B_str_Eklund_17B	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0
 Clostridium_botulinum_E3_str_Alaska_E43	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0
 Clostridium_cf_saccharolyticum_K10	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Clostridium_difficile_CD196	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0
+Clostridium_difficile_R20291	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0
 Clostridium_lentocellum_DSM_5427	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
 Clostridium_ljungdahlii_DSM_13528	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
 Clostridium_perfringens_ATCC_13124	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0
@@ -352,7 +350,6 @@ Cronobacter_sakazakii_SP291	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
 Cronobacter_turicensis_z3032	0	0	0	0	1	0	1	1	0	0	0	1	0	0	0	1
 Cupriavidus_metallidurans_CH34	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
 Cupriavidus_necator_N_1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
-Cutibacterium_acnes_KPA171202	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
 Cyanobacterium_PCC_10605	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
 Cyanobacterium_UCYN_A	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
 Cyanothece_PCC_8801	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
@@ -533,10 +530,10 @@ Francisella_TX077308	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0
 Frankia_alni_ACN14a	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0
 Frankia_CcI3	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0
 Frateuria_aurantia_DSM_6220	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
-Fusobacterium_nucleatum_subsp_animalis_4_8	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
 Fusobacterium_nucleatum_subsp_nucleatum_ATCC_25586	1	1	0	1	0	0	0	0	0	0	1	0	0	0	1	0
 Fusobacterium_nucleatum_subsp_polymorphum_ATCC_10953	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0
 Fusobacterium_nucleatum_subsp_vincentii_3_1_36A2	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Fusobacterium_sp_4_8	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
 Gallibacterium_anatis_UMN179	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
 Gallionella_capsiferriformans_ES_2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
 Geitlerinema_PCC_7407	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
@@ -861,6 +858,7 @@ Prochlorococcus_marinus_MIT_9515	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
 Prochlorococcus_marinus_NATL1A	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
 Prochlorococcus_marinus_subs_pastoris_CCMP1986	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
 Propionibacterium_acidipropionici_ATCC_4875	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
+Propionibacterium_acnes_KPA171202	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
 Prosthecochloris_aestuarii_DSM_271	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
 Proteus_mirabilis_BB2000	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
 Proteus_mirabilis_HI4320	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0
@@ -982,6 +980,8 @@ Ruegeria_pomeroyi_DSS_3	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
 Ruegeria_TM1040	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
 Ruminococcus	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
 Ruminococcus_champanellensis_18P13	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Ruminococcus_obeum_A2_162	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Ruminococcus_torques_L2_14	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
 Runella_slithyformis_DSM_19594	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
 Saccharomonospora_viridis_DSM_43017	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
 Saccharophagus_degradans_2_40	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
