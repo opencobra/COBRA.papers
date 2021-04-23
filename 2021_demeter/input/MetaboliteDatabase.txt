@@ -4333,22 +4333,22 @@ hs_pre9	(GlcNAc-GlcA)4-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C87H129N5O69X	-5
 hspdn	Hydroxyspheroidene		C41H62O2	0							19/09/2018
 hspdnn	Hydroxyspheroidenone		C41H60O3	0							19/09/2018
 hspg	heparan sulfate proteoglycan		C79H113N5O101S12X	-13							02/07/2014
-hspg_degr_1	Product 1 HEPARL1_e, IdoA-GlcN2,6diS-GlcA-GlcN2,3,6triS		C24H33O36N2S5	-7							02/07/2014
-hspg_degr_10	Product AS3TASE_HS2, GlcN2S-IdoA-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C43H66N2O38SX	-3							02/07/2014
-hspg_degr_11	Product GAM2STASE_HS3, GlcN-IdoA-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C43H67N2O35X	-2							02/07/2014
-hspg_degr_12	Product GLCNACASE_HS2, GlcA-GlcNAc-IdoA-Gal-Gal-Xyl-L-Ser (protein)		C37H56NO31X	-2							02/07/2014
-hspg_degr_13	Product GLCAASE_HS, GlcNAc-IdoA-Gal-Gal-Xyl-L-Ser (protein)		C31H49NO25X	-1							02/07/2014
-hspg_degr_14	Product GLCNACASE_HS3, IdoA-Gal-Gal-Xyl-L-Ser (protein)		C23H36O20X	-1							02/07/2014
-hspg_degr_15	Product IDOURASE_HS3, Gal-Gal-Xyl-L-Ser (protein)		C17H29O14X	0							02/07/2014
-hspg_degr_2	Product 2 HEPARL1_e, IdoA2S-GlcN2,6diS-IdoA2S-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C49H71N2O56S5X	-6							02/07/2014
-hspg_degr_3	Product IDOURASE_HS1, GlcN2,6diS-GlcA-GlcN2,3,6triS		C18H26O30N2S5	-6							02/07/2014
-hspg_degr_4	Product AS6TASE_HS1, GlcN2S-GlcA-GlcN2,3diS		C18H28O24N2S3	-4							02/07/2014
-hspg_degr_5	Product AS3TASE_HS1, GlcN2S-GlcA-GlcN2S		C18H29O21N2S2	-3							02/07/2014
-hspg_degr_6	Product GAM2STASE_HS2, GlcN-GlcA-GlcN		C18H31O15N2	-1							02/07/2014
-hspg_degr_7	Product IS2TASE_HS1, IdoA-GlcN2,6diS-IdoA-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C49H71N2O50S3X	-6							02/07/2014
-hspg_degr_8	Product IDOURASE_HS2, GlcN2,6diS-IdoA-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C43H64N2O44S3X	-5							02/07/2014
-hspg_degr_9	Product AS6TASE_HS2, GlcN2S-IdoA-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)		C43H65N2O41S2X	-4							02/07/2014
-hspg_rest	Undegradable product GALASE_HS, Xyl-L-Ser (protein)		C5H9O4X	0							02/07/2014
+hspg_degr_1	Heparan sulfate degradation product 1		C24H33O36N2S5	-7							02/07/2014
+hspg_degr_10	Heparan sulfate degradation product 10		C43H66N2O38SX	-3							02/07/2014
+hspg_degr_11	Heparan sulfate degradation product 11		C43H67N2O35X	-2							02/07/2014
+hspg_degr_12	Heparan sulfate degradation product 12		C37H56NO31X	-2							02/07/2014
+hspg_degr_13	Heparan sulfate degradation product 13		C31H49NO25X	-1							02/07/2014
+hspg_degr_14	Heparan sulfate degradation product 14		C23H36O20X	-1							02/07/2014
+hspg_degr_15	Heparan sulfate degradation product 15		C17H29O14X	0							02/07/2014
+hspg_degr_2	Heparan sulfate degradation product 2		C49H71N2O56S5X	-6							02/07/2014
+hspg_degr_3	Heparan sulfate degradation product 3		C18H26O30N2S5	-6							02/07/2014
+hspg_degr_4	Heparan sulfate degradation product 4		C18H28O24N2S3	-4							02/07/2014
+hspg_degr_5	Heparan sulfate degradation product 5		C18H29O21N2S2	-3							02/07/2014
+hspg_degr_6	Heparan sulfate degradation product 6		C18H31O15N2	-1							02/07/2014
+hspg_degr_7	Heparan sulfate degradation product 7		C49H71N2O50S3X	-6							02/07/2014
+hspg_degr_8	Heparan sulfate degradation product 8		C43H64N2O44S3X	-5							02/07/2014
+hspg_degr_9	Heparan sulfate degradation product 9		C43H65N2O41S2X	-4							02/07/2014
+hspg_rest	Undegradable product Heparan sulfate		C5H9O4X	0							02/07/2014
 hspmd	Homospermidine		C8H24N3	3							19/09/2018
 hst	Hesperetin	C16H14O6	C16H14O6	0	C01709	72281					01/03/2019
 hst_3_glc	Hesperetin 3-O-Glucuronide (Aglycone Of Hesperidin)	C22H22O12	C22H21O12	-1		46896123					01/03/2019
