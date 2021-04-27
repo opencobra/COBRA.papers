@@ -151,4 +151,5 @@ EX_xan(e)	-1
 EX_zn2(e)	-1
 EX_na1(e)	-10
 EX_meoh(e)	-10
+EX_nh4(e)	-10
 EX_h2o(e)	-10
