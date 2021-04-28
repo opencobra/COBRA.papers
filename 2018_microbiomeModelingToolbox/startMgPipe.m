@@ -23,22 +23,9 @@ abunFilePath=[CBTDIR filesep 'tutorials' filesep 'analysis' filesep 'microbiomeM
 % should be performed
 computeProfiles = true;
 
-% path where to save results (default=cobratoolbox/tmp)
-mkdir('MicrobiomeModels')
-resPath = [pwd filesep 'MicrobiomeModels'];
-
 % path to and name of the file with dietary information
 % (default='AverageEuropeanDiet')
 dietFilePath = [CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'input' filesep 'AverageEuropeanDiet'];
-
-% stratification of samples (note that group classification in the example 
-% input file is not biologically meaningful)
-infoFilePath='sampInfo.csv';
-
-% to define whether the personalized mdoels should be pruned from a globals
-% etup model (default), or created separately (recommended for large
-% numbers of organisms)
-buildSetupAll=true;
 
 % if to save models with diet constrains implemented (default=false)
 saveConstrModels = true;
@@ -48,7 +35,7 @@ numWorkers = 4;
 
 % Only inputs that you want to change from the default need to be declared.
 
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
+[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'dietFilePath', dietFilePath, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
 
 %% Statistical analysis and violin plots of the results
 % Requires providing the path to a file with sample stratification
@@ -62,10 +49,8 @@ sampleGroupHeaders={'Group'};
 % sampleGroupHeaders can contain more than one entry if multiple columns 
 % with sample information (e.g., disease state, age group) should be analyzed.
 
-% define where results will be saved (optional, default folders will be
-% generated otherwise)
-statPath = [pwd filesep 'Statistics'];
-violinPath = [pwd filesep 'ViolinPlots'];
+% to where the computation results to analyze are located
+resPath = [pwd filesep 'Results'];
 
-analyzeMgPipeResults(infoFilePath,resPath,'statPath', statPath, 'violinPath', violinPath, 'sampleGroupHeaders', sampleGroupHeaders);
+analyzeMgPipeResults(infoFilePath,resPath, 'sampleGroupHeaders', sampleGroupHeaders);
 
