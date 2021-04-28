@@ -21,19 +21,6 @@ abunFilePath=[CBTDIR filesep 'tutorials' filesep 'analysis' filesep 'microbiomeM
 
 % To define whether flux variability analysis to compute the metabolic profiles 
 % should be performed
-computeProfiles = false;
-
-%% If you only want to set the required input variables, please run the
-% pipeline as follows:
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles);
-
-% If you want to change any of the optional inputs, please find a
-% description of them below.
-
-%% Pipeline start if setting any optional inputs
-
-% To define whether flux variability analysis to compute the metabolic profiles 
-% should be performed
 computeProfiles = true;
 
 % path where to save results (default=cobratoolbox/tmp)
@@ -53,35 +40,15 @@ infoFilePath='sampInfo.csv';
 % numbers of organisms)
 buildSetupAll=true;
 
-% name of objective function of organisms, default='EX_biomass(e)'
-objre = 'EX_biomass(e)';
-
 % if to save models with diet constrains implemented (default=false)
 saveConstrModels = true;
 
 % number of cores dedicated for parallelization (default=2)
-numWorkers = 2;
-
-% to enable also rich diet simulations (default=false)
-rDiet = false;
-
-% to enable personalized diet simulations (default=false)
-pDiet = false;
-
-% to manually set the lower bound on flux through the community biomass
-% reaction (default=0.4 mmol/person/day)
-lowerBMBound = 0.4;
-
-% to set whether existing simulation results are rewritten (default=false)
-repeatSim = false;
-
-% to set if the input medium should be adapted through the adaptVMHDietToAGORA
-% function or used as is (default=true)                  
-adaptMedium = true; 
+numWorkers = 4;
 
 % Only inputs that you want to change from the default need to be declared.
 
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'objre', objre, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers, 'rDiet', rDiet, 'pDiet', pDiet, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim, 'adaptMedium', adaptMedium);
+[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'resPath', resPath, 'dietFilePath', dietFilePath, 'infoFilePath', infoFilePath, 'buildSetupAll', buildSetupAll, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
 
 %% Statistical analysis and violin plots of the results
 % Requires providing the path to a file with sample stratification
@@ -94,9 +61,6 @@ infoFilePath='sampInfo.csv';
 sampleGroupHeaders={'Group'};
 % sampleGroupHeaders can contain more than one entry if multiple columns 
 % with sample information (e.g., disease state, age group) should be analyzed.
-
-% path with results of mgPipe that will be analyzed
-resPath = [pwd filesep 'Results'];
 
 % define where results will be saved (optional, default folders will be
 % generated otherwise)
