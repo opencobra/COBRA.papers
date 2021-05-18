@@ -3452,7 +3452,7 @@ estrones	estrone 3-sulfate(1-)		C18H21O5S	-1	C02538	3001028	17474	JKKFKPJIXZFSSB
 etetnb	Ergosta-5,7,22,24,(28)-tetraen-3beta-ol		C28H42O	0							19/09/2018
 etfox	Electron transfer flavoprotein oxidized		R	0							02/07/2014
 etfrd	Electron transfer flavoprotein reduced		RH2	0							02/07/2014
-etha	etha[c]		C2H8NO	1	C00189	700	16000	HZAXFHJVJLSVMW-UHFFFAOYSA-O		HMDB00149	02/07/2014
+etha	Ethanolamine		C2H8NO	1	C00189	700	16000	HZAXFHJVJLSVMW-UHFFFAOYSA-O		HMDB00149	02/07/2014
 ethamp	O-phosphonatoethanaminium(1-)		C2H7NO4P	-1	C00346	1015	17553	SUHOOTKUPISOBE-UHFFFAOYSA-M		HMDB00224	02/07/2014
 ethmalac	Ethylmalonic Acid		C5H6O4	-2		11756		UKFXDFUAPNAMPJ-UHFFFAOYSA-L		HMDB00622	03/01/2017
 ethmalcoa	Ethylmalonyl Coenzyme A		C26H37N7O19P3S	-5				VUGZQVCBBBEZQE-UQCJFRAESA-I			03/01/2017
