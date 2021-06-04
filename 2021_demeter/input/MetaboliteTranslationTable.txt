@@ -4042,3 +4042,11 @@ cpd35865	octd11ecoa
 cpd35962	CE1162
 cpd36413	g1p
 cpd37112	M00797
+cpd02506	5a4icamide
+cpd03559	ppoh
+cpd14720	metsox_R_L
+cpd14958	lipoate
+cpd15853	dkfp
+cpd17158	hpyraldp
+cpd17159	adth
+cpd21488	23dhdp
