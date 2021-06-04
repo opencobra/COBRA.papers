@@ -998,6 +998,7 @@
 56eppvs	5,6-epoxy-3-alpha-iso-pravastatin	C23H35NaO8	C23H35NaO8	0							02/07/2014
 5a2opntn	5-amino-2-oxopentanoic acid		C5H9NO3	0	C01110	439402	49268	BWHGMFYTDQEALD-UHFFFAOYSA-N		HMDB06272	02/07/2014
 5a3ohex	3-keto-5-aminohexanoate	C6H11NO3	C6H10NO3	-1	C03656	440077		FAASBXNEOGMQHS-BYPYZUCNSA-N		HMDB0012131	23/02/2015
+5a4icamide	5-Amino-4-imidazolecarboxyamide		C4H6N4O	0	 C04051						21/05/2021
 5achltn3one	5alpha-Cholestan-3-one		C27H46O	0							19/09/2018
 5adtststerone	17beta-hydroxy-5alpha-androstan-3-one		C19H30O2	0	C03917	10635	16330	NVKAWKQGWWIWPM-ABEVXSGRSA-N		HMDB02961	02/07/2014
 5adtststeroneglc	5alpha-Dihydrotestosterone glucuronide		C25H38O8	0	C03033	44263365		CLQMBSSRTBUNDV-HRPCFKRRSA-N		HMDB06203	02/07/2014
@@ -1365,6 +1366,7 @@ adrncoa	adrenyl coenzyme A		C43H66N7O17P3S	-4	C16170	23724647		LVXQCHCSSLFKLO-GK
 adrncrn	Adrenyl carnitine		C29H49NO4	0		53477825		OLORTLVEDIELGC-SNPVRQPZSA-N		HMDB06321	02/07/2014
 adrnl	Adrenaline		C9H14NO3	1	C00788	5816	28918	UCTWMZQNUQWSLP-VIFPVBQESA-O		HMDB00068	02/07/2014
 adsel	Adenylylselenate		C10H12N5O10PSe	-2	C05686	440758	2485	XCADVMZZFPIERR-KQYNXXCUSA-L		HMDB04112	02/07/2014
+adth	2-Amino-3,7-dideoxy-D-threo-hept-6-ulosonic acid		C7H13NO5	0	C16850						21/05/2021
 AEP	2-Aminoethylphosphonate		C2H7N1O3P1	0							02/07/2014
 af6p	Aminofructose 6-phosphate		C6H14NO8P	0							19/09/2018
 afburdpp	alpha-Fluoro-beta-ureidopropionic acid		C4H6N2O3F	-1							19/09/2018
@@ -3217,6 +3219,7 @@ disop	Diisopropyl phosphate	C6H14O4P	C6H14O4P	-1							19/09/2018
 ditp	dITP(4-)		C10H11N4O13P3	-4	C01345	146302	28807	UFJPAQSLHAGEBL-RRKCRQDMSA-J		HMDB03537	02/07/2014
 dkdglcn	2,5-Diketo-3-deoxy-D-gluconate		C6H7O6	-1							02/07/2014
 dkdi	D-2,3-Diketo 4-deoxy-epi-inositol		C6H8O5	0							02/07/2014
+dkfp	1-Deoxy-D-threo-hexo-2,5-diulose 6-phosphate		C6H9O8P	-2	C16848						21/05/2021
 dkmpp	2,3-diketo-5-methylthio-1-phosphopentane		C6H9O6PS	-2	C15650	561	50604	HKEAOVFNWRDVAJ-UHFFFAOYSA-L		HMDB0059620	02/07/2014
 dl2acdval	delta(L-2-Aminoadipyl)-L-cysteinyl-D-valine		C14H24N3O6S	-1							19/09/2018
 dlb	Deleobuvir	C34H33BrN6O3	C34H32BrN6O3	-1		56948249					01/03/2019
@@ -4287,6 +4290,7 @@ hphhlipa	heptosyl-phospho-heptosyl-heptosyl-kdo2-lipidA		C131H231N2O60P3	-8					
 hphodcnt	(9S,10S)-10-Hydroxy-9-(phosphonooxy)octadecanoate		C18H35O7P	-2							19/09/2018
 hphtho	4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one		C10H11NO3	0							19/09/2018
 hpyr	3-hydroxypyruvate		C3H3O4	-1	C00168	964	30841	HHDDCCUIIUWNGJ-UHFFFAOYSA-M		HMDB01352	02/07/2014
+hpyraldp	Hydroxypyruvaldehyde phosphate		C3H3O6P	-2	C16849						21/05/2021
 hqn	Hydroquinone		C6H6O2	0						HMDB02434	02/07/2014
 hretn	4 hydroxy retinoic acid		C20H27O3	-1	C16677	6438629	63795	KGUMXGDKXYTTEY-FRCNGJHJSA-M		HMDB06254	02/07/2014
 hs	heparan sulfate, free chain		C79H114N5O102S12	-13	C00925	53477714	28815	WKPUACLQLIIVJJ-RHKLHVFKSA-M		HMDB00693	02/07/2014
