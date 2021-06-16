@@ -12,8 +12,10 @@ global CBTDIR
 %% REQUIRED INPUT VARIABLES
 
 % path to microbe models
-system('curl -LJO https://github.com/VirtualMetabolicHuman/AGORA/archive/master.zip')
-unzip('AGORA-master')
+websave('AGORA-master.zip','https://github.com/VirtualMetabolicHuman/AGORA/archive/master.zip')
+try
+    unzip('AGORA-master')
+end
 modPath = [pwd filesep 'AGORA-master' filesep 'CurrentVersion' filesep 'AGORA_1_03' filesep' 'AGORA_1_03_mat'];
 
 % path to and name of the file with abundance information.
@@ -54,3 +56,4 @@ resPath = [pwd filesep 'Results'];
 
 analyzeMgPipeResults(infoFilePath,resPath, 'sampleGroupHeaders', sampleGroupHeaders);
 
+close all
