@@ -2990,7 +2990,7 @@ cytaar	cytochrome-aa-red		CuR	2							12/11/2020
 cytbdox	cytochrome-bd-ox		FeR	4							12/11/2020
 cytbdr	cytochrome-bd-red		FeR	2							12/11/2020
 cytbox	cytochrome-bo-ox		CuR	2							12/11/2020
-cytbr	cytochrome-bo-red		CuR	2							12/11/2020
+cytbr	cytochrome-bo-red		CuR	1							12/11/2020
 cytcbbox	cytochrome-cbb-ox		CuR	2							12/11/2020
 cytcbbr	cytochrome-cbb-red		CuR	2							12/11/2020
 cytcox	Cytochrome-C-ox		FeR	3							12/11/2020

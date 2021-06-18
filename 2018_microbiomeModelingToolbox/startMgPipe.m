@@ -7,6 +7,7 @@
 % Almut Heinken, 08/2020: adapted to simplified inputs.
 
 initCobraToolbox
+solverOK=changeCobraSolver('ibm_cplex','LP');
 global CBTDIR
 
 %% REQUIRED INPUT VARIABLES
@@ -35,8 +36,6 @@ saveConstrModels = true;
 % number of cores dedicated for parallelization (default=2)
 numWorkers = 4;
 
-% Only inputs that you want to change from the default need to be declared.
-
 [init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, computeProfiles, 'dietFilePath', dietFilePath, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
 
 %% Statistical analysis and violin plots of the results
@@ -56,4 +55,3 @@ resPath = [pwd filesep 'Results'];
 
 analyzeMgPipeResults(infoFilePath,resPath, 'sampleGroupHeaders', sampleGroupHeaders);
 
-close all
