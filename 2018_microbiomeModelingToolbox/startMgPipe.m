@@ -36,7 +36,7 @@ saveConstrModels = true;
 % number of cores dedicated for parallelization (default=2)
 numWorkers = 4;
 
-[init, netSecretionFluxes, netUptakeFluxes, Y, modelStats, summary, modelsWithErrors] = initMgPipe(modPath, abunFilePath, computeProfiles, 'dietFilePath', dietFilePath, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
+[init, netSecretionFluxes, netUptakeFluxes, Y, modelStats, summary, statistics, modelsOK] = initMgPipe(modPath, abunFilePath, computeProfiles, 'dietFilePath', dietFilePath, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
 
 %% Statistical analysis and violin plots of the results
 % Requires providing the path to a file with sample stratification
