@@ -38,16 +38,11 @@ reconVersion = 'TutorialExample';
 
 %% Testing reconstructions
 
-notGrowing = plotBiomassTestResults(refinedFolder,reconVersion,'translatedDraftsFolder',translatedDraftsFolder, 'numWorkers', numWorkers);
-
-tooHighATP = plotATPTestResults(refinedFolder,reconVersion,'translatedDraftsFolder',translatedDraftsFolder, 'numWorkers', numWorkers);
-
 testResultsFolder = runTestSuiteTools(refinedFolder, infoFilePath, inputDataFolder, reconVersion, 'translatedDraftsFolder', translatedDraftsFolder, 'numWorkers', numWorkers);
 
 %% Debugging the reconstructions
 
-% Run the debugging suite
-[debuggingFolder,debuggingReport, fixedModels, failedModels]=runDebuggingTools(refinedFolder,testResultsFolder,inputDataFolder,reconVersion,'numWorkers',numWorkers);
+[debuggingReport, fixedModels, failedModels]=runDebuggingTools(refinedFolder,testResultsFolder,inputDataFolder,reconVersion,'numWorkers',numWorkers);
 
 %% Plotting reconstructions
 
@@ -56,4 +51,3 @@ testResultsFolder = runTestSuiteTools(refinedFolder, infoFilePath, inputDataFold
 % contained in the reconstruction resopurce.
 
 propertiesFolder = computeModelProperties(refinedFolder, infoFilePath, reconVersion, 'numWorkers', numWorkers);
-
