@@ -1499,7 +1499,6 @@ ama1aagcn	Avermectin A1a aglycone		C35H50O8	0							19/09/2018
 ama1bagcn	Avermectin A1b aglycone		C34H48O8	0							19/09/2018
 ama2aagcn	Avermectin A2a aglycone		C35H52O9	0							19/09/2018
 ama2bagcn	Avermectin A2b aglycone		C34H50O9	0							19/09/2018
-amannan140	Alpha-mannan, yeast, has a MW of about 25000 (PMID: 5461381), equals ~ 140 mannose units.		C840H1402O701	0							02/07/2014
 amb1aagcn	Avermectin B1a aglycone		C34H48O8	0							19/09/2018
 amb1bagcn	Avermectin B1b aglycone		C33H46O8	0							19/09/2018
 amb2aagcn	Avermectin B2a aglycone		C34H50O9	0							19/09/2018
@@ -7905,6 +7904,7 @@ xu1p_L	L-Xylulose 1-phosphate		C5H9O8P	-2							02/07/2014
 xu5p_D	D-xylulose 5-phosphate(2-)		C5H9O8P	-2	C00231	439190	16332	FNZLKVNUWIIPSJ-RFZPGFLSSA-L		HMDB00868	02/07/2014
 xu5p_L	L-Xylulose 5-phosphate		C5H9O8P	-2							02/07/2014
 xyl_D	aldehydo-D-xylose		C5H10O5	0	C00181	135191	15936	PYMYPHUHKUWMLA-VPENINKCSA-N		HMDB00098	02/07/2014
+xyl_L	L-Xylose		C5H10O5	0	C01510			P			02/07/2021
 xylan	Oat spelt xylan, MW 79200 (DOI: 10.1002/masy.200551405) = 528 xyl_D	C2640H4226O2113	C2640H4226O2113	0	G00279						27/03/2015
 xylhl_L	L-xylo-Hexulonolactone	C6H8O6	C6H8O6	0	C03289	439966	73681		C(C(C1C(C(=O)C(=O)O1)O)O)O		03/02/2015
 xyllac_D	D-Xylonolactone	C5H8O5	C5H8O5	0						HMDB0011676	02/07/2014
