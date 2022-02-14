@@ -19,6 +19,7 @@ Achromobacter_xylosoxidans_NCTC10807	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Acidaminobacter_hydrogenoformans_DSM_2784	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	https://doi.org/10.1007/BF00410730					
 Acidaminococcus_fermentans_DSM_20731	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1067	PMID: 24757212				
 Acidaminococcus_intestini_RyC_MR95	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1068	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.				
+Acidaminococcus_massiliensis_Marseille_P2828	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Acidaminococcus_sp_BV3L6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1068					
 Acidaminococcus_sp_D21	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1068	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212			
 Acidaminococcus_sp_HPA0509	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1068					
@@ -260,6 +261,7 @@ Actinomyces_georgiae_DSM_6843	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Actinomyces_gerencseriae_DSM_6844	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_graevenitzii_C83	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p45	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45				
 Actinomyces_hongkongensis_HKU8	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
+Actinomyces_ihuae_DSM_100538	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Actinomyces_israelii_DSM_43320	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_johnsonii_F0510	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_johnsonii_F0542	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
@@ -272,9 +274,11 @@ Actinomyces_odontolyticus_ATCC_17982	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Actinomyces_odontolyticus_F0309	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_oris_K20	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p45	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45				
 Actinomyces_oris_T14V	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p45	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45				
+Actinomyces_polynesiensis_DSM_27066	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Actinomyces_sp_HPA0247	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_sp_ICM39	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_sp_ICM47	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
+Actinomyces_sp_ph3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Actinomyces_timonensis_DSM_23838	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45					
 Actinomyces_turicensis_ACS_279_V_Col4	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p45	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45				
 Actinomyces_urogenitalis_DSM_15434	1	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p45	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v4, p45				
@@ -351,6 +355,7 @@ Alistipes_onderdonkii_ERR1204041	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Alistipes_onderdonkii_ERR2221102	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p56					
 Alistipes_onderdonkii_ERR2230089	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p56					
 Alistipes_onderdonkii_ERR2230093	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p56					
+Alistipes_provencensis_DSM_102308	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Alistipes_putredinis_DSM_17216	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 12866844				
 Alistipes_senegalensis_JC50	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Alistipes_shahii_ERR2221103	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -378,11 +383,13 @@ Anaerobaculum_hydrogeniformans_OS1_ATCC_BAA_1850	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Anaerobiospirillum_succiniciproducens_DSM_640001	1	0	0	1	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p583					
 Anaerococcus_hydrogenalis_ACS_025_V_Sch4	1	0	0	0	0	1	0	1	1	0	0	1	0	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0						
 Anaerococcus_hydrogenalis_DSM_7454	1	0	0	0	0	1	0	1	1	0	0	1	0	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212				
+Anaerococcus_jeddahensis_DSM_100537	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Anaerococcus_lactolyticus_ATCC_51172	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131	PMID: 11491354				
 Anaerococcus_lactolyticus_S7_1_13	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131	PMID: 11491354				
 Anaerococcus_obesiensis_ph10	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131					
 Anaerococcus_prevotii_ACS_065_V_Col13	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131					
 Anaerococcus_prevotii_DSM_20548	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1011,1030,1130	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131	PMID: 24757212			
+Anaerococcus_rubeinfantis_DSM_101186	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Anaerococcus_senegalensis_JC48	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131	PMID:22675604				
 Anaerococcus_tetradius_ATCC_35098	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131	PMID: 11491354				
 Anaerococcus_tetradius_MJR8151	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1131	PMID: 11491354				
@@ -640,6 +647,7 @@ Bacillus_simplex_ERR2221243	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Bacillus_smithii_7_3_47FAA	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2010, v3, p116					
 Bacillus_sonorensis_L12	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p76,87					
 Bacillus_sp_7_6_55CFAA_CT2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Bacillus_sp_B_jedd	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Bacillus_subtilis_B_1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p35, 65,81	PMID:10809684				
 Bacillus_subtilis_BSn5	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p35, 65,81	PMID:10809684				
 Bacillus_subtilis_ERR2221132	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p35, 65,81	PMID:10809684				
@@ -658,6 +666,7 @@ Bacillus_subtilis_subsp_subtilis_str_JH642	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
 Bacillus_subtilis_subsp_subtilis_str_NCIB_3610	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p35, 65,81	PMID:10809684				
 Bacillus_subtilis_subsp_subtilis_str_RO_NN_1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p35, 65,81	PMID:10809684				
 Bacillus_subtilis_subsp_subtilis_str_SMY	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p35, 65,81	PMID:10809684				
+Bacillus_testis_DSM_101190	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Bacillus_thermoamylovorans_1A1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Bacillus_thuringiensis_BMB171	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p77,87+88					
 Bacillus_thuringiensis_Bt407	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p77,87+88					
@@ -926,6 +935,7 @@ Bdellovibrio_bacteriovorus_HD100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Bdellovibrio_bacteriovorus_SSB218315	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Antonie van Leeuwenhoek J. Microbiol. Serol. (1963) 29: 217-248					
 Bdellovibrio_bacteriovorus_str_Tiberius	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Antonie van Leeuwenhoek J. Microbiol. Serol. (1963) 29: 217-248					
 Bdellovibrio_bacteriovorus_W	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Antonie van Leeuwenhoek J. Microbiol. Serol. (1963) 29: 217-248					
+Beduini_massiliensis_DSM_100188	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Bifidobacterium_adolescentis_ATCC_15703	0	1	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 21484167				
 Bifidobacterium_adolescentis_BBMN23	0	1	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 21484167				
 Bifidobacterium_adolescentis_DSM_20087	0	1	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 21484167				
@@ -1198,12 +1208,14 @@ Burkholderiales_bacterium_1_1_47	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Burkholderiales_bacterium_YL45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Butyricicoccus_nov_ERR2221182	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Butyricicoccus_pullicaecorum_1_2	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	PMID: 19060061					
+Butyricimonas_sp_Marseille_P2440	1	0	0	0	0	0	0	1	1	0	0	0	0	1	0	0	0	0	1	0	0	0	1	0	0	0	1	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Butyricimonas_synergistica_DSM_23225	1	0	0	0	0	0	0	1	1	0	0	0	0	1	0	0	0	0	1	0	0	0	1	0	0	0	1	0	0	0	PMID: 19542124					
 Butyricimonas_virosa_DSM_23226	1	0	0	0	0	0	0	1	1	0	0	0	0	1	0	0	0	0	1	0	0	0	1	0	0	0	1	0	0	0	PMID: 19542124					
 Butyricimonas_virosa_ERR2221144	1	0	0	0	0	0	0	1	1	0	0	0	0	1	0	0	0	0	1	0	0	0	1	0	0	0	1	0	0	0						
 Butyrivibrio_crossotus_DSM_2876	1	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212				
 Butyrivibrio_fibrisolvens_16_4	1	0	0	1	1	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 10382263	PMID: 19222573	PMID: 24757212		
 Butyrivibrio_proteoclasticus_B316	1	0	0	1	0	0	0	1	1	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 8782685					
+Caecibacter_massiliensis_DSM_100188	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Campylobacter_coli_1098	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 25348335				
 Campylobacter_coli_111_3	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 25348335				
 Campylobacter_coli_1148	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 25348335				
@@ -1373,6 +1385,7 @@ Catonella_morbi_ATCC_51271	1	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
 Cedecea_davisae_DSM_4568	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p648					
 Cellulomonas_massiliensis_JC225	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:23408774					
 Cellulomonas_massiliensis_MGYG_HGUT_01416	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Cellulomonas_timonensis_DSM_100699	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Cellulosilyticum_lentocellum_DSM_5427	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	PMID: 19661493					
 Cellulosimicrobium_cellulans_J36	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p260					
 Centipeda_periodontii_DSM_2778	1	0	0	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p1078					
@@ -1381,6 +1394,7 @@ Chlorobium_phaeobacteroides_BS1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Chlorobium_phaeobacteroides_DSM_266	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:5709364					
 Christensenella_massiliensis_Marseille_P2438	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	PMID: 21357455	PMID:32019803				
 Christensenella_minuta_DSM_22607	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	PMID: 21357455	PMID:32019803				
+Christensenella_timonensis_DSM_102800	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Christensenellaceae_nov_ERR1022455	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Citrobacter_amalonaticus_FDAARGOS_122	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p654-655					
 Citrobacter_amalonaticus_FDAARGOS_166	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p654-655					
@@ -1419,6 +1433,7 @@ Clostridiaceae_nov_ERR2221345	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Clostridiaceae_nov_ERR2221361	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridiaceae_nov_ERR2221383	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridiaceae_nov_ERR2230154	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Clostridiales_bacterium_mt11	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridiales_incertae_sedis_nov_ERR1022334	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridiales_incertae_sedis_nov_ERR1022419	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridiales_incertae_sedis_nov_ERR2221176	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -1472,6 +1487,7 @@ Clostridium_bolteae_90B3	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Clostridium_bolteae_90B7	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Clostridium_bolteae_90B8	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Clostridium_bolteae_ATCC_BAA_613	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
+Clostridium_bolteae_WAL_14578	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridium_botulinum_A_str_ATCC_19397	1	0	0	0	0	0	1	0	0	0	1	1	0	0	1	0	0	0	1	0	0	0	1	1	0	0	0	1	1	1	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p759,746	PMID: 24553467	PMID: 24757212			
 Clostridium_botulinum_A_str_ATCC_3502	1	0	0	0	0	0	1	0	0	0	1	1	0	0	1	0	0	0	1	0	0	0	1	1	0	0	0	1	1	1	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p759,746	PMID: 24553467	PMID: 24757212			
 Clostridium_botulinum_A_str_Hall	1	0	0	0	0	0	1	0	0	0	1	1	0	0	1	0	0	0	1	0	0	0	1	1	0	0	0	1	1	1	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p759,746	PMID: 24553467	PMID: 24757212			
@@ -1541,9 +1557,11 @@ Clostridium_jeddahtimonense_CL_2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Clostridium_lavalense_NLAE_zl_G277	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 19244429					
 Clostridium_leptum_DSM_753	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Clostridium_massilioamazoniensis_ND2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Clostridium_mediterraneense_Marseille_P2434	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Clostridium_methoxybenzovorans_SR3	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p791					
 Clostridium_methylpentosum_R2_DSM_5476	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Clostridium_nexile_DSM_1787	1	0	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
+Clostridium_niameyense_DSM_100441	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Clostridium_papyrosolvens_C7	1	0	0	1	0	0	1	0	0	0	1	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergeys manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2010, v3, p796					
 Clostridium_papyrosolvens_DSM_2782	1	0	0	1	0	0	1	0	0	0	1	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergeys manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2010, v3, p796					
 Clostridium_paraputrificum_AGR2156	1	0	0	1	0	1	0	1	1	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p797					
@@ -1561,6 +1579,7 @@ Clostridium_perfringens_NCTC_8239	1	0	0	1	0	1	0	1	0	0	1	1	0	0	1	0	0	0	1	0	0	0	0	
 Clostridium_perfringens_SM101	1	0	0	1	0	1	0	1	0	0	1	1	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p800					
 Clostridium_perfringens_str_13	1	0	0	1	0	1	0	1	0	0	1	1	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p800					
 Clostridium_perfringens_WAL_14572	1	0	0	1	0	1	0	1	0	0	1	1	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p800					
+Clostridium_phoceensis_DSM_100334	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Clostridium_polynesiense_MS1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	PMID:26485191					
 Clostridium_polysaccharolyticum_DSM_1801	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergeys manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2010, v3, p803					
 Clostridium_ramosum_VPI_0427_DSM_1402	1	0	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
@@ -1575,6 +1594,8 @@ Clostridium_sordellii_ATCC_9714	1	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	1	0	0	0	1	1	
 Clostridium_sp_7_2_43FAA	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24553467	PMID: 24757212				
 Clostridium_sp_7_3_54FAA	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridium_sp_ASF356	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Clostridium_sp_AT4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Clostridium_sp_ATCC_29733	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Clostridium_sp_ATCC_BAA_442	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridium_sp_BNL1100	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridium_sp_D5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -1583,6 +1604,8 @@ Clostridium_sp_HGF2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Clostridium_sp_KLE_1755	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Clostridium_sp_L2_50	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24757212					
 Clostridium_sp_M62_1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24553467	PMID: 24757212				
+Clostridium_sp_Marseille_P2538	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Clostridium_sp_Marseille_P299	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Clostridium_sp_MSTE9	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:24553467					
 Clostridium_sp_SS2_1	1	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 19222573	PMID: 24757212				
 Clostridium_sp_SY8519	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24757212					
@@ -1604,6 +1627,7 @@ Clostridium_tyrobutyricum_DSM_2637	1	0	0	1	0	0	0	1	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0
 Clostridium_tyrobutyricum_UC7086	1	0	0	1	0	0	0	1	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p826, 744					
 Clostridium_viride_DSM_6836	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p827	PMID:11759672 				
 Cohnella_laeviribosi_DSM_21336	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 18048746					
+Colibacter_massiliensis_DSM_103304	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Collinsella_aerofaciens_ATCC_25986	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
 Collinsella_aerofaciens_ERR1022282	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
 Collinsella_aerofaciens_ERR1022300	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
@@ -1622,6 +1646,7 @@ Collinsella_aerofaciens_ERR2230140	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
 Collinsella_aerofaciens_ERR2230145	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
 Collinsella_aerofaciens_ERR2230147	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
 Collinsella_aerofaciens_ERR2230156	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
+Collinsella_ihuae_GD8	0	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Collinsella_intestinalis_DSM_13280	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID: 11034485	PMID:10319476				
 Collinsella_massiliensis_An5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:25197489					
 Collinsella_sp_4_8_47FAA	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -1638,6 +1663,7 @@ Comamonas_testosteroni_CNB_2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Comamonas_testosteroni_KF_1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p694					
 Comamonas_testosteroni_NBRC_100989	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p694					
 Comamonas_testosteroni_S44	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p694					
+Coprobacillus_cateniformis_D6	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Coprobacillus_sp_29_1	1	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3 New York: Springer, 2010, v3, p1311	PMID:10711596				
 Coprobacillus_sp_3_3_56FAA	1	0	0	0	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Coprobacillus_sp_8_2_54BFAA	1	0	0	0	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
@@ -1673,6 +1699,7 @@ Corynebacterium_amycolatum_SK46	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Corynebacterium_argentoratense_CNM_46305_c1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_argentoratense_DSM_44202	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_aurimucosum_ATCC_700975	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p87				
+Corynebacterium_bouchesdurhonense_DSM_100846	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Corynebacterium_casei_LMG_S_19264	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_casei_UCMA_3821	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_coyleae_UMB0147_16933_8_1_1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
@@ -1689,7 +1716,9 @@ Corynebacterium_mastitidis_DSM_44356	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Corynebacterium_matruchotii_ATCC_14266	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_matruchotii_ATCC_33806	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_matruchotii_NCTC10254	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
+Corynebacterium_phoceense_DSM_100570	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Corynebacterium_propinquum_DSM_44285	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p744,745				
+Corynebacterium_provencense_DSM_101074	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Corynebacterium_pseudodiphtheriticum_DSM_44287	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_pseudodiphtheriticum_ERR2221235	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
 Corynebacterium_pseudogenitalium_ATCC_33035	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2010, v5, p268					
@@ -1714,6 +1743,7 @@ Cronobacter_sakazakii_ES713	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	
 Cronobacter_sakazakii_SP291	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	PMID: 18523192					
 Cryocola_sp_340MFSha3_1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Cryptobacterium_curtum_DSM_15641	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p263	PMID: 21304644	PMID:21304644			
+Culturomica_massiliensis_DSM_103121	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Cuneatibacter_caecimuris_DSM_29486	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Cupriavidus_metallidurans_CH34	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:15023939					
 Curtobacterium_flaccumfaciens_MEB126	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p303,308					
@@ -1856,6 +1886,7 @@ Dorea_longicatena_ERR2221186	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0
 Dorea_longicatena_ERR2221271	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Dorea_longicatena_ERR2230069	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Dorea_nov_ERR2230118	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Dorea_sp_D27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Dyadobacter_beijingensis_DSM_21582	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p382,386					
 Dyadobacter_fermentans_DSM_18053	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p382,385					
 Dysgonomonas_gadei_ATCC_BAA_286	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p71					
@@ -1881,7 +1912,6 @@ Eggerthella_lenta_A2	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Eggerthella_lenta_AB12n2	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Eggerthella_lenta_AB8n2	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Eggerthella_lenta_AN51LG	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
-Eggerthella_lenta_ATCC_25559	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Eggerthella_lenta_C592	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Eggerthella_lenta_CC75D52	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Eggerthella_lenta_CC82BHI2	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
@@ -1898,6 +1928,7 @@ Eggerthella_lenta_W1BHI6	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Eggerthella_sinensis_DSM_16107	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Eggerthella_sp_1_3_56FAA	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID:29617190				
 Eggerthella_sp_YY7918	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID:29617190				
+Eggerthellaceae_bacterium_AT8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Eggerthia_catenaformis_OT_569	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 21112984 					
 Eikenella_corrodens_ATCC_23834	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p832					
 Eisenbergiella_nov_ERR2221109	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -1905,8 +1936,10 @@ Eisenbergiella_nov_ERR2221178	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Eisenbergiella_tayi_ERR1022439	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24282142					
 Eisenbergiella_tayi_NML110678	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24282142					
 Elusimicrobium_minutum_Pei191	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	PMID:1927013					
+Emergencia_timonensis_DSM_101844	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Enhydrobacter_aerosaccus_ATCC_27094	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:22145860	https://www.microbiologyresearch.org/content/journal/ijsem/10.1099/00207713-37-3-289				
 Enorma_massiliensis_ERR1022365	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 23991260					
+Enorma_massiliensis_phI	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Enorma_timonensis_GD5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 25197477					
 Enterobacter_aerogenes_EA1509E	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p662,686-687	PMID:239921				
 Enterobacter_aerogenes_ERR2221162	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p662,686-687	PMID:239921				
@@ -1942,6 +1975,7 @@ Enterobacter_nov_ERR2221350	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	
 Enterobacter_nov_ERR2221354	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p662,668					
 Enterobacter_roggenkampii_35734	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Enterobacter_sp_MGH_8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p662,668					
+Enterobacter_timonensis_DSM_101775	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Enterobacteriaceae_bacterium_9_2_54FAA	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Enterococcus_asini_ATCC_700915	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
 Enterococcus_avium_ATCC_14025	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
@@ -2446,6 +2480,7 @@ Enterococcus_gallinarum_ERR2221362	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Enterococcus_gilvus_ATCC_BAA_350	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
 Enterococcus_gilvus_CR1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
 Enterococcus_hirae_ATCC_9790	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
+Enterococcus_massiliensis_DSM_100308	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p658-659	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v2C, p655				
 Enterococcus_mundtii_ATCC_882	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
 Enterococcus_mundtii_crl1656	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
 Enterococcus_mundtii_CRL35	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p595					
@@ -3536,6 +3571,7 @@ Eubacterium_siraeum_DSM_15702	1	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	
 Eubacterium_siraeum_V10Sc8a	1	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24553467				
 Eubacterium_sp_14_2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Eubacterium_sp_3_1_31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Eubacterium_sp_SB2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Eubacterium_sulci_ATCC_35585	1	0	0	0	1	1	0	1	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p874,887					
 Eubacterium_ventriosum_ATCC_27560	1	0	0	1	0	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212				
 Eubacterium_yurii_ATCC_43714	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24757212					
@@ -3560,6 +3596,8 @@ Faecalibacterium_prausnitzii_ERR2221188	1	0	0	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	
 Faecalibacterium_prausnitzii_L2_6	1	0	0	1	1	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1026-1027	PMID: 12508881	PMID: 22357539	PMID: 24553467	PMID: 24757212	
 Faecalibacterium_prausnitzii_M21_2	1	0	0	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1026-1027	PMID: 12508881	PMID: 22357539	PMID: 24553467	PMID: 24757212	
 Faecalibacterium_prausnitzii_SL3_3	1	0	0	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1026-1027	PMID: 12508881	PMID: 22357539	PMID: 24553467	PMID: 24757212	
+Faecalitalea_cylindroides_ATCC_27803	1	0	0	1	1	1	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Fenollaria_timonensis_GD5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Filifactor_alocis_ATCC_35896	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1012					
 Finegoldia_magna_ACS_171_V_Col3	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1030,1132					
 Finegoldia_magna_ATCC_29328	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1030,1132					
@@ -3578,6 +3616,7 @@ Flavonifractor_plautii_ERR1022446	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	
 Flavonifractor_plautii_ERR2221213	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 19654357 					
 Flavonifractor_plautii_ERR2221305	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 19654357 					
 Flavonifractor_plautii_YL31	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 19654357 					
+Fournierella_massiliensis_DSM_100451	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Frisingicoccus_caecimuris_DSM_28559	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Fructobacillus_durionis_DSM_19113	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:18768629					
 Fructobacillus_pseudoficulneus_DSM_15468	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:18768629					
@@ -3589,12 +3628,15 @@ Fusicatenibacter_saccharivorans_ERR1022400	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0
 Fusicatenibacter_saccharivorans_ERR1022437	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 23625266					
 Fusobacterium_gonidiaformans_3_1_5R	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_gonidiaformans_ATCC_25563	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
+Fusobacterium_massiliense_DSM_103085	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Fusobacterium_mortiferum_ATCC_9817	1	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_necrogenes_NCTC10723	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3 New York: Springer, 2010, v3, p749					
 Fusobacterium_necrophorum_D12	1	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24553467	PMID: 24757212			
 Fusobacterium_necrophorum_subsp_funduliforme_1_1_36S	1	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24553467	PMID: 24757212			
 Fusobacterium_necrophorum_subsp_funduliforme_ATCC_51357	1	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_necrophorum_subsp_funduliforme_Fnf_1007	1	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
+Fusobacterium_nucleatum_13_3C	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Fusobacterium_nucleatum_CTI_2	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Fusobacterium_nucleatum_subsp_animalis_11_3_2	1	0	0	0	1	1	0	0	0	0	0	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_nucleatum_subsp_animalis_21_1A	1	0	0	0	1	1	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_nucleatum_subsp_animalis_3_1_33	1	0	0	0	1	1	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
@@ -3619,6 +3661,8 @@ Fusobacterium_sp_4_8	1	0	0	0	1	1	0	0	0	0	0	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	1	0
 Fusobacterium_ulcerans_12_1B	1	0	0	0	0	0	0	1	0	0	0	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_ulcerans_ATCC_49185	1	0	0	0	0	0	0	1	0	0	0	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	PMID: 11759672	PMID: 24757212				
 Fusobacterium_varium_ATCC_27725	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	1	0	PMID: 11759672	PMID: 24757212				
+Gabonia_massiliensis_DSM_100571	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Gabonibacter_massiliensis_DSM_101039	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Gardnerella_vaginalis_00703Bmash	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v5, p231					
 Gardnerella_vaginalis_14019_MetR	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v5, p231					
 Gardnerella_vaginalis_JCP7672	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v5, p231					
@@ -3627,7 +3671,6 @@ Gemella_haemolysans_M341	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Gemella_morbillorum_M424	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p74, 100					
 Gemella_sanguinis_ATCC700632	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p74, 100					
 Gemella_sanguinis_M325	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p149-151	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p74, 100	PMID: 25937690			
-Gemmata_obscuriglobus_DSM_5831	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v4, p920					
 Gemmata_obscuriglobus_UQM_2246	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v4, p920					
 Gemmatimonas_aurantiaca_T_27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 12892144					
 Gemmiger_formicilis_ATCC_27749	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Gossling, J., and Moore, W.E.C., Int. J. Syst. Bacteriol. (1975) 25:202-207.					
@@ -3642,8 +3685,11 @@ Gordonia_terrae_NBRC_100016	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Gordonibacter_pamelaeae_7_10_1_bT_DSM_19378	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p74, 100	PMID: 18077471				
 Gordonibacter_pamelaeae_ERR2221155	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 18077471					
 Gordonibacter_pamelaeae_ERR2221387	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 18077471					
+Gorillibacterium_timonense_CSUR_P2011	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Gottschalkia_acidurici_9a	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Gottschalkia_purinilyticum_DSM_1384	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 24475322					
+Gracilibacillus_massiliensis_DSM_29726	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Gracilibacillus_timonensis_CSUR_P2481	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Gracilibacter_sp_BRH_c7a	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Granulicatella_adiacens_ATCC_49175	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p74, 100					
 Granulicatella_elegans_ATCC_700633	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p494	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p74, 100				
@@ -3699,10 +3745,12 @@ Helicobacter_apodemus_SCJK1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Helicobacter_bilis_ATCC_43879	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.				
 Helicobacter_bilis_WiWa	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169					
 Helicobacter_canadensis_MIT_98_5491	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.				
+Helicobacter_canis_NCTC_12740	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Helicobacter_cinaedi_CCUG_18818	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.				
 Helicobacter_fennelliae_MRY12_0050	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169					
 Helicobacter_fennelliae_NCTC13102	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169					
 Helicobacter_hepaticus_ATCC_51449	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169					
+Helicobacter_macacae_MIT_99_5501	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Helicobacter_pullorum_MIT_98_5489	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.				
 Helicobacter_pylori_2017	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169					
 Helicobacter_pylori_2018	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2c, p1169					
@@ -3953,12 +4001,14 @@ Intestinibacter_nov_ERR2221096	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Intestinimonas_butyriciproducens_AF211	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 23918795					
 Intestinimonas_butyriciproducens_ERR1022450	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 23918795					
 Intestinimonas_butyriciproducens_SRB_521_5_I	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 23918795					
+Intestinimonas_massiliensis_DSM_100417	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Intestinimonas_nov_ERR1022454	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Intestinimonas_nov_ERR171285	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Jeddahella_massiliensis_OL_1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Johnsonella_ignava_ATCC_51276	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:29405826					
 Jonquetella_anthropi_DSM_22815	1	0	0	0	1	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	0	0	PMID:18048718					
 Jonquetella_anthropi_E3_33_E1	1	0	0	0	1	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	0	0	PMID:18048718					
+Kallipyga_gabonensis_DSM_100575	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Kallipyga_massiliensis_ph2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 21112984					
 Kandleria_vitulina_DSM_20405	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p839					
 Kingella_denitrificans_ATCC_33394	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p839					
@@ -4250,6 +4300,7 @@ Lactobacillus_antri_DSM_16041	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Lactobacillus_apis_LMG_26964	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:24096349					
 Lactobacillus_apodemi_DSM_16634_JCM_16172	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16825652					
 Lactobacillus_brevis_ATCC_367	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
+Lactobacillus_brevis_DSM_20054	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Lactobacillus_brevis_KB290	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_brevis_subsp_gravesensis_ATCC_27305	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_buchneri_ATCC_11577	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
@@ -4290,6 +4341,7 @@ Lactobacillus_delbrueckii_subsp_bulgaricus_CNCM_I_1519	0	0	0	0	1	0	0	0	0	0	0	0	0
 Lactobacillus_delbrueckii_subsp_bulgaricus_CNCM_I_1632	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_delbrueckii_subsp_bulgaricus_ND02	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_delbrueckii_subsp_delbrueckii_DSM_20074	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
+Lactobacillus_delbrueckii_subsp_lactis_DSM_20072	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Lactobacillus_delbrueckii_ZN7a_9	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_dextrinicus_DSM_20335	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:19244449					
 Lactobacillus_equicursoris_66c	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:19648335					
@@ -4322,6 +4374,7 @@ Lactobacillus_helveticus_DSM_20075	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Lactobacillus_helveticus_H10	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_helveticus_R0052	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_hilgardii_ATCC_8290	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p485	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341			
+Lactobacillus_iners_7_1_47FAA	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Lactobacillus_iners_AB_1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p485					
 Lactobacillus_iners_ATCC_55195	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p485					
 Lactobacillus_iners_DSM_13335	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p485	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p487				
@@ -4463,7 +4516,6 @@ Lactobacillus_sanfranciscensis_DSM_20451	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
 Lactobacillus_sanfranciscensis_TMW_1_1304	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010,v3, p489					
 Lactobacillus_sanfranciscensis_TMW_1_2137	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010,v3, p489					
 Lactobacillus_siliginis_DSM_22696	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
-Lactobacillus_siliginis_NBRC_101315	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Lactobacillus_suebicus_DSM_5007_KCTC_3549	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010,v3, p489					
 Lactobacillus_taiwanensis_DSM_21401	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:17429157					
 Lactobacillus_ultunensis_DSM_16047	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p489	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341			
@@ -4496,7 +4548,9 @@ Lactococcus_lactis_subsp_lactis_KF147	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Lactococcus_lactis_subsp_lactis_YF11	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p722	PMID:28585563				
 Lactococcus_raffinolactis_4877	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p722	PMID: 11724825	PMID: 21711917			
 Lactonifactor_longoviformis_DSM_17459	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:17196483					
+Lagierella_massiliensis_CSUR_P2012	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Laribacter_hongkongensis_HLHK9	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p605	PMID: 11724825	PMID: 21711917			
+Lascolabacillus_massiliensis_DSM_100190	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Lautropia_mirabilis_ATCC_51599	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p725	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p605				
 Leclercia_adecarboxylata_ATCC_23216_NBRC_102595	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p722					
 Leclercia_adecarboxylata_KY2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p722					
@@ -4585,6 +4639,9 @@ Mageeibacillus_indolicus_0009_5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Mageeibacillus_indolicus_UPII9_5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	PMID:25482717					
 Marinospirillum_alkaliphilum_DSM_21637	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v2B, p313					
 Marvinbryantia_formatexigens_I_52_DSM_14469	0	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 18398204					
+Massilibacterium_senegalense_DSM_100455	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Massilioclostridium_coli_DSM_103344	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Mediterraneibacter_massiliensis_DSM_100837	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Megamonas_funiformis_YIT_11815	1	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 13952972	PMID: 18398204			
 Megamonas_hypermegale_ART12_1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 13952972	PMID: 24553467			
 Megamonas_rupellensis_DSM_19944	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:19060083					
@@ -4627,6 +4684,7 @@ Microvirga_massiliensis_JC119	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Mitsuokella_jalaludinii_DSM_13811	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Mitsuokella_jalaludinii_ERR1022286	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Mitsuokella_multacida_DSM_20544	1	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p137-138				
+Mobilicoccus_massiliensis_DSM_29065	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Mobiluncus_curtisii_ATCC_43063	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v5, p149					
 Mobiluncus_curtisii_ATCC_51333	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v5, p149					
 Mobiluncus_curtisii_subsp_holmesii_ATCC_35242	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v5, p149					
@@ -4657,6 +4715,8 @@ Morganella_morganii_FDAARGOS_63	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Morganella_morganii_SC01	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p324-326					
 Morganella_morganii_subsp_morganii_KT	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p324-326					
 Mucispirillum_schaedleri_ASF457	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 15879255					
+Murdochiella_massiliensis_CSUR_P1987	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Murdochiella_vaginalis_DSM_102237	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Muribaculum_intestinale_YL27	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: PMID:27670113					
 Muricomes_intestini_DSM_29489	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Murimonas_intestini_DSM_26524	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 25519299					
@@ -4730,6 +4790,7 @@ Myroides_odoratimimus_CIP_101113	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Myroides_odoratimimus_PR63039	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Natranaerovirga_hydrolytica_DSM_24176	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Natranaerovirga_pectinivora_DSM_24629	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Neglecta_timonensis_DSM_102082	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Neisseria_bacilliformis_914_NLAC_0_29744_674333	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p777					
 Neisseria_bacilliformis_ATCC_BAA_1200	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p777					
 Neisseria_cinerea_ATCC_14685	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p777					
@@ -4748,6 +4809,8 @@ Neisseria_sicca_ATCC_29256	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Neisseria_sicca_C2010005502	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p777					
 Neisseria_sicca_VK64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p777					
 Neisseria_subflava_NJ9703	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p777					
+Neobacillus_jeddahensis_DSM_28281	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Neofamilia_massiliensis_DSM_100639	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Nesterenkonia_massiliensis_NP1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Nevskia_ramosa_DSM_11499	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p181-184					
 Nigerium_massiliense_SIT5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -4771,10 +4834,12 @@ Odoribacter_splanchnicus_1651_6_DSM_20712	1	0	0	0	1	0	0	1	1	0	0	0	0	0	0	1	0	1	1	
 Odoribacter_splanchnicus_ERR1203973	1	0	0	0	1	0	0	1	1	0	0	0	0	0	0	1	0	1	1	0	0	0	1	1	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212				
 Odoribacter_splanchnicus_ERR1204067	1	0	0	0	1	0	0	1	1	0	0	0	0	0	0	1	0	1	1	0	0	0	1	1	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212				
 Odoribacter_splanchnicus_ERR2230125	1	0	0	0	1	0	0	1	1	0	0	0	0	0	0	1	0	1	1	0	0	0	1	1	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212				
+Olegusella_massiliensis_DSM_101849	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Oligella_urethralis_DNF00040	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p674					
 Oligella_urethralis_DSM_7531	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p674					
 Oligella_urethralis_UMB0345_21837_8_92_1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part C . New York: Springer, 2010, p674					
 Olsenella_profusa_F019501	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Olsenella_sp_SIT9	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Olsenella_uli_DSM_7084	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p270					
 Oribacterium_sinus_F0268	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p949					
 Oribacterium_sp_oral_taxon_078_str_F0262	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p949					
@@ -4791,14 +4856,20 @@ Paenibacillus_barengoltzii_G22	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1
 Paenibacillus_daejeonensis_DSM_15491	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 284	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p286				
 Paenibacillus_graminis_RSA19	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p288					
 Paenibacillus_ihuae_GD6	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
+Paenibacillus_ihumii_DSM_100664	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Paenibacillus_lactis_154	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p713,718	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p288				
+Paenibacillus_phocaensis_DSM_101777	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Paenibacillus_rubinfantis_DSM_101191	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Paenibacillus_senegalensis_JC66	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
+Paenibacillus_senegalimassiliensis_CCUG_69869	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Paenibacillus_sp_GM2	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Paenibacillus_sp_HGF5	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
 Paenibacillus_sp_HGF7	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
 Paenibacillus_sp_HGH0039	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
 Paenibacillus_sp_HW567	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
 Paenibacillus_sp_ICGEB2008	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Paenibacillus_sp_JDR_2	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, 282					
+Paenibacillus_tuaregi_DSM_102801	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Paeniclostridium_sordellii_8483	1	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p814					
 Paeniclostridium_sordellii_AF05_25	1	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p814					
 Paeniclostridium_sordellii_AM370	1	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p814					
@@ -4888,6 +4959,7 @@ Parabacteroides_sp_ASF519	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Parabacteroides_sp_D13	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16825636	PMID: 22468341	PMID: 22753523			
 Parabacteroides_sp_D25	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16825636	PMID: 22468341				
 Parabacteroides_sp_D26	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16825636	PMID: 22468341				
+Parabacteroides_sp_HGS0025	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Paraburkholderia_sediminicola_LMG_24238	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Paraclostridium_bifermentans_ATCC_638	1	0	0	1	0	1	1	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p758	PMID: 23503672				
 Paraclostridium_bifermentans_Cbm	1	0	0	1	0	1	1	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p758	PMID: 23503672				
@@ -4937,11 +5009,11 @@ Peptoniphilus_lacrimalis_315_B	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0
 Peptoniphilus_lacrimalis_DSM_7455	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1136	PMID: 23449949 	PMID: 24757212			
 Peptoniphilus_nov_ERR2221395	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1136	PMID: 24757212				
 Peptoniphilus_obesi_ph1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1136	PMID: 24757212				
+Peptoniphilus_phoceensis_SIT15	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Peptoniphilus_senegalensis_JC140	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1136	PMID: 24757212				
 Peptoniphilus_timonensis_JC401	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1009	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1136	PMID: 24757212			
 Peptostreptococcus_anaerobius_653_L	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1009					
 Peptostreptococcus_anaerobius_DSM_2949	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1009					
-Peptostreptococcus_anaerobius_VPI_4330	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1009					
 Peptostreptococcus_russellii_Calf135	0	0	0	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 20833884					
 Peptostreptococcus_stomatis_DSM_17678	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p1009	PMID: 22081579				
 Phascolarctobacterium_faecium_DSM_14760	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 22081579					
@@ -4957,6 +5029,7 @@ Photorhabdus_luminescens_BA1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Photorhabdus_luminescens_H1_H1_C1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v2B, p756					
 Photorhabdus_luminescens_NBAII_H75HRPL105	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v2B, p756					
 Pirellula_staleyi_DSM_6068	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p903					
+Planococcus_massiliensis_DSM_28915	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Plesiomonas_shigelloides_302_73	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p740,744	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p62,64-66				
 Plesiomonas_shigelloides_GN7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Polynesia_massiliensis_MS3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
@@ -5033,7 +5106,6 @@ Prevotella_oris_DSM_18711_JCM_12252	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Prevotella_oris_F0302	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92					
 Prevotella_oulorum_ATCC_43324	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92					
 Prevotella_oulorum_F0390	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92					
-Prevotella_oulorum_JCM_14966	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92					
 Prevotella_pallens_ATCC_700821	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92					
 Prevotella_pleuritidis_F0068	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92	PMID:17684245				
 Prevotella_pleuritidis_JCM_14110	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92	PMID:17684245				
@@ -5047,6 +5119,7 @@ Prevotella_timonensis_4401737	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Prevotella_timonensis_CRIS_5C_B1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p86, 101	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92				
 Prevotella_veroralis_DSM_19559	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p86, 101	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92				
 Prevotella_veroralis_F0319	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v3, p86, 101	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010, v4, p86, 92				
+Prevotellaceae_bacterium_Marseille_P2826	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Propionibacterium_acidifaciens_DSM_21887	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	McCubbin BMC Genomics 2020	PMID:19625418	PMID:24757212			
 Propionibacterium_acidifaciens_F0233	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	McCubbin BMC Genomics 2020	PMID:19625418	PMID:24757212			
 Propionibacterium_acidipropionici_ATCC_4875	1	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v3, p1138	McCubbin BMC Genomics 2020	PMID: 21329995	PMID:10937824		
@@ -5087,6 +5160,8 @@ Proteus_vulgaris_NCTC13145	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Proteus_vulgaris_NCTC401	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2B New York: Springer, 2010, v2B, p751	PMID:11034498	PMID:7547312			
 Providencia_alcalifaciens_Dmel2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Providencia_alcalifaciens_DSM_30120	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
+Providencia_alcalifaciens_PAL_1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
+Providencia_alcalifaciens_RIMD_1656011	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Providencia_burhodogranariea_DSM_19968	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Providencia_rettgeri_Dmel1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Providencia_rettgeri_DSM_1131	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
@@ -5104,6 +5179,7 @@ Pseudoglutamicibacter_albus_DNF00011	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Pseudomonas_aeruginosa_152504	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Pseudomonas_aeruginosa_18A	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Pseudomonas_aeruginosa_19BR	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
+Pseudomonas_aeruginosa_2_1_26	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Pseudomonas_aeruginosa_213BR	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Pseudomonas_aeruginosa_2192	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Pseudomonas_aeruginosa_39016	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
@@ -5158,6 +5234,7 @@ Pseudomonas_fragi_A22	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Pseudomonas_fragi_B25	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
 Pseudomonas_fragi_F1794	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
 Pseudomonas_fragi_NBRC_3458	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
+Pseudomonas_massiliensis_DSM_29075	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Pseudomonas_mendocina_DLHK	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
 Pseudomonas_mendocina_EGD_AQ5	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
 Pseudomonas_mendocina_NBRC_14162	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
@@ -5190,6 +5267,7 @@ Pseudomonas_putida_S16	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Pseudomonas_putida_SJTE_1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
 Pseudomonas_putida_TRO1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
 Pseudomonas_putida_W619	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p356-357					
+Pseudomonas_sp_HPB0071	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Pseudomonas_stutzeri_28a24	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p360					
 Pseudomonas_stutzeri_A1501	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p360					
 Pseudomonas_stutzeri_ATCC_14405_CCUG_16156	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p360					
@@ -5279,6 +5357,7 @@ Rothia_mucilaginosa_ATCC_25296	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
 Rothia_mucilaginosa_DY_18	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	PMID: 18218952					
 Rothia_mucilaginosa_M508	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0						
 Rothia_mucilaginosa_NUM_Rm6536	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0						
+Rubeoparvulum_massiliense_DSM_100479	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Rubrobacter_aplysinae_RV113	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v5, p2031					
 Rubrobacter_radiotolerans_DSM_5868	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v5, p2031					
 Rubrobacter_xylanophilus_DSM_9941	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 5. New York: Springer, 2012, v5, p2031					
@@ -6309,6 +6388,7 @@ Staphylococcus_saprophyticus_subsp_saprophyticus_KACC_16562	0	0	0	0	0	1	0	0	0	0	
 Staphylococcus_sciuri_subsp_sciuri_DSM_20345	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p414	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p418				
 Staphylococcus_sciuri_subsp_sciuri_Z8	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p414	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p418				
 Staphylococcus_simulans_ACS_120_V_Sch1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p418	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p419				
+Staphylococcus_sp_HGB0015	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Staphylococcus_succinus_SNUC_1280	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p418					
 Staphylococcus_succinus_subsp_casei_DSM_15096	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p418					
 Staphylococcus_succinus_subsp_succinus_DSM_14617	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p418					
@@ -6599,7 +6679,6 @@ Streptococcus_lutetiensis_033	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	
 Streptococcus_lutetiensis_ERR2230054	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656,668					
 Streptococcus_macedonicus_679	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID:9731293				
 Streptococcus_macedonicus_ACA_DC_198	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID:9731293				
-Streptococcus_massiliensis_4401825	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID:16627666				
 Streptococcus_massiliensis_DSM_18628	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID:16627666				
 Streptococcus_mitis_11_5	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656.,668					
 Streptococcus_mitis_13_39	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656.,668					
@@ -7026,10 +7105,12 @@ Streptococcus_thermophilus_LMG_18311	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Streptococcus_thermophilus_MN_ZLW_002	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Streptococcus_thermophilus_ND03	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.					
 Streptococcus_thoraltensis_DSM_12221	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656,670					
+Streptococcus_timonensis_CSUR_P2915	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Streptococcus_uberis_0140J	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656,670					
 Streptococcus_vestibularis_ATCC_49124	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656,670					
 Streptococcus_vestibularis_F0396	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p656,670	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 24757212			
 Streptomyces_massiliensis_AP10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Streptomyces_sp_HPH0547	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ref1	Ref2	Ref3	Ref4	Ref5	Ref6
 Subdoligranulum_sp_4_3_54A2FAA	1	0	0	0	0	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16701519					
 Subdoligranulum_variabile_DSM_15176	1	0	0	0	0	1	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16701519	PMID:24757212				
 Succinatimonas_hippei_YIT_12066	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p581	PMID: 19749029				
@@ -7182,6 +7263,7 @@ Victivallis_vadensis_MGYG_HGUT_02473	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
 Virgibacillus_massiliensis_MGYG_HGUT_01470	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Virgibacillus_massiliensis_Vm_5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:26649181					
 Virgibacillus_senegalensis_SK_1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:26649181					
+Vitreoscilla_massiliensis_CSUR_P2036	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Weissella_ceti_NC36	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p644	PMID:21216921				
 Weissella_cibaria_KACC_11862	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p644					
 Weissella_confusa_LBAE_C39_2	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p644					
@@ -7189,6 +7271,7 @@ Weissella_koreensis_KACC_15510	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Weissella_koreensis_KCTC_3621	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p644					
 Weissella_paramesenteroides_ATCC_33313	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p644					
 Weissella_viridescens_DSM_20410	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 3. New York: Springer, 2009, v3, p644					
+Xanthomonas_massiliensis_CSUR_P2129	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Yersinia_bercovieri_ATCC_43970	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p842					
 Yersinia_enterocolitica_FORC_002	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
 Yersinia_enterocolitica_IP_10393	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 2 Part B . New York: Springer, 2010, p842					
