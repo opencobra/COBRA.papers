@@ -18,6 +18,6 @@ Sparse flux balance analysis is implemented by the function sparseFBA.m
 
 Relaxed flux balance analysis is implemented by the function relaxedFBA.m. 
 
-A set of tutorials illustrating each cardinality optimisation application are also available within the COBRA toolbox tutorial collection [https://github.com/opencobra/COBRA.tutorials||https://github.com/opencobra/COBRA.tutorials]. 
+A set of tutorials illustrating each cardinality optimisation application are also available within the COBRA toolbox tutorial collection https://github.com/opencobra/COBRA.tutorials. 
 
 The function checkModelProperties.m provides a single interface that analyses leaks/siphons as well as stoichiometric, flux, thermodynamic flux, and a previously developed implementation that analyses a form of kinetic consistency (Fleming RMT, Vlassis N, Thiele I, Saunders MA. Conditions for duality between fluxes and concentrations in biochemical networks. Journal of Theoretical Biology. 2016 Nov 21;409:1–10. Available from: http://www.sciencedirect.com/science/article/pii/S0022519316301679)
