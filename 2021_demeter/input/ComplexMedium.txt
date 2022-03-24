@@ -138,6 +138,7 @@ EX_q8(e)	-1
 EX_ribflv(e)	-1
 EX_sel(e)	-1
 EX_sheme(e)	-1
+EX_so3(e)	-1
 EX_so4(e)	-1
 EX_spmd(e)	-1
 EX_succ(e)	-1
