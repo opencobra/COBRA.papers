@@ -564,7 +564,7 @@ cpd00729	5apentam
 cpd00731	alaala
 cpd00735	fmfur
 cpd00738	pser_L
-cpd00739	ribflvRD
+cpd00739	rbflvrd
 cpd00742	allphn
 cpd00743	citmcoa_L
 cpd00745	3hpp
@@ -4050,3 +4050,10 @@ cpd15853	dkfp
 cpd17158	hpyraldp
 cpd17159	adth
 cpd21488	23dhdp
+cpd00455	2dglc
+cpd02508	45dthu
+cpd05262	galur
+cpd01029	M02820
+cpd18031	succitr_L
+cpd17282	dh6na
+cpd23834	6adxft
