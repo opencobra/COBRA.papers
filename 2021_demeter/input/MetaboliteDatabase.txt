@@ -7119,8 +7119,7 @@ rhamnogalurI	Potato rhamnogalacturonan I, MW assumed ~200000, 62 galur, 20 rmn, 
 rhamnogalurII	Wine rhamnogalacturonan II, MW ~ 5-10 kDa, 37% galur, 16% rmn, 3% fuc-L, 11% arab-L, 6% gal, 5% glcur, 4% 2omfuc, 3% 2omxyl, 6% ... <Preview truncated at 128 characters>		C317H445O273	-27	G06506						02/07/2014	Plant polysaccharide degradation
 rhcys	S-Ribosyl-L-homocysteine		C9H17NO6S	0							02/07/2014	Glycerophospholipid metabolism
 rib_D	D-ribose		C5H10O5	0	C00121	5779	47013	HMFHBZSHGGEWLO-SOOFDHNKSA-N		HMDB00283	02/07/2014	Methionine and cysteine metabolism
-ribflv	Riboflavin		C17H20N4O6	0	C00255	493570	17015	AUNGANRZJHBGPY-SCRDCRAPSA-N		HMDB00244	02/07/2014	Respiration
-ribflvRD	Reduced_riboflavin		C17H22N4O6	0							02/07/2014	
+ribflv	Riboflavin		C17H20N4O6	0	C00255	493570	17015	AUNGANRZJHBGPY-SCRDCRAPSA-N		HMDB00244	02/07/2014	Respiration	
 rml	L-Rhamnulose		C6H12O5	0						HMDB0010207	02/07/2014	Fructose and mannose metabolism
 rml1p	L-Rhamnulose 1-phosphate		C6H11O8P	-2							02/07/2014	Fructose and mannose metabolism
 rmn	L-Rhamnose		C6H12O5	0						HMDB00849	02/07/2014	Fructose and mannose metabolism
