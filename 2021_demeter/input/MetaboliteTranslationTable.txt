@@ -4051,7 +4051,7 @@ cpd17158	hpyraldp
 cpd17159	adth
 cpd21488	23dhdp
 cpd00455	2dglc
-cpd02508	45dthu
+cpd02508	5dh4dglcn
 cpd05262	galur
 cpd01029	M02820
 cpd18031	succitr_L
