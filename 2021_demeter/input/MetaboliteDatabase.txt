@@ -854,7 +854,6 @@
 44mzym	14-demethyllanosterol		C29H48O	0	C05108	50990081	18364	CHGIKSSZNBCNDW-QGBOJXOESA-N		HMDB01286	02/07/2014	Cholesterol metabolism
 45adhcrtsn	4,5alpha-Dihydrocortisone		C21H30O5	0							19/09/2018	Steroid metabolism
 45bdhcrtsn	4,5beta-Dihydrocortisone		C21H30O5	0							19/09/2018	Steroid metabolism
-45dthu	5-dehydro-4-deoxy-D-glucuronate		X	0							02/07/2014	
 46dhoxquin	4,6-Dihydroxyquinoline		C9H7NO2	0	C05639	440738	28799	XFALURCRIGINGT-UHFFFAOYSA-N		HMDB04077	02/07/2014	Tryptophan metabolism
 48dhoxquin	quinoline-4,8-diol		C9H7NO2	0	C05637	440737	28883	PYELIMVFIITPER-UHFFFAOYSA-N		HMDB0060289	02/07/2014	Tryptophan metabolism
 4a3hbutnt	4-Amino-3-hydroxybutanoate		C4H9NO3	0							19/09/2018	Tryptophan metabolism
@@ -1028,6 +1027,7 @@
 5dgclur	5-Deoxy glucuronic acid	C6H10O6	C6H9O6	-1							02/07/2014	Inositol phosphate metabolism
 5dglcn	5-Dehydro-D-gluconate		C6H9O7	-1							02/07/2014	Ascorbate and aldarate metabolism
 5dh4dglc	5-Dehydro-4-deoxy-D-glucarate		C6H6O7	-2							02/07/2014	Ascorbate and aldarate metabolism
+5dh4dglcn	5-dehydro-4-deoxy-D-glucuronate		C6H7O6	-1	C04053						04/04/2022	Pentose and glucuronate interconversions
 5dhf	pentaglutamyl folate (DHF)		C39H43N11O18	-6		73374		CTJXQGDEZPVUGK-GKBRVULUSA-H		HMDB06487	02/07/2014	Folate metabolism
 5dleuccyan	5-Deoxyleucocyanidin	C15H14O6	C15H14O6	0	C09736						01/07/2019	Flavonoid, isoflavonoid, and polyphenol metabolism
 5dleucpelargn	5-Deoxyleucopelargonidin	C15H14O5	C15H14O5	0	C16415						01/07/2019	Flavonoid, isoflavonoid, and polyphenol metabolism
@@ -7119,7 +7119,7 @@ rhamnogalurI	Potato rhamnogalacturonan I, MW assumed ~200000, 62 galur, 20 rmn, 
 rhamnogalurII	Wine rhamnogalacturonan II, MW ~ 5-10 kDa, 37% galur, 16% rmn, 3% fuc-L, 11% arab-L, 6% gal, 5% glcur, 4% 2omfuc, 3% 2omxyl, 6% ... <Preview truncated at 128 characters>		C317H445O273	-27	G06506						02/07/2014	Plant polysaccharide degradation
 rhcys	S-Ribosyl-L-homocysteine		C9H17NO6S	0							02/07/2014	Glycerophospholipid metabolism
 rib_D	D-ribose		C5H10O5	0	C00121	5779	47013	HMFHBZSHGGEWLO-SOOFDHNKSA-N		HMDB00283	02/07/2014	Methionine and cysteine metabolism
-ribflv	Riboflavin		C17H20N4O6	0	C00255	493570	17015	AUNGANRZJHBGPY-SCRDCRAPSA-N		HMDB00244	02/07/2014	Respiration	
+ribflv	Riboflavin		C17H20N4O6	0	C00255	493570	17015	AUNGANRZJHBGPY-SCRDCRAPSA-N		HMDB00244	02/07/2014	Respiration
 rml	L-Rhamnulose		C6H12O5	0						HMDB0010207	02/07/2014	Fructose and mannose metabolism
 rml1p	L-Rhamnulose 1-phosphate		C6H11O8P	-2							02/07/2014	Fructose and mannose metabolism
 rmn	L-Rhamnose		C6H12O5	0						HMDB00849	02/07/2014	Fructose and mannose metabolism
@@ -7918,4 +7918,4 @@ yvite	gamma-tocopherol		C28H48O2	0	C02483	92729	18185	QUEDXNHFTDJVIY-DQCZWYHMSA-
 zn2	Zinc		Zn	2	C00038	32051		PTFCDOFLOPIGGS-UHFFFAOYSA-N		HMDB01303	02/07/2014	
 zym_int2	zymosterol intermediate 2		C27H42O	0	C05437	22298942	18252	AUNLIRXIJAVBNM-ZMKODQQDSA-N		HMDB06271	02/07/2014	Cholesterol metabolism
 zymst	zymosterol		C27H44O	0	C05437	92746	18252	CGSJXLIKVBJVRY-XTGBIJOFSA-N		HMDB06271	02/07/2014	Cholesterol metabolism
-zymstnl	5alpha-cholest-8-en-3beta-ol		C27H46O	0	C03845	101770	16608	QETLKNDKQOXZRP-XTGBIJOFSA-N		HMDB06841	02/07/2014	Cholesterol metabolism
+zymstnl	5alpha-cholest-8-en-3beta-ol		C27H46O	0	C03845	101770	16608	QETLKNDKQOXZRP-XTGBIJOFSA-N		HMDB06841	02/07/2014	Cholesterol metabolism						
