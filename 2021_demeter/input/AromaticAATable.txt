@@ -1,4 +1,4 @@
-MicrobeID	EX_pppn(e)	EX_r34hpp(e)	EX_ind3ppa(e)	EX_isocapr(e)
+MicrobeID	Phenylpropanoate	4-Hydroxyphenylpropanoate	Indolepropionate	Isocaproate
 Abiotrophia_defectiva_ATCC_49176	0	0	0	0
 Acaricomes_phytoseiuli_DSM_14247	0	0	0	0
 Acaryochloris_marina_MBIC11017	0	0	0	0
