@@ -6,79 +6,52 @@
 % Federico Baldini, 2017-2018
 % Almut Heinken, 08/2020: adapted to simplified inputs.
 
-initCobraToolbox()
+initCobraToolbox
+solverOK=changeCobraSolver('ibm_cplex','LP');
 global CBTDIR
 
 %% REQUIRED INPUT VARIABLES
 
 % path to microbe models
-system('curl -O https://www.vmh.life/files/reconstructions/AGORA/1.02/Agora-1.02.zip')
-unzip('Agora-1.02.zip','AGORA')
-modPath = [pwd filesep 'AGORA' filesep 'mat'];
+websave('AGORA-master.zip','https://github.com/VirtualMetabolicHuman/AGORA/archive/master.zip')
+try
+    unzip('AGORA-master')
+end
+modPath = [pwd filesep 'AGORA-master' filesep 'CurrentVersion' filesep 'AGORA_1_03' filesep' 'AGORA_1_03_mat'];
 
 % path to and name of the file with abundance information.
-abunFilePath=[CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'examples' filesep 'normCoverage.csv'];
+abunFilePath=[CBTDIR filesep 'tutorials' filesep 'analysis' filesep 'microbiomeModelingToolbox' filesep 'normCoverageReduced.csv'];
 
-%% If you only want to set the required input variables, please run the
-% pipeline as follows:
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath);
-
-% If you want to change any of the optional inputs, please find a
-% description of them below.
-
-%% OPTIONAL INPUTS
-% path where to save results (default=cobratoolbox/tmp)
-mkdir('MicrobiomeModels')
-resPath = [pwd filesep 'MicrobiomeModels'];
+% To define whether flux variability analysis to compute the metabolic profiles 
+% should be performed
+computeProfiles = true;
 
 % path to and name of the file with dietary information
 % (default='AverageEuropeanDiet')
-dietFilePath = [CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'resources' filesep 'AverageEuropeanDiet'];
+dietFilePath = [CBTDIR filesep 'papers' filesep '2018_microbiomeModelingToolbox' filesep 'input' filesep 'AverageEuropeanDiet'];
 
-% path to csv file for stratification criteria (if empty or not existent no criteria is used)
-indInfoFilePath = '';
-
-% name of objective function of organisms, default='EX_biomass(e)'
-objre = 'EX_biomass(e)';
-
-%the output is vectorized picture, default=-depsc, change to '-dpng' for .png
-figForm = '-depsc';
+% if to save models with diet constrains implemented (default=false)
+saveConstrModels = true;
 
 % number of cores dedicated for parallelization (default=2)
-numWorkers = 2;
+numWorkers = 4;
 
-% autofix for names mismatch (default=true)
-autoFix = true;
+[init, netSecretionFluxes, netUptakeFluxes, Y, modelStats, summary, statistics, modelsOK] = initMgPipe(modPath, abunFilePath, computeProfiles, 'dietFilePath', dietFilePath, 'saveConstrModels', saveConstrModels, 'numWorkers', numWorkers);
 
-% if outputs in open formats should be produced for each section (default=false)
-compMod = false; 
+%% Statistical analysis and violin plots of the results
+% Requires providing the path to a file with sample stratification
+% information as the variable infoFilePath.
+infoFilePath='sampInfo.csv';
 
-% to enable also rich diet simulations (default=false)
-rDiet = false;
+% Header in the file with sample information with the stratification to 
+% analyze (if not provided, the second column will be chosen by default)
 
-% to enable personalized diet simulations (default=false)
-pDiet = false;
+sampleGroupHeaders={'Group'};
+% sampleGroupHeaders can contain more than one entry if multiple columns 
+% with sample information (e.g., disease state, age group) should be analyzed.
 
-% if to use an external solver and save models with diet (default=false)
-extSolve = false;
+% to where the computation results to analyze are located
+resPath = [pwd filesep 'Results'];
 
-% the type of FVA function to use to solve (true=fastFVA,
-% flase=fluxVariability)
-fvaType = true;
-
-% To turn off the autorun to be able to manually execute each part of the pipeline (default=true).
-autorun = true;
-
-% to manually set the lower bound on flux through the community biomass
-% reaction (default=0.4 mmol/person/day)
-lowerBMBound = 0.4;
-
-% to set whether existing simulation results are rewritten (default=false)
-repeatSim = false;
-
-%% Pipeline start if setting any optional inputs
-% Only inputs that you want to change from the default need to be declared.
-
-[init, netSecretionFluxes, netUptakeFluxes, Y] = initMgPipe(modPath, abunFilePath, 'resPath', resPath, 'dietFilePath', dietFilePath, 'indInfoFilePath', indInfoFilePath, 'objre', objre, 'figForm', figForm, 'numWorkers', numWorkers, 'autoFix', autoFix, 'compMod', compMod, 'rDiet', rDiet, 'pDiet', pDiet, 'extSolve', extSolve, 'fvaType', fvaType, 'autorun', autorun, 'lowerBMBound', lowerBMBound, 'repeatSim', repeatSim);
-
+analyzeMgPipeResults(infoFilePath,resPath, 'sampleGroupHeaders', sampleGroupHeaders);
 

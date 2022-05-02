@@ -1,2 +1,0 @@
-The diets provided in this folder were created by the Diet Designer resource at Virtual Metabolic Human (https://www.vmh.life/). They represent the food intake of a human per day. The unit is mmol/(human*day). For a description of the diets and a list of food items in each diet, please go to https://www.vmh.life/#nutrition.
-Almut Heinken, 19.04.2018
