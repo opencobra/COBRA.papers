@@ -4300,7 +4300,7 @@ Lactobacillus_antri_DSM_16041	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
 Lactobacillus_apis_LMG_26964	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID:24096349					
 Lactobacillus_apodemi_DSM_16634_JCM_16172	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	PMID: 16825652					
 Lactobacillus_brevis_ATCC_367	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
-Lactobacillus_brevis_DSM_20054	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0						
+Lactobacillus_brevis_DSM_20054	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_brevis_KB290	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_brevis_subsp_gravesensis_ATCC_27305	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
 Lactobacillus_buchneri_ATCC_11577	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Krieg NR. Bergey's manual of systematic bacteriology, 2nd ed., volume 4. New York: Springer, 2010.	PMID: 22468341				
