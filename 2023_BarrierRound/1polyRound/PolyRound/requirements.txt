@@ -1,0 +1,9 @@
+numpy==1.18.3
+pandas==1.0.1
+python-dateutil==2.8.1
+python-libsbml==5.18.0
+scipy==1.4.1
+h5py==2.10.0
+tables==3.6.1
+cobra==0.20.0
+optlang==1.4.4
