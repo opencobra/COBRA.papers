@@ -42,7 +42,7 @@ testResultsFolder = runTestSuiteTools(refinedFolder, infoFilePath, inputDataFold
 
 %% Debugging the reconstructions
 
-[debuggingReport, fixedModels, failedModels]=runDebuggingTools(refinedFolder,testResultsFolder,inputDataFolder,reconVersion,'numWorkers',numWorkers);
+[debuggingReport, fixedModels, failedModels]=runDebuggingTools(refinedFolder,testResultsFolder,inputDataFolder,infoFilePath,reconVersion,'numWorkers',numWorkers);
 
 %% Plotting reconstructions
 
