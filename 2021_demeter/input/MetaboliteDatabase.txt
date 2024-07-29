@@ -6273,6 +6273,7 @@ mqn7	Menaquinone 7	C46H64O2	C46H64O2	0	C00828	5287554	16374	RAKQPZMEYJZGPI-LJWNY
 mqn8	Menaquinone 8	C51H72O2	C51H72O2	0	C00828	5376507	16374	LXKDFTDVRVLXFY-UHFFFAOYSA-N	CC1=C(C(=O)C2=CC=CC=C2C1=O)C/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CCC=C(C)C		02/07/2014	Citric acid cycle
 mqn9	Menaquinone-9		C56H80O2	0		6289935		WCRXHNIUHQUASO-UVZVDVBNSA-N			02/07/2014	
 mrctn	Myricetin		C15H9O8	-1							19/09/2018	Isoquinoline alkaloid biosynthesis
+mrna	mRNA		X	0							29/07/2024	Nucleotide interconversion
 mrphn	Morphine		C17H19NO3	0							19/09/2018	Drug metabolism
 mrphn_3glc	Morphine 3-Glucuronide	C23H27NO9	C23H27NO9	0	C16643	5484731					01/03/2019	Drug metabolism
 mrphn_6glc	Morphine 6-Glucuronide	C23H27NO9	C23H27NO9	0	C16578	5360621					01/03/2019	Drug metabolism
