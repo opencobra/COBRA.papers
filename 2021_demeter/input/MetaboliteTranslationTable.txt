@@ -4057,3 +4057,6 @@ cpd01029	M02820
 cpd18031	succitr_L
 cpd17282	dh6na
 cpd23834	6adxft
+cpd11462	mrna
+cpd19001	glc_D
+cpd19006	g6p
