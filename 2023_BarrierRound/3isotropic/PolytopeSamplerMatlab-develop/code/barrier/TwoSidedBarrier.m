@@ -42,8 +42,8 @@ classdef TwoSidedBarrier < handle
             o.freeIdx = find((o.lb == -Inf) & (o.ub == Inf));
             
             c = (o.ub+o.lb)/2;
-            c(o.lowerIdx) = o.lb(o.lowerIdx) + 1e4;
-            c(o.upperIdx) = o.ub(o.upperIdx) - 1e4;
+            c(o.lowerIdx) = o.lb(o.lowerIdx) + 1e6;
+            c(o.upperIdx) = o.ub(o.upperIdx) - 1e6;
             c(o.freeIdx) = 0;
             o.center = c;
         end

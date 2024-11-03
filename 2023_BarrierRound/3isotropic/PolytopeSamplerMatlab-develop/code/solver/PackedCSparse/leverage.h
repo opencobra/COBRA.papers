@@ -31,7 +31,7 @@ namespace PackedCSparse {
 			o.initialize(L, A, At);
 
 		Tx T1 = Tx(1.0), T2 = Tx(2.0);
-		projinv(o.Hinv, L); // Hinv = inv(LL') = inv(AWA')
+		projinv(o.Hinv, L);
 
 		Ti m = A.m, n = A.n;
 		Ti* Sp = o.Hinv.p.get(); Tx* Sv = o.Hinv.x.get();

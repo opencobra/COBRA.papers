@@ -7,7 +7,7 @@ classdef Polytope < handle
       y       % shift of the domain
       barrier % TwoSidedBarrier
       f       % the objective function and its derivatives in the original space
-      w       % Lewis weight
+      w      % Lewis weight
       df
       ddf
       original
@@ -107,7 +107,7 @@ classdef Polytope < handle
             ub(fixedVars) = +Inf;
             lb(fixedVars) = -Inf;
          end
-         o.barrier = TwoSidedBarrier(max(lb,-1e5), min(ub,1e5));
+         o.barrier = TwoSidedBarrier(max(lb,-1e7), min(ub,1e7));
          o.barrier.extraHessian = opts.extraHessian;
          
          %% Update the transformation Tx + y
@@ -169,7 +169,7 @@ classdef Polytope < handle
             [~, hess] = o.analytic_center_oracle(x);
          end
          solver.setScale(1./hess);
-         tau = solver.leverageScoreComplement(); % Q. tau(i) = 1 - ls(i), where ls(i) = leverage score of i^th row of A
+         tau = solver.leverageScoreComplement();
          w = sqrt((max(tau,0))./hess)+eps;
       end
       
@@ -344,12 +344,12 @@ classdef Polytope < handle
          
          % compute the cost of chol decomposition
          function s = cholCost(H, P)
-            count = symbfact(H(P,P)); % vector of row counts of R=chol(A)
+            count = symbfact(H(P,P));
             s = sum(count.^2);
          end
          
          m = size(o.A,1);
-         H = o.A * o.A' + spdiag(ones(m,1)); % H = AA'+I
+         H = o.A * o.A' + spdiag(ones(m,1));
          
          p_dissect = dissect(H); p_amd = amd(H);
          
@@ -373,7 +373,7 @@ classdef Polytope < handle
          zeroRows = full(sum(o.A~=0, 2))==0;
          o.A = o.A(~zeroRows,:); o.b = o.b(~zeroRows);
          
-         solver = Solver(o.A, 'doubledouble'); % prepare C++ Cholesky decomposer (PackedChol0)
+         solver = Solver(o.A, 'doubledouble');
          solver.setScale(ones(size(o.A,2),1))
          dL = solver.diagL();
          I = find((dL > 1e-12) .* (dL < 1e+64));

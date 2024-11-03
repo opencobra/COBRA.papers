@@ -68,10 +68,6 @@ end
 
 polytope = Polytope(problem, opts);
 
-%% Adjust sample numbers %%
-N = 4*(size(polytope.A, 2)-size(polytope.A, 1));
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 if ischar(opts.logging) || isstring(opts.logging)
     fclose(fid);
 end
