@@ -91,8 +91,8 @@ struct PackedChol
 		++numExact[k];
 		if (accuracyThreshold > 0.0 || !decomposed) // the first time we call, always run the double chol.
 		{
-			multiply(H, A, w.get(), At); // H = A*diag(w)*A' (=AWA')
-			chol(L, H); // Obtain a lower-triangular matrix L s.t. LL' = AWA'
+			multiply(H, A, w.get(), At);
+			chol(L, H);
 			decomposed = true;
 			
 			exactIdx.clear();
