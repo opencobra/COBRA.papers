@@ -7909,62 +7909,6 @@ zn2	Zinc		Zn	2	C00038	32051		PTFCDOFLOPIGGS-UHFFFAOYSA-N		HMDB01303	02/07/2014
 zym_int2	zymosterol intermediate 2		C27H42O	0	C05437	22298942	18252	AUNLIRXIJAVBNM-ZMKODQQDSA-N		HMDB06271	02/07/2014	Cholesterol metabolism
 zymst	zymosterol		C27H44O	0	C05437	92746	18252	CGSJXLIKVBJVRY-XTGBIJOFSA-N		HMDB06271	02/07/2014	Cholesterol metabolism
 zymstnl	5alpha-cholest-8-en-3beta-ol		C27H46O	0	C03845	101770	16608	QETLKNDKQOXZRP-XTGBIJOFSA-N		HMDB06841	02/07/2014	Cholesterol metabolism
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
-												
 3slac	3-Sialyllactose	C23H39NO19	C23H38NO19	-1	G00436	123914				HMDB0000825	03/02/2023	HMO degradation
 3s_3fuclac	3-Sialyl-3-fucosyllactose	C29H49NO23	C29H48NO23	-1		53477869				HMDB0006606	03/02/2023	HMO degradation
 3sln	3-Sialyllactosamine	C23H40N2O18	C23H40N2O18	0		53477870				HMDB0006607	03/02/2023	HMO degradation
