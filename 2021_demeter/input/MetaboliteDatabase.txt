@@ -1346,7 +1346,6 @@ adhlam	S-Acetyldihydrolipoamide		C10H19NO2S2	0						HMDB01526	02/07/2014	Glycoly
 adn	Adenosine		C10H13N5O4	0	C00212	60961	16335	OIRDTQYFTABQOQ-KQYNXXCUSA-N		HMDB00050	02/07/2014	Methionine and cysteine metabolism
 adocbi	Adenosyl cobinamide		C58H84CoN16O11	1						HMDB06903	02/07/2014	Vitamin B12 metabolism
 adocbip	Adenosyl cobinamide phosphate		C58H83CoN16O14P	-1						HMDB0012184	02/07/2014	Vitamin B12 metabolism
-adocbl	Adenosylcobalamin		C72H100CoN18O17P	0	C00194	5459907	18408	ZIHHMGTYZOSFRC-OUCXYWSSSA-L		HMDB02086	02/07/2014	Vitamin B12 metabolism
 adocblp	Adenosylcobalamin-phosphate		C72H99CoN18O20P2	0							02/07/2014	
 adp	ADP		C10H12N5O10P2	-3	C00008	6022	16761	XTWYTFMLZFPYCI-KQYNXXCUSA-K		HMDB01341	02/07/2014	Alanine and aspartate metabolism
 adpac	adipic acid		C6H8O4	-2	C06104	196	30832	WNLRTRBMVRJNCN-UHFFFAOYSA-L		HMDB00448	02/07/2014	Fatty acid oxidation
@@ -1566,7 +1565,6 @@ apio_D	D-Apiose (rare sugar in rhamnogalacturonan II)		C5H10O5	0	C01488			ASNHGE
 apnnox	alpha-pinene oxide		C10H16O	0	C02759	91508	29060	NQFUSWIGRKFAHK-UHFFFAOYSA-N		HMDB03667	02/07/2014	Limonene and pinene degradation
 apoACP	apoprotein [acyl carrier protein]		RHO	0							02/07/2014	CoA synthesis
 apoC	Apocarboxlase (no lys residue)		XH	0							02/07/2014	Biotin metabolism
-apoc	Apo-[carboxylase]		C7H13N3O2R2	0							04/10/2018	
 apoC_Lys	Apocarboxylase (Lys residue)		C6H13N2OX	0							02/07/2014	Biotin metabolism
 apoC_Lys_btn	Holocarboxylase (biotin covalent bound to Lys residue of apoC)		C16H27N4O3SX	0	C06250						02/07/2014	Biotin metabolism
 apolpp	Braun apolipoprotein		C292H498N87O98S2	0							02/07/2014	
@@ -1580,7 +1578,6 @@ aprgstrn	(20S)-20-hydroxypregn-4-en-3-one		C21H32O2	0	C04042	92747	28453	RWBRUCC
 aprut	N-acetylputrescinium		C6H15N2O	1	C02714	122356	17768	KLZGKIDSEJWEDW-UHFFFAOYSA-O		HMDB02064	02/07/2014	Arginine and proline metabolism
 aps	5-adenylyl sulfate(2-)		C10H12N5O10PS	-2	C00224	10238	17709	IRLPACMLTUPBCL-KQYNXXCUSA-L		HMDB01003	02/07/2014	Nucleotide interconversion
 aptrpn	Acetylpseudotropine		C10H17NO2	0							19/09/2018	Tropane, piperidine and pyridine alkaloid biosynthesis
-aqcobal	Aquacob(III)alamin		C62H93CoN13O15P	0	C00992		15852	YOZNUFWCRFCGIH-WZHZPDAFSA-L		HMDB03458	02/07/2014	Vitamin B12 metabolism
 ara5p	D-Arabinose 5-phosphate		C5H9O8P	-2						HMDB0011734	02/07/2014	Lipopolysaccharide biosynthesis
 arab_D	D-Arabinose	C5H10O5	C5H10O5	0						HMDB0029942	02/07/2014	Lipopolysaccharide biosynthesis
 arab_L	L-arabinose		C5H10O5	0	C00259	439195	17535	SRBFZHDQGSBBOR-HWQSCIPKSA-N		HMDB00646	02/07/2014	Ascorbate and aldarate metabolism
@@ -1834,7 +1831,6 @@ C06314	Lipoxin A4		C20H31O5	-1	C06314	5280914	6498	IXAQOQZEOGMIQS-SNDKYGBFSA-M		
 C06315	Lipoxin B4		C20H31O5	-1	C06315	5280915	6499	UXVRTOKOJOMENI-DXEGFZHISA-M		HMDB05082	02/07/2014	Arachidonic acid metabolism
 C06350	(R,S)-Norlaudanosoline		C16H18NO4	1	C06350	18519	28770	ABXZOXDTHTTZJW-UHFFFAOYSA-O		HMDB0012486	02/07/2014	Isoquinoline alkaloid biosynthesis
 C06439	Prostaglandin E3		C20H29O5	-1	C06439	5280937	28031			HMDB02664	02/07/2014	
-C06453	Methylcobalamin		C63CoH91N13O14P	-1	C06453		28115	UPAJMOGMOIFZMY-WZHZPDAFSA-L		HMDB02274	02/07/2014	Vitamin B12 metabolism
 C06948	Diazepam		C16ClH13N2O	0	C06948	3016	49575	AAOVKJBEBIDNHE-UHFFFAOYSA-N		HMDB0014967	02/07/2014	Miscellaneous
 C07296	4,8,12-trimethyltridecanoyl-CoA(4-)		C37H62N7O17P3S	-4		11966114	15495				02/07/2014	
 C07297	3-oxopristanoyl-CoA(4-)		C40H66N7O18P3S	-4	C07297	441253	15371	NQFYRDGBRBDQQG-SVFBWJQPSA-J		HMDB02057	02/07/2014	Fatty acid oxidation
@@ -1905,8 +1901,6 @@ carveol	(-)-trans-carveol		C10H16O	0	C00964	94221	15389	BAVONGHXFVOKBV-ZJUUUORDS
 catechol	Catechol	C6H6O2	C6H5O2	-1	C00090	289	18135	YCIMNLLNPGFGHC-UHFFFAOYSA-N	Oc1ccccc1O	HMDB00957	02/07/2014	Benzoate degradation
 cbasp	N-Carbamoyl-L-aspartate		C5H6N2O5	-2	C00438	93072	15859	HLKXYZVTANABHZ-REOHCLBHSA-L		HMDB00828	02/07/2014	Alanine and aspartate metabolism
 cbi	Cobinamide		C48H72CoN11O8	0						HMDB06902	02/07/2014	Vitamin B12 metabolism
-cbl1	Cob(I)alamin		C62H88CoN13O14P	-1	C00853	53477772	15982	OMAOKVYASDIYQG-DSRCUDDDSA-L		HMDB03429	02/07/2014	Vitamin B12 metabolism
-cbl2	Cob(II)alamin		C62H92CoN13O14P	0	C00541		16304	ASARMUCNOOHMLO-DSRCUDDDSA-L		HMDB06316	02/07/2014	Vitamin B12 metabolism
 cbl3	Vitamin B12, Cobalamin (III)	C62H89CoN13O14P	C62H94CoN13O14P	5							02/07/2014	
 cbmn	Columbamine	C20H20NO4	C20H20NO4	1							19/09/2018	Flavonoid, isoflavonoid, and polyphenol metabolism
 cbmt	Carbamate	CH3NO2	CH2NO2	-1						HMDB03551	02/07/2014	Nitrogen metabolism
@@ -2801,8 +2795,6 @@ codscl4	Cobalt-precorrin-4		C44H44CoN4O16	0							02/07/2014
 codscl5a	Cobalt-precorrin-5a		C45H46CoN4O16	0							02/07/2014	
 codscl6a	Cobalt-precorrin-6a		C44H45CoN4O16	0							02/07/2014	
 codscl8x	Cobalt-precorrin-8x		C45H52CoN4O14	0							02/07/2014	
-coF240	Coenzyme F420	C29H38N5O18P	C29H34N5O18P	-4							02/07/2014	
-coF240h	Reduced coenzyme F420	C29H40N5O18P	C29H36N5O18P	-4							02/07/2014	
 coF420	Coenzyme F420	C29H38N5O18P	C29H34N5O18P	-4							02/07/2014	Methane metabolism
 coF420h	Reduced coenzyme F420	C29H40N5O18P	C29H36N5O18P	-4							02/07/2014	Methane metabolism
 coke	cocaine(1+)		C17H21NO4	0	C01416	446220	27958	ZPUCINDJVBIVPJ-LJISPDSOSA-N		HMDB0015043	02/07/2014	Alkaloid synthesis
@@ -2990,7 +2982,7 @@ cytbdox	cytochrome-bd-ox		FeR	4							12/11/2020	Respiration
 cytbdr	cytochrome-bd-red		FeR	2							12/11/2020	Respiration
 cytbox	cytochrome-bo-ox		CuR	2							12/11/2020	Respiration
 cytbr	cytochrome-bo-red		CuR	1							12/11/2020	Respiration
-cytcbbox	cytochrome-cbb-ox		CuR	2							12/11/2020	
+cytcbbox	cytochrome-cbb-ox		CuR	4							12/11/2020	
 cytcbbr	cytochrome-cbb-red		CuR	2							12/11/2020	
 cytcox	Cytochrome-C-ox		FeR	3							12/11/2020	Respiration
 cytcr	Cytochrome-C-red"		FeR	2							12/11/2020	Respiration
@@ -5832,7 +5824,6 @@ mfur	Methanofuran	C34H44N4O15	C34H40N4O15	-4							02/07/2014	Methane metabolism
 mg2	magnesium		Mg	2				JLVVSXFLKOJNIY-UHFFFAOYSA-N		HMDB00547	02/07/2014	Vitamin B12 metabolism
 mgacpail_hs	mannosyl-glucosaminyl-acylphosphatidylinositiol (H2)		C37H68NO19PFULLRCO2FULLR2CO2	0							02/07/2014	Phosphatidylinositol phosphate metabolism
 mgal	Methyl beta-D-galactoside	C7H14O6	C7H14O6	0	C03619						01/07/2019	Glycosaminoglycan degradation
-MGD	moldybdopterin_guanine_dinucleotide		X	0							02/07/2014	
 MGlcn10	mucin-type O-glycan No 10	C44H71N4O31X	C44H69N4O31X	-2							29/03/2017	Mucin O-glycan biosynthesis
 MGlcn10_rl	released mucin-type O-glycan No 10	C44H72N4O32	C44H70N4O32	-2							29/03/2017	O-glycan degradation
 MGlcn100	mucin-type O-glycan No 100	C61H100N5O43X	C61H99N5O43X	-1							29/03/2017	Mucin O-glycan biosynthesis
@@ -6406,7 +6397,6 @@ nflasp	N-Formyl-L-aspartate	C5H7NO5	C5H5NO5	-2							19/09/2018	Histidine metabo
 nflmaatrna	N-Formyl-L-methionylaminoacyl-tRNA		C23H34N2O19P2R4S	-2							19/09/2018	Methionine and cysteine metabolism
 nfmmt	N-Formyl maleamic acid		C5H4NO4	-1							19/09/2018	Nicotine degradation
 nfmnlasp	N-Formimino-L-aspartate		C5H7N2O4	-1							19/09/2018	Xenobiotics metabolism
-Nforglu	N-Formyl-L-glutamate		C6H7NO5	-2						HMDB03470	04/10/2018	
 nforglu	N-Formyl-L-glutamate	C6H9NO5	C6H7NO5	-2						HMDB03470	02/07/2014	Folate metabolism
 nformanth	N-formylanthranilate		C8H6NO3	-1	C05653	101399	36575	LLLPDUXGHXIXIW-UHFFFAOYSA-M		HMDB04089	02/07/2014	Tryptophan metabolism
 Nfortyr	N-Formyl-L-tyrosine (iMM904)		C10H10NO4	-1							08/03/2016	Folate metabolism
@@ -7438,7 +7428,6 @@ tdec2eACP	trans-Dec-2-enoyl-[acyl-carrier protein]		C21H37N2O8PRS	-1							02/07
 tdec4ecoa	trans4decenoylcoa		C31H48N7O17P3S	-4				QTOYQSMKQWCWOX-SGUJYKCESA-J			02/07/2014	Fatty acid oxidation
 tdechola	Taurodeoxycholic acid		C26H44NO6S	-1	C05463	2733768	9410	AWDRATDZQPNJFN-VAYUFCLWSA-M		HMDB00896	02/07/2014	Bile acid metabolism
 tdecoa	Tetradecenoyl-CoA (n-C14:1CoA)		C35H56N7O17P3S	-4							02/07/2014	Fatty acid oxidation
-te	tellurium		X	-2							02/07/2014	
 teich_45_BS	teichuronic acid (GlcA + GalNac, 45 repeating unit)	X	X	0							30/09/2014	Cell wall biosynthesis
 Temp001	Biomass		X	0							03/01/2017	
 tet	Tetrathionate		O6S4	-2							02/07/2014	Respiration
@@ -7920,3 +7909,112 @@ zn2	Zinc		Zn	2	C00038	32051		PTFCDOFLOPIGGS-UHFFFAOYSA-N		HMDB01303	02/07/2014
 zym_int2	zymosterol intermediate 2		C27H42O	0	C05437	22298942	18252	AUNLIRXIJAVBNM-ZMKODQQDSA-N		HMDB06271	02/07/2014	Cholesterol metabolism
 zymst	zymosterol		C27H44O	0	C05437	92746	18252	CGSJXLIKVBJVRY-XTGBIJOFSA-N		HMDB06271	02/07/2014	Cholesterol metabolism
 zymstnl	5alpha-cholest-8-en-3beta-ol		C27H46O	0	C03845	101770	16608	QETLKNDKQOXZRP-XTGBIJOFSA-N		HMDB06841	02/07/2014	Cholesterol metabolism
+3slac	3-Sialyllactose	C23H39NO19	C23H38NO19	-1	G00436	123914				HMDB0000825	03/02/2023	HMO degradation
+3s_3fuclac	3-Sialyl-3-fucosyllactose	C29H49NO23	C29H48NO23	-1		53477869				HMDB0006606	03/02/2023	HMO degradation
+3sln	3-Sialyllactosamine	C23H40N2O18	C23H40N2O18	0		53477870				HMDB0006607	03/02/2023	HMO degradation
+3gallac	3-Galactosyllactose	C18H32O16	C18H32O16		" 	
+G00386 "	"	11755848"	504.438			HMDB0006599	03/02/2023	HMO degradation
+6gallac	6'-Galactosyllactose	C18H32O16	C18H32O16	0	G00478	129864686					03/02/2023	HMO degradation
+6slac	6-Sialyllactose	C23H39NO19	C23H38NO19	-1	G00265	643987				HMDB0006569	03/02/2023	HMO degradation
+dflnh_a	Difucosyllacto-N-hexaose a	C52H88N2O39	C52H88N2O39	0		124202089				HMDB06622	03/02/2023	HMO degradation
+dslacnttr	Disialyllacto-N-tetraose	C48H79N3O37	C48H77N3O37	-2		3085216				HMDB0006594	03/02/2023	HMO degradation
+fuclacnhx	Monofucosyllacto-N-hexaose	C46H78N2O35	C46H78N2O35	0		126017				HMDB0006612	03/02/2023	HMO degradation
+ilacNose	iso-Lacto-N-octaose	C48H79N3O35	C48H79N3O35	0	G12797	124501392					03/02/2023	HMO degradation
+lacnd	Lacto-N-decaose	C95H168N4O23	C95H168N4O23	0	G04631	53477880				HMDB0006650	03/02/2023	HMO degradation
+lacnfucpt_i	Lacto-N-fucopentaose I	C32H55NO25	C32H55NO25	0	G00535	53477883				HMDB06705	03/02/2023	HMO degradation
+lacnfucpt_ii	Lacto-N-fucopentaose II	C32H55NO25	C32H55NO25	0	G00623	168012				HMDB0006577	03/02/2023	HMO degradation
+lacnfucpt_iii	Lacto-N-fucopentaose III	C32H55NO25	C32H55NO25	0	G00557	53477857				HMDB0006576	03/02/2023	HMO degradation
+lacnfucpt_v	Lacto-N-fucopentaose V	C32H55NO25	C32H55NO25	0	G00899	53477884				HMDB0006706	03/02/2023	HMO degradation
+lacndfucpt_ii	Lacto-N-difucopentaose II	C38H65NO29	C38H65NO29	0						HMDB0001986	03/02/2023	HMO degradation
+lacnhx	Lacto-N-hexaose	C40H68N2O31	C40H68N2O31	0	G00993	53477866				HMDB0006602	03/02/2023	HMO degradation
+lacnn	Lacto-N-neooctaose	C54H91N3O41	C54H91N3O41	0	G12796						03/02/2023	HMO degradation
+lacNose	Lacto-N-octaose	C54H91N3O41	C54H91N3O41	0	G02881						03/02/2023	HMO degradation
+lnd	Lacto-N-decaose	C95H168N4O23	C95H168N4O23	0	G04631	53477880				HMDB0006650	03/02/2023	HMO degradation
+lndfh_ii	Lacto-N-difucopentaose II	C38H65NO29	C38H65NO29	0		53477740				HMDB01986	03/02/2023	HMO degradation
+lnnh	Lacto-N-neohexaose	C40H68N2O31	C40H68N2O31	0	G00555	22833673				HMDB0006610	03/02/2023	HMO degradation
+lntri_ii	Lacto-N-triose II	C20H35NO16	C20H35NO16	0		53477860				HMDB0006592	03/02/2023	HMO degradation
+lntri_i	Lacto-N-triose I	C20H35NO16	C20H35NO16	0		22609086				HMDB0039750	03/02/2023	HMO degradation
+neuac_lact	N-acetylneuraminosyl(a2-6)lactosamine	C25H42N2O19	C25H41N2O19	-1						HMDB0001081	03/02/2023	HMO degradation
+placNose	para-Lacto-N-octaose	C54H91N3O41	C54H91N3O41	0	G12798	22833680				HMDB0006691	03/02/2023	HMO degradation
+plnnh	para-Lacto-N-hexaose	C40H68N2O31	C40H68N2O31	0	G02993	22833594				HMDB0006628	03/02/2023	HMO degradation
+naclacn	N-acetyllactosamine	C14H25NO11	C14H25NO11	0	C00611					HMDB0001542	03/02/2023	HMO degradation
+naclacn6p	N-acetyllactosamine-6-phosphate	C14H25NO14P	C14H24NO14P	-2							03/02/2023	HMO degradation
+lacn	Lactosamine	C12H23NO10	C12H23NO10	0	C00203					HMDB0006591	03/02/2023	HMO degradation
+neulacnttr_b	Sialyllacto-N-tetraose b	C37H62N2O29	C37H61N2O29	-1	G00391	53477864				HMDB0006600	03/02/2023	HMO degradation
+neulacnttr_c	Sialyllacto-N-tetraose c	C37H62N2O29	C37H61N2O29	-1	G11147	4418533				HMDB06593	03/02/2023	HMO degradation
+dfuclac	Difucosyllactose	C24H42O19	C24H42O19	0						HMDB0006587	03/02/2023	HMO degradation
+dslac	Disialyllactose	C34H56N2O27	C34H54N2O27	-2						HMDB0006692	03/02/2023	HMO degradation
+lacnnhx	Lacto-N-neohexaose	C40H68N2O31	C40H68N2O31	0	G00555					HMDB0006610	03/02/2023	HMO degradation
+fuclachx	Monofucosyllacto-N-hexaose	C46H78N2O35	C46H77N2O35	-1	G00680					HMDB0006612	03/02/2023	HMO degradation
+galnb	Galacto-N-biose	C14H25NO11	C14H25NO11	0		129661805				HMDB0006600	03/02/2023	HMO degradation
+mets	Methionine synthase enzyme		X	0							04/08/2022	Vitamin B12 metabolism
+mets_C06453	[Methionine synthase]-methylcob(I)alamin		C63H91CoN13O14PX	0	C06410						04/08/2022	Vitamin B12 metabolism
+mets_cbl1	[Methionine synthase]-cob(I)alamin		C62H89CoN13O14PX	0							04/08/2022	Vitamin B12 metabolism
+mets_cbl2	[Methionine synthase]-cob(II)alamin		C62H88CoN13O14PX	1	C06409						04/08/2022	Vitamin B12 metabolism
+mutApoE	Methylmalonyl Coenzyme A Mutase	enzyme	X	0							04/08/2022	Vitamin B12 metabolism
+mutHoloE	Adenosylcobalamin bound to Methylmalonyl Coenzyme A Mutase enzyme		C72H100CoN18O17PX	0							04/08/2022	Vitamin B12 metabolism
+cbl1	Cob(I)alamin		C62H89CoN13O14P	0	C00853	53477772	15982	OMAOKVYASDIYQG-DSRCUDDDSA-L		HMDB03429	04/08/2022	Vitamin B12 metabolism
+cbl2	Cob(II)alamin		C62H88CoN13O14P	1	C00541		16304	ASARMUCNOOHMLO-DSRCUDDDSA-L		HMDB06316	04/08/2022	Vitamin B12 metabolism
+adocbl	Adenosylcobalamin		C72H100CoN18O17P	0	C00194	5459907	18408	ZIHHMGTYZOSFRC-OUCXYWSSSA-L		HMDB02086	04/08/2022	Vitamin B12 metabolism
+con_adocbl	Consumed adenosylcobalamin		C72H100CoN18O17P	0	C00194	5459907	18408	ZIHHMGTYZOSFRC-OUCXYWSSSA-L		HMDB02086	04/08/2022	Vitamin B12 metabolism
+hoxocbl	Hydroxocobalamin		C62H89CoN13O15P	0	C08230		27786				04/08/2022	Vitamin B12 metabolism
+ccbl	Cyanocobalamin		C63H88CoN14O14P	0	C02823		17439				04/08/2022	Vitamin B12 metabolism
+C06453	Methylcobalamin		C63H91CoN13O14P	0	C06453		28115	UPAJMOGMOIFZMY-WZHZPDAFSA-L		HMDB02274	04/08/2022	Vitamin B12 metabolism
+con_C06453	Methylcobalamin consumed		C63H91CoN13O14P	0	C06453		28115	UPAJMOGMOIFZMY-WZHZPDAFSA-L		HMDB02274	04/08/2022	Vitamin B12 metabolism
+aqcobal	Aquacob(III)alamin		C62H90CoN13O15P	1	C00992		15852	YOZNUFWCRFCGIH-WZHZPDAFSA-L		HMDB03458	04/08/2022	Vitamin B12 metabolism
+6hnac	6-Hydroxynicotinate		C6H4NO3	-1	C01020		16168	BLHCMGRVFXRYRN-UHFFFAOYSA-M		HMDB02658	15/07/2025	Nicotinate and nicotinamide metabolism
+1acpc	1-Aminocyclopropane-1-carboxylate		C4H7NO2	0	C01234		11251	PAJPWUMXBYXFCZ-UHFFFAOYSA-N		HMDB36458	15/07/2025	Cysteine and methionine metabolism
+preq0	7-cyano-7-carbaguanine		C7H5N5O	0	C15996		677358	FMKSMYDYKXQYRV-UHFFFAOYSA-N			15/07/2025	
+25dthpp	2 5 diamino 6 ribitylamino 4 3H pyrimidinone 5 phosphate C9H16N5O8P		C9H16N5O8P	-2	C18910		52402	ACIVVGBVOVHFPQ-RPDRRWSUSA-N			15/07/2025	Riboflavin metabolism
+2mglutr	2-methyleneglutarate		C6H6O4	-2	C02930	21703573	58056	CWNNYYIZGGDCHS-UHFFFAOYSA-L			15/07/2025	
+6othnic	6-oxo-1,4,5,6-tetrahydronicotinate		C6H6NO3	-1	C04226	21123017	57777	SDKCWSUZEUBWLP-UHFFFAOYSA-M			15/07/2025	
+2fglutr	2-Formylglutarate		C6H6O5	-2	C16159 	47205469	49075	NMUKFRCHLYPKSR-UHFFFAOYSA-N			15/07/2025	
+2h2mglutr	(S)-2-hydroxymethylglutarate		C6H8O5	-2	C16390 	47205688	49076	XPQIPNORJZZYPV-BYPYZUCNSA-N			15/07/2025	
+dmp	dimethylallyl phosphate		C5H9O4P	-2	C21214   	315431329					15/07/2025	Riboflavin metabolism
+26fsdp	(2Z,6E)-Farnesyl diphosphate		C15H26O7P2	-2	C16826	96023350	19515	VWFJDQUYCIWHTN-PVMFERMNSA-K			15/07/2025	
+coFIII	cobalt-factor III		C43H40CoN4O16	-8	C17401	71306346	73299	RQHZZQLPDALGEQ-CYGMIEPJSA-D			15/07/2025	
+mnO2	Manganese(IV) oxide		MnO2	0	C21744	14801	136511	NUJOXMJBOLGQSY-UHFFFAOYSA-N			15/07/2025	
+dttchexdp	di-trans,tri-cis-hexaprenyl diphosphate		C30H50O7P2	-2	C17434	25245249	81085	NGFSMHKFTZROKJ-SLKMIFNPSA-K			15/07/2025	
+dtdcpentdp	di-trans,di-cis-pentaprenyl diphosphate		C25H42O7P2	-2	C17435	25246285	81086	JMVSBFJBMXQNJW-PSTDWBAXSA-K			15/07/2025	
+dttechepdp	ditrans,tetracis-Heptaprenyl diphosphate		C35H58O7P2	-2	C17436	25245482	81087	LSJLEXWXRKTZAJ-KQKACQDCSA-K			15/07/2025	
+dtpcoctdp	ditrans,pentacis-Octaprenyl diphosphate		C40H66O7P2	-2	C17437	25244577	81088	IKKLDISSULFFQO-MXWMMQQISA-K			15/07/2025	
+dthcnondp	di-trans,hexa-cis-nonaprenyl diphosphate		C45H74O7P2	-2	C17438	25244754	81088	IVLBHBFTRNVIAP-HUIBRQQWSA-K			15/07/2025	
+23ggglyc	CDP-2,3-bis-O-geranylgeranyl-sn-glycerol		C52H83N3O13P2	-2	C18059	46878446	58838	DCAZOLWWPLSROK-DXHGDTBASA-L			15/07/2025	
+MoO2	MoO2(OH)-molybdopterin cofactor		C10H10MoN5O8PS2	-2	C18237	135926587	71302	RVADHZKSUZKIRJ-BKZHXLINSA-J			15/07/2025	
+dcpp	mono-trans,octa-cis-decaprenyl diphosphate		C50H82O7P2	-2	C18321	45479373	87356	FSCYHDCTHRVSKN-DJNGBRKISA-K			15/07/2025	
+mn3	Manganese(3+)		Mn	3	C19611 	124490280					15/07/2025	
+799cnspr	7,9,9'-cis-neurosporene		C40H58	0	C19759	25244751	62463	ATCICVFRSJQYDV-IFJQPPEWSA-N			15/07/2025	
+Sm5tins	S-methyl-5'-thioinosine		C11H14N4O4S	0	C19787	135511888	48595	GXYLOXCSJFJFKA-IOSLPCCCSA-N			15/07/2025	
+2gpl2phglyt	2-O-(α-D-glucopyranosyl)-3-phospho-D-glycerate		C9H14O12P	-3	C19791	53262383	62600	RJDBNSZFZDWPFL-CECBSOHTSA-K			15/07/2025	
+2gpl2glyt	2-O-(α-D-glucopyranosyl)-D-glycerate		C9H15O9	-1	C19792	53262367	62510	DDXCFDOPXBPUJC-CECBSOHTSA-M			15/07/2025	
+glymanheptph	D-glycero-α-D-manno-heptose 7-phosphate		C7H13O10P	-2	C19878	46906050	60203	SDADNVAZGVDAIM-QTNLNCNHSA-L			15/07/2025	
+ctdMoO2	cytidylyl MoO2(OH)-molybdopterin cofactor		C19H22MoN8O15P2S2	-2	C21485	135915294	60538	ZOPFRBWJOPZGAV-MQPNXHJTSA-J			15/07/2025	
+6cthpt	6-carboxy-5,6,7,8-tetrahydropterin		C7H8N5O3	-1	C20239	135911924	61032	QSIYONWVWDSRRO-UHFFFAOYSA-M			15/07/2025	
+2cmtzeph	2-(2-carboxy-4-methylthiazol-5-yl)ethyl phosphate		C7H7NO6PS	-3	C20247	53477624	62890	XWECMAHAKFWYNV-UHFFFAOYSA-K			15/07/2025	
+7c7dzgua	7-carboxy-7-deazaguanine		C7H5N4O3	-1	C20248	136041714	61036	XIUIRSLBMMTDSK-UHFFFAOYSA-M			15/07/2025	
+cadThiS	carboxy-adenylated-[ThiS sulfur-carrier protein]		C14H19N7O9PR	0							15/07/2025	
+afuc_L	α-L-fucopyranose		C6H12O5	0	C20835	439554	42548	SHZGCJCMOBCMKK-SXUWKVJYSA-N			15/07/2025	
+23ggdpg1pser	2,3-bis-O-geranylgeranyl-sn-glycero-1-phosphoserine		C46H77NO8P	-1	C20466	70698354	71517	UPNGZNGTSDAVMT-JAQDALRISA-M			15/07/2025	
+btd_RS	(R,S)-2,3-butanediol		C4H10O2	0	C20657	220010	75460	OWBTYPJTUOEWEK-ZXZARUISSA-N			15/07/2025	
+bfuc_L	β-L-fucopyranose		C6H12O5	0	C20836	444863	42589	SHZGCJCMOBCMKK-KGJVWPDLSA-N			15/07/2025	
+ch4Te	methanetelluronate		CH3O3Te	-1		70698379	71624	DPPANEFZFQYGIG-UHFFFAOYSA-M			15/07/2025	
+tcMoss	thiocarboxylated [molybdopterin-synthase sulfur-carrier protein subunit]		C4H7N2O2RS	0							15/07/2025	
+bMo	bis(molybdenum cofactor)		C20H20MoN10O13P2S4	-4		136630911		IHRHKHANGAHFPM-BURDSJQCSA-F			15/07/2025	
+bguMoO2	bis(guanylyl molybdopterin) cofactor		C40H44MoN20O27P4S4	-4		136630930		SPLYCLQDZVSNSU-HWCCSRDCSA-F			15/07/2025	
+38cydhg5tp	(8S)-3',8-cyclo-7,8-dihydroguanosine 5'-triphosphate		C10H12N5O14P3	-4	C21310	135921686	131766	HRBCPXBJAWPPIC-FLISOKMQSA-J			15/07/2025	
+DsrCCys_L	DsrC-L-Cysteine		C6H11N2O2R3S2	1							15/07/2025	
+caMoss	carboxy-adenylated [molybdopterin-synthase sulfur-carrier protein subunit]		C14H19N7O9PR	0							15/07/2025	
+tcThiS	thiocarboxylated-[ThiS sulfur-carrier protein]		C4H7N2O2RS	0	C20728						15/07/2025	
+DsrCdsul	a [DsrC protein] with an intramolecular disulfide bond		C6H9N2O2R3S2	1							15/07/2025	
+glyliplys	[glycine cleavage system lipoyl-carrier protein]-L-lysine		C6H14N2OR2	2							15/07/2025	
+glyHoctlys	[glycine-cleavage complex H protein] N6-octanoyl-L-lysine		C14H27N2O2R2	1							15/07/2025	
+MoO2syn	molybdopterin synthase sulfur carrier subunit		C4H7N2O3R	0							15/07/2025	
+cOThiSP	[CysO sulfur-carrier protein]-Gly-Gly		C4H7N2O3R	0							15/07/2025	
+acitr_L	N-Acetyl-L-citrulline		C8H14N3O4	-1	C15532	17396524	49002	WMQMIOYQXNRROC-LURJTMIESA-M			15/07/2025	
+preq1	7-Aminomethyl-7-carbaguanine		C7H10N5O	1	C16675	51090998	45126				15/07/2025	
+cIIbi	cob(II)inamide		C48H72CoN11O8	1							15/07/2025	
+MGD	moldybdopterin_guanine_dinucleotide		C20H22N10O15P2S2Mo	-2							15/07/2025	
+te	tellurium		O3Te	-2							15/07/2025	
+malmeACP	Malonyl-ACP-methyl-ester		C15H25N2O10PRS	-1	C19673						15/07/2025	
+pfmnh2	Prenylated FMNH2		C22H29N4O9P	-2	C21215						15/07/2025	
+7979clcpn	7,9,7',9'-Tetra-cis-lycopene		C40H56	0	C15858	47205178	62466				15/07/2025	
