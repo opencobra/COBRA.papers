@@ -1,0 +1,2 @@
+Models for this simulation can be downloaded from the dataverse.
+the germ-free infant model can be uploaded into this folder, while the host-microbiome models should be uploaded inot the HM_models>female>CC_20000 folder instead.
