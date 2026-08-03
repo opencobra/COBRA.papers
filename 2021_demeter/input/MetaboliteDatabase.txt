@@ -1799,10 +1799,8 @@ C03693	D-Mannose 1,6-bisphosphate		C6H10O12P2	-4	C03693	3036654		RWHOZGRAXYWRNX-
 C03820	1-Alkyl-2-acetyl-sn-glycerol		C5H9O4R	0	C03820		16291				02/07/2014	Glycerophospholipid metabolism
 C03958	Thyrotropin releasing hormone		C16H22N6O4	0	C03958	638678	35940	XNSAINXGIQZQOO-SRVKXCTJSA-N		HMDB05763	02/07/2014	Miscellaneous
 C03968	1-alkyl-sn-glycerol 3-phosphate(1-)		C3H6O6PR	-2			58014				02/07/2014	Glycerophospholipid metabolism
-C03990	lithocholate		C24H39O3	-1	C03990	9903	16325			HMDB00761	02/07/2014	
 C04295	Androst-5-ene-3beta,17beta-diol		C19H30O2	0	C04295	10634	2710	QADHLRWLCPCEKT-LOVVWNRFSA-N		HMDB03818	02/07/2014	Androgen and estrogen synthesis and metabolism
-C04308	Phosphatidyl-N-dimethylethanolamine		C9H15NO8PR2	-1	C04308		52332				02/07/2014	Glycerophospholipid metabolism
-C04483	deoxycholate		C24H39O4	-1	C04483	222528	28834			HMDB00626	02/07/2014	
+C04308	Phosphatidyl-N-dimethylethanolamine		C9H15NO8PR2	-1	C04308		52332				02/07/2014	Glycerophospholipid metabolism	
 C04685	prostaglandin A1(1-)		C20H31O4	-1	C04685	5281912	15545			HMDB02656	02/07/2014	
 C04717	13-L-Hydroperoxylinoleic acid		C18H30O4	-1	C04717	5280720	15655	JDSRHVWSAMTSSN-IRQZEAMPSA-N		HMDB03871	02/07/2014	Linoleate metabolism
 C04805	5(S)-HETE		C20H31O3	-1	C04805	5280733	28209	KGIJOOYOSFUGPC-HSFOLRKZSA-M		HMDB0011134	02/07/2014	Arachidonic acid metabolism
