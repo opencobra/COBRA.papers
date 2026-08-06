@@ -1800,7 +1800,7 @@ C03820	1-Alkyl-2-acetyl-sn-glycerol		C5H9O4R	0	C03820		16291				02/07/2014	Glyce
 C03958	Thyrotropin releasing hormone		C16H22N6O4	0	C03958	638678	35940	XNSAINXGIQZQOO-SRVKXCTJSA-N		HMDB05763	02/07/2014	Miscellaneous
 C03968	1-alkyl-sn-glycerol 3-phosphate(1-)		C3H6O6PR	-2			58014				02/07/2014	Glycerophospholipid metabolism
 C04295	Androst-5-ene-3beta,17beta-diol		C19H30O2	0	C04295	10634	2710	QADHLRWLCPCEKT-LOVVWNRFSA-N		HMDB03818	02/07/2014	Androgen and estrogen synthesis and metabolism
-C04308	Phosphatidyl-N-dimethylethanolamine		C9H15NO8PR2	-1	C04308		52332				02/07/2014	Glycerophospholipid metabolism	
+C04308	Phosphatidyl-N-dimethylethanolamine		C9H15NO8PR2	-1	C04308		52332				02/07/2014	Glycerophospholipid metabolism
 C04685	prostaglandin A1(1-)		C20H31O4	-1	C04685	5281912	15545			HMDB02656	02/07/2014	
 C04717	13-L-Hydroperoxylinoleic acid		C18H30O4	-1	C04717	5280720	15655	JDSRHVWSAMTSSN-IRQZEAMPSA-N		HMDB03871	02/07/2014	Linoleate metabolism
 C04805	5(S)-HETE		C20H31O3	-1	C04805	5280733	28209	KGIJOOYOSFUGPC-HSFOLRKZSA-M		HMDB0011134	02/07/2014	Arachidonic acid metabolism
@@ -7910,8 +7910,7 @@ zymstnl	5alpha-cholest-8-en-3beta-ol		C27H46O	0	C03845	101770	16608	QETLKNDKQOXZ
 3slac	3-Sialyllactose	C23H39NO19	C23H38NO19	-1	G00436	123914				HMDB0000825	03/02/2023	HMO degradation
 3s_3fuclac	3-Sialyl-3-fucosyllactose	C29H49NO23	C29H48NO23	-1		53477869				HMDB0006606	03/02/2023	HMO degradation
 3sln	3-Sialyllactosamine	C23H40N2O18	C23H40N2O18	0		53477870				HMDB0006607	03/02/2023	HMO degradation
-3gallac	3-Galactosyllactose	C18H32O16	C18H32O16		" 	
-G00386 "	"	11755848"	504.438			HMDB0006599	03/02/2023	HMO degradation
+3gallac	3-Galactosyllactose	C18H32O16	C18H32O16	0 	G00386 	11755848				HMDB0006599	03/02/2023	HMO degradation
 6gallac	6'-Galactosyllactose	C18H32O16	C18H32O16	0	G00478	129864686					03/02/2023	HMO degradation
 6slac	6-Sialyllactose	C23H39NO19	C23H38NO19	-1	G00265	643987				HMDB0006569	03/02/2023	HMO degradation
 dflnh_a	Difucosyllacto-N-hexaose a	C52H88N2O39	C52H88N2O39	0		124202089				HMDB06622	03/02/2023	HMO degradation
