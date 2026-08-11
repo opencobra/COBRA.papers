@@ -3681,7 +3681,6 @@ gd2_hs	GD2		C60H101N4O33FULLRCO	-2	C06134		28648				02/07/2014	O-glycan degradat
 gd3_hs	GD3		C52H88N3O28FULLRCO	-2	C06133	20057321		FLBTXIPIINJPIM-KNHVHYCVSA-N		HMDB04911	02/07/2014	N-glycan degradation
 gda1_hs	Gda1 Hs	C67H111N4O39R	X	0							25/04/2016	
 gdca3s	Glycodeoxycholic acid 3-sulfate		C26H42NO8S	-1							03/01/2017	Bile acid synthesis
-gdchola	glycochenodeoxycholate		C26H43NO5	0							02/07/2014	
 gdman	D-Glucosyl-D-mannose		C12H22O11	0							19/09/2018	Starch and sucrose metabolism
 gdp	GDP		C10H12N5O11P2	-3	C00035	8977	17552	QGWNDRXFNXRZMB-UUOKFMHZSA-K		HMDB01201	02/07/2014	Blood group synthesis
 gdpddman	GDP-4-dehydro-6-deoxy-alpha-D-mannose(2-)		C16H21N5O15P2	-2	C01222	439446	16955	PNHLMHWWFOPQLK-BKUUWRAGSA-L		HMDB01346	02/07/2014	Aminosugar metabolism
